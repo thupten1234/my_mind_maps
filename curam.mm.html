@@ -1,0 +1,221 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Curam</title>
+<style type="text/css">
+    li { list-style: none;  margin: 0; }
+    p { margin: 0; }
+
+    span.l { color: red; font-weight: bold; }
+
+    a.mapnode:link {text-decoration: none; color: black; }
+    a.mapnode:visited {text-decoration: none; color: black; }
+    a.mapnode:active {text-decoration: none; color: black; }
+    a.mapnode:hover {text-decoration: none; color: black; background: #eeeee0; }
+
+</style>
+<!-- ^ Position is not set to relative / absolute here because of Mozilla -->
+</head>
+<body>
+<p>Curam
+<ul><li><p>PA_LOVES_U (Application tier) &nbsp;
+<br>
+Provider mgt, Appeals, Life mgt, Outcome mgt, 
+<br>
+Verification, Evidence broker, Social Mgt, Universal access.
+<br>
+
+<br>
+Income and Health/Medical (Special US application)
+<br>
+
+<br>
+Rest is Platform.
+<p>Application Tier Layers
+<ul><li>Remote Interface Layers
+
+</li>
+<li>Business Object Layer
+<ul><li>Facade layer
+
+</li>
+<li>Service Layer
+
+</li>
+<li>Entity Layer
+
+</li>
+
+</ul>
+</li>
+<li>Data Access Layer
+
+</li>
+
+</ul><p>Class Hierarchy
+<ul><li>&#xa;    <p>&#xa;      Factory-&gt;Implementation-&gt;Base-&gt;Interface&#xa;    </p>&#xa;  
+</li>
+</ul><p>Server Features
+<ul><li><p>Code Table
+<ul><li>&#xa;    <p>&#xa;      Code Table Hierarchy&#xa;    </p>&#xa;    <p>&#xa;      Multi level Code table. Only the last level selection is stored.&#xa;    </p>&#xa;    <p>&#xa;      - In ctx file. Use parent_code=&quot;parentvalue&quot; and &quot;value&quot; attributes to refer to parent.&#xa;    </p>&#xa;    <p>&#xa;      - Usage in uim&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&lt;FIELD CONTROL=&quot;CT_HIERARCHY_HORIZONTAL (DEFAULT)&quot; or &quot;CT_HEIRARCHY_VERTICAL&quot;..&gt;..&lt;/FIELD&gt;&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      Filtered Code tables&#xa;    </p>&#xa;    <p>&#xa;      Use case: show different codetable values for different context.<br >&#160;for example, show different list for children.&#xa;    </p>&#xa;    <p>&#xa;      Involves using combination of APPLICATIONCODE (users table) and context&#xa;    </p>&#xa;  
+</li>
+</ul><p>Post-processing informational messages
+<ul><li>&#xa;    <p>&#xa;      -Message are not error and thus does not block transaction.&#xa;    </p>&#xa;    <p>&#xa;      -Message shown in informational box&#xa;    </p>&#xa;    <p>&#xa;      -Facade method should return Struct that aggregates InfoMessageDetails in it with Struct::addRef(infoMessageDetails) method.&#xa;    </p>&#xa;    <p>&#xa;      -The aggregated Struct is returned by the facade method. Thats why no exception is thrown. (ie. we don't call failOperation())&#xa;    </p>&#xa;    <p>&#xa;      -On uim, shown in &lt;INFORMATIONAL&gt;&lt;CONNECT&gt;&lt;SOURCE NAME='mybean' PROPERTY='messageText'/&gt; ...<br >&#xa;    </p>&#xa;  
+</li>
+</ul><p>Curam RSAD Model
+<ul><li><p>-Meta model consists of packages, classes, operations, attributes, class diagrams and relationships.
+<br>
+-Model file split into .emx (model file) and .efx (fragment file)
+<br>
+-Fragments represent functional areas.
+<br>
+-RSAD package has no effect on generated code. CODE_PACKAGE option in Curum tab determines the package.
+<br>
+
+<p>Entity Operations
+<ul><li>DB Operations
+<ul><li>&#xa;    <p>&#xa;      code fully or partially generated.<br >-&lt;&lt;insert&gt;&gt;, &lt;&lt;read&gt;&gt;, &lt;&lt;modify&gt;&gt;, &lt;&lt;remove&gt;&gt;&#xa;    </p>&#xa;  
+</li>
+</ul>
+</li>
+<li>Non DB Operations
+<ul><li>&#xa;    <p>&#xa;      Generator only creates skeleton, developer must implement the code in impl's entity class.<br >&lt;&lt;blank&gt;&gt;<br >&#xa;    </p>&#xa;  
+</li>
+</ul>
+</li>
+<li>Entity operations stereotypes
+<ul><li><p>standard
+&#xa;    <p>&#xa;      non-standard<br >CRUDL operations that process a subset of attributes and records.&#xa;    </p>&#xa;  
+</li>
+</ul>
+</li>
+
+</ul><p>Indices
+<ul><li><p>To create index, In class diagram: drag the handle from the struct to the Entity. 
+<br>
+A menu option will show with options Create Uniqueindex, Create Assignment, Create Aggregation, create Index. Choose Create Index. 
+<br>
+- An &lt;index&gt; stereotype is created as a line between the struct and Entity.
+<br>
+- index name must be unique in entire model.
+<br>
+- struct must be subset of Entity. ie every attribute in struct must be present in the Entity.
+<br>
+- the struct MUST NOT aggregate any other class.
+<br>
+- `build generated` will now create the sql for creating index.
+</li>
+</ul><p>Foreign key
+<ul><li>&#xa;    <p>&#xa;      In RSAD, drag the handler from child Entity to parent Entity.&#xa;    </p>&#xa;    <p>&#xa;      -then in Foreign Key properties tab, select the attribute names for child and parent.&#xa;    </p>&#xa;  
+</li>
+</ul><p>Aggregation
+<ul><li>&#xa;    <p>&#xa;      Struct A containing Struct B or list of Struct B. (ie 1-1 or 1-*)&#xa;    </p>&#xa;    <p>&#xa;      -if you need A to contain a shadow struct, then model the aggregation between the stuct and Entity.&#xa;    </p>&#xa;  
+</li>
+</ul></li>
+</ul><p>Modeling Code table (static dropdown values)
+<ul><li>Create &lt;codetable name="AccountStatus".. in codetable\my.ctx file
+
+</li>
+<li>Create domain definitation of type CODETABLE_CODE
+
+</li>
+<li>In curum tab, set the Code_Table Name to the name in ctx file eg. AccountStatus.
+
+</li>
+<li>Now when used in field, it will show dropdown.
+
+</li>
+
+</ul>&#xa;    <p>&#xa;      Testing<br >- extend `CuramServerTestJUnit4.java`<br >- `build test`<br >- Organizing tests:&#160;&#160;Test suite -&gt; Test class -&gt; Test case<br >&#xa;    </p>&#xa;  
+<p>Troubleshooting
+<ul><li>&#xa;    <p>&#xa;      Server tracing<br >-trace settings in Application.prx curam.trace=[trace_on, trace_verbose, trace_ultra_verbose]<br >- build insertproperties or build database<br >&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      Client tracing<br >- in CDEJResources.properties, set TraceOn=true and/or JavaScriptTraceOn=true<br >- build client&#xa;    </p>&#xa;  
+</li>
+</ul></li>
+</ul><p>Client Features
+<ul><li>&#xa;    <p>&#xa;      app navigation&#xa;    </p>&#xa;    <p>&#xa;      -lives on server side&#xa;    </p>&#xa;    <p>&#xa;      -A user has application code in USERS table. The matching value in CT_APPLICATION_CODE is used as the application file. 'DEFAULTAPP.app'&#xa;    </p>&#xa;    <p>&#xa;      - server `build inserttabconfiguration` . It populates APPRESOURCE table in db with tab/menu information.&#xa;    </p>&#xa;    <p>&#xa;      - DONT need to rebuild client&#xa;    </p>&#xa;  
+<ul><li>.app
+<ul><li>.sec
+<ul><li><p>.ssp
+&#xa;    <p>&#xa;      tab&#xa;    </p>&#xa;    <p>&#xa;      if there is only single tab, its declared here.<br >Other wise it contains the navigation nodes which points to a page-id (many tabs)&#xa;    </p>&#xa;  
+<ul><li>&#xa;    <p>&#xa;      .nav<br >nc:navigation &gt; nc:nodes &gt; nc:navigation-page* #page-id&#xa;    </p>&#xa;  
+<p>.mnu
+<p>.context-page.uim (readonly)
+<p>smartpanel
+<p>tab-content -uim pages associated with tab in .nav or .tab
+</li>
+</ul></li>
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul><p>UIM elements
+<ul><li>PAGE
+
+</li>
+<li>CLUSTER
+
+</li>
+<li>FIELD
+
+</li>
+<li>CONNECT
+<ul><li>SOURCE
+
+</li>
+<li>TARGET
+
+</li>
+
+</ul>
+</li>
+<li>LINK
+
+</li>
+<li>PAGE_PARAMETER
+
+</li>
+<li>SERVER_INTERFACE
+<ul><li>&#xa;    <p>&#xa;      &lt;SERVER_INTERFACE&#160;NAME.. CLASS.. OPERATION. PHASE=&quot;ACTION&quot; ACTION_ID_PROPERTY=&quot;myActionId&quot;/&gt;&#160;&#160;//ACTION, DISPLAY&#xa;    </p>&#xa;    <p>&#xa;      &lt;ACTION-SET&gt;&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&lt;ACTION_CONTROL TYPE=&quot;SUBMIT&quot; ACTION_ID='ID_1'../&gt;&#160;&#160;//SUBMIT, ACTION, DISMISS&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&lt;ACTION_CONTROL TYPE=&quot;SUBMIT&quot; ACTION_ID='ID_2'../&gt;&#160;&#160;//SUBMIT, ACTION, DISMISS&#xa;    </p>&#xa;    <p>&#xa;      &lt;/ACTION-SET&gt;&#xa;    </p>&#xa;    <p>&#xa;      &#xa;    </p>&#xa;    <p>&#xa;      //when multiple submit button use &lt;ACTION_CONTROL ACTION_ID to send attach value to the button. In server interface add ACTION_ID_PROPERTY. Then the methods struct parameter will have a variable type myActionId with value.&#xa;    </p>&#xa;    <p>&#xa;      if(myStruct.myActionId.equals(&quot;ID_1&quot;)){//user pressed button with ID_1 ACTION_ID}&#xa;    </p>&#xa;  
+</li>
+</ul>
+</li>
+<li>ACTION_SET
+<ul><li>ACTION_CONTROL
+
+</li>
+
+</ul>
+</li>
+<li>MENU
+<ul><li>&#xa;    <p>&#xa;      Dynamic update of menu item.&#xa;    </p>&#xa;    <p>&#xa;      Menu created with static values, but after menu is loaded, it can be dynamically updated (enable/disable, visible/invisible) during runtime.&#xa;    </p>&#xa;    <p>&#xa;      - In ui mnu file, add reference to loader class file. loader-registry &gt; loader. Set dynamic=true to menu-item.&#xa;    </p>&#xa;    <p>&#xa;      - Then create the java class implementing DynamicMenuStateLoader interface. Implement loadMenuState method based on menuitem and pageparameters that are available.&#xa;    </p>&#xa;    <p>&#xa;      &#xa;    </p>&#xa;    <p>&#xa;      &#xa;    </p>&#xa;  
+</li>
+</ul>
+</li>
+<li>LIST
+<ul><li>&#xa;    <p>&#xa;      &lt;LIST&gt;&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&lt;DETAILS_ROW&gt;<br >&#160;&#160;&#160;&#160;&#160;&#160;&lt;INLINE_PAGE PAGE_ID=&quot;Pageid&quot;&gt;&#160; //this makes 1st column item an expand control. the page shows under the row.<br >&#160;&#160;&lt;/DETAILS_ROW&gt;&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&lt;FIELD&gt;&lt;CONNECT&gt;&lt;SOURCE/&gt;&lt;TARGET/&gt;&lt;/CONNECT&gt;&lt;/FIELD&gt;&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;..MORE FIELDS&#xa;    </p>&#xa;    <p>&#xa;      &#xa;    </p>&#xa;    <p>&#xa;      The server_interface bean that list connects to get data should return detailsList (ie &lt;read_multi&gt;. Thats why there is no need of loop inside LIST element.&#xa;    </p>&#xa;  
+</li>
+</ul>
+</li>
+
+</ul><p>Additional UIM features
+<ul><li>&#xa;    <p>&#xa;      Select List (INITIAL)<br >- To show dropdown with dynamic content, like list of person names.<br >- Place INITIAL element in CONNECT element.<br >&lt;FIELD&gt;&#xa;    </p>&#xa;    <p>&#xa;      &lt;CONNECT&gt;&lt;INITIAL ../&gt;&lt;/CONNECT&gt; //initial items to display. initial is like source.<br >&#xa;    </p>&#xa;    <p>&#xa;      &lt;FIELD&gt;&#xa;    </p>&#xa;    <p>&#xa;      - why INITIAL instead of SOURCE? because INITIAL can refer to list, and INITIAL has optional HIDDEN_PROPERTY attributes. Take INITIAL#PROPERTY as what is displayed and INITIAL#HIDDEN_PROPERTY as value.<br >&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      <font size="4">INCLUDE a VIEW </font>&#xa;    </p>&#xa;    <p>&#xa;      <font size="4">-VIEW is placeholder for UIM elements.<br size="4" >-Convention of filename is .vim<br size="4" >-Root element is VIEW, rather than PAGE.<br size="4" ></font>&#xa;    </p>&#xa;    <p>&#xa;      <font size="4">-VIEW is inserted in a page using INCLUDE#FILE_NAME in the page.<br size="4" >-optionally can have its own .properties file which gets merged with parent UIM .properties file. If collision, parent uim .properties wins.<br size="4" >//mypage.uim<br size="4" >&lt;PAGE..&gt;<br size="4" >.. &lt;INCLUDE FILE_NAME=&quot;Add_contact.vim&quot;/&gt;<br size="4" >&lt;/PAGE&gt;<br size="4" ><br size="4" >//Add_contact.vim<br size="4" >&lt;VIEW&gt;<br size="4" >... </font>&#xa;    </p>&#xa;    <p>&#xa;      <font size="4">&lt;/VIEW&gt;</font>&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      Curam Online Help<br >To set Help, do 2 things.&#xa;    </p>&#xa;    <p>&#xa;      &#xa;    </p>&#xa;    <p>&#xa;      1.add HELP tag in curam-config.xml (this shows help [?] icon)<br >&lt;HELP ACCESSKEY=&quot;AccessKey.Help&quot; INCLUDE=&quot;true&quot; TYPE=&quot;html&quot;/&gt;&#xa;    </p>&#xa;    <p>&#xa;      2.add Help properties in the&#160;.properties file.&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;Help.PageDescription=This is page help desc<br >&#160; Field.Label.Whatever.Help=This is field help desc<br >&#160;&#160;Action.Label.LabelName.Help=Button help&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;Link.Label.LabelName.Help=Link help<br >&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      In-page navigation &lt;MENU MODE=&quot;IN_PAGE_NAVIGATION&quot;&gt;&#xa;    </p>&#xa;    <p>&#xa;      -place action controls inside the menu.<br >-Shows up as Horizontal link similar to tab navigation. But this one is inside the tab. -used for adding sub-navigation<br >-set ACTION_CONTROL#STYLE to in-page-current-link or in-page-link, former will show the menu item as selected.&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      Wizard &lt;MENU MODE=&quot;WIZARD_PROGRESS_BAR&quot;&gt;<br >-Each step is a standard uim page<br >-Details about wizard step labels, page, step number etc are in special property resource file.&#xa;    </p>&#xa;    <p>&#xa;      -Button bar's button can be one of these 2 types. Progressive or Dismissive.&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      &lt;CONTAINER&gt; element&#xa;    </p>&#xa;    <p>&#xa;      -use to group FIELD, ACTION_CONTROL and IMAGE so that they show in a single cell of a CLUSTER or LIST element.&#xa;    </p>&#xa;    <p>&#xa;      - attributes #LABEL and #SEPARATOR&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      &lt;IMAGE&gt; element<br >&lt;IMAGE IMAGE=&quot;IMG.A.SRC&quot; LABEL=&quot;smiley image&quot;/&gt;&#xa;    </p>&#xa;    <p>&#xa;      #STYLE css style&#xa;    </p>&#xa;    <p>&#xa;      <br >&#xa;      -in properties file.<br >IMG.A.SRC=images/smily.jpg<br >-Images must be in CONTAINER element.&#xa;    </p>&#xa;    <p>&#xa;      -can also be added to ACTION_CONTROLS to create Image Button.&#xa;    </p>&#xa;  
+<p>Adding Logic to pages
+<ul><li>&#xa;    <p>&#xa;      &lt;JSP_SCRIPTLET&gt; element<br >allows to write Java code in uim page, wrap in CDATA.<br >Scriptlet apis are available.<br >- Texthelpers to access server interface, labels, field values<br >- Request to access system properties to return to previous pages<br >- Commonly use to page redirection. Dont overuse.<br >in uim page&#xa;    </p>&#xa;    <p>&#xa;      &lt;PAGE..&gt;<br >&#160;&#160;&lt;JSP_SCRIPTLET&gt;<br >&#160;&#160;&#160;&lt;![CDATA[<br >&#160; &#160;&#160;&#160;&#160;&#160;//java code here&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;]]&gt;&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&lt;/JSP_SCRIPTLET&gt;<br >&#xa;    </p>&#xa;    <p>&#xa;      &lt;/PAGE&gt;&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      JavaScript &lt;SCRIPT..&gt;&#xa;    </p>&#xa;    <p>&#xa;      -Add &lt;SCRIPT&gt; as child element of PAGE,&#xa;    </p>&#xa;    <p>&#xa;      ACTION_CONTROLS, FIELDS (EXCLUDE FIELDS IN LIST and READ-ONLY FIELDS)&#xa;    </p>&#xa;    <p>&#xa;      -Example&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&lt;ACTION_CONTROL..&gt;&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&lt;SCRIPT EVENT=&quot;ONCLICK&quot; SCRIPT_FILE=&quot;script.js&quot; ACTION=&quot;myFunction()&quot;&gt;<br >&#160;&#160;&#160;&#160;..<br ><br >- Then in `script.js` in component\blah\web_content folder&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;function myFunction(){...}<br >&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      &lt;CONDITION&gt;&#xa;    </p>&#xa;    <p>&#xa;      -Condition to display or hide the parent element. In ACTION_CONTROL, it might just disable the button instead of hiding. This is set in curam-config.xml or in page level code.&#xa;    </p>&#xa;    <p>&#xa;      - Parents include (ACTION_SET | ACTION_CONTROL), LIST, CLUSTER, LINK<br >&#xa;    </p>&#xa;    <p>&#xa;      -Must have one of these childs IS_TRU, IS_FALSE, SCRIPT&#xa;    </p>&#xa;    <p>&#xa;      &lt;CLUSTER TITLE=&quot;Cluster.Label.Title&quot;&gt;&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&lt;CONDITION&gt; &lt;IS_TRUE PROPERTY=&quot;someBoolean&quot; NAME=&quot;myBean&quot;/&gt;&lt;/CONDITION&gt;&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&lt;FIELD...&#xa;    </p>&#xa;  
+</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></body>
+</html>
