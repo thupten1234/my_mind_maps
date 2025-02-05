@@ -74,8 +74,7 @@
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1730225576834" ID="ID_209429092" MODIFIED="1730668172232">
 <richcontent TYPE="NODE"><html>
@@ -146,8 +145,7 @@
       result.dtls.item(1).firstname
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1730606101913" ID="ID_1432955950" MODIFIED="1730606258697" TEXT="Assignment">
@@ -167,8 +165,7 @@
       important:<br />-same name attribute names are deep copied. Everything else ignored.<br />-If matching attribute name have different type, cast exception occurs.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1730432407496" ID="ID_1231394256" MODIFIED="1730432427623" TEXT="Stereotypes (4 groups)">
@@ -283,8 +280,7 @@
       - eg usage: modify invoice record, the on postinsert() modify last invoice date changed in invoice_header table.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1730601915067" ID="ID_662076395" MODIFIED="1730602289686">
@@ -297,12 +293,9 @@
       UniqueID (keysets)
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1730602295863" ID="ID_1117833144" MODIFIED="1730603042488" TEXT="System-Generated Unique IDs (used for primary keys in db)&#xa;2 ways to set auto id &#xa;&#xa0;&#xa0;-set auto id in the model entity&apos;s insert operation&#xa;&#xa0;&#xa0;-or use programmatically with UniqueIdFactory and UniqueIdKeySet java class. &#xa;curam unique ID are generated from keyset. use default key set or provide your own in Keyserver.dmx . It is loaded to keyserver table.&#xa;-Value is  SVR_INT64&#xa;```&#xa;&lt;row&gt;&#xa; &lt;attribute name=&quot;keySetCode&quot;&gt;&#xa;  &lt;value&gt;ACCOUNTID&lt;/value&gt;&#xa; &lt;/attribute&gt;&#xa; &lt;attribute name=&quot;nextUniqueIdBlock&quot;&gt;&#xa;  &lt;value&gt;0&lt;/value&gt;&#xa; &lt;/attribute&gt;&#xa; &lt;attribute name=&quot;humanReadable&quot;&gt;&#xa;  &lt;value&gt;1&lt;/value&gt;&#xa; &lt;/attribute&gt;&#xa; . . . &#xa;&lt;/row&gt;```&#xa;256 values are allocated and reserved at a time per server. "/>
-<node CREATED="1730602934428" ID="ID_613004548" MODIFIED="1730602934428" TEXT=""/>
 </node>
-<node CREATED="1730603454223" ID="ID_412286923" MODIFIED="1730603454223" TEXT=""/>
 <node CREATED="1730227796894" ID="ID_719512750" MODIFIED="1730228209623">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -379,8 +372,7 @@
       &lt;ac:application
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1730060430160" ID="ID_23947394" MODIFIED="1730669078267">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -391,8 +383,7 @@
       .sec<br />&lt;ac:section-ref
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1730060433860" ID="ID_1312566810" MODIFIED="1730060436304" TEXT=".ssp"/>
 <node CREATED="1730060450248" ID="ID_1575514022" MODIFIED="1730671335563">
 <richcontent TYPE="NODE"><html>
@@ -431,8 +422,7 @@
       &#160;&#160;&#160;&#160;
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1730060461593" ID="ID_1367211949" MODIFIED="1730227293231">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -509,8 +499,7 @@
       &lt;ac:application-menu
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1730669004816" ID="ID_337059774" MODIFIED="1730669048379">
 <richcontent TYPE="NODE"><html>
@@ -522,8 +511,7 @@
       &lt;ac:application-search
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -549,8 +537,7 @@
       -can have CONDITION child to display/hide the cluster
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1730269064638" ID="ID_592975826" MODIFIED="1730269066983" TEXT="FIELD">
@@ -582,8 +569,7 @@
       attributes: LABEL, CONTROL,
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1730269067201" ID="ID_801692888" MODIFIED="1730269069218" TEXT="CONNECT">
@@ -603,8 +589,7 @@
       #name, #property &lt;-- result$accountNumber or FIELD.LABEL
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1730609472150" ID="ID_600408151" MODIFIED="1730671664855">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -615,8 +600,7 @@
       4 sources<br />name=[TEXT, CONSTANT, PAGE, serverInterface]
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <font NAME="Consolas" SIZE="12"/>
 </node>
 </node>
@@ -633,8 +617,7 @@
       write (shows editable textbox field)
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1730609539006" ID="ID_606140834" MODIFIED="1730671655893">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -648,8 +631,7 @@
       name=[PAGE, serverInterface]
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -667,8 +649,7 @@
       &#160;&#160;&#160;&#160;&lt;TARGET PROPPERTY=&quot;accountNumberParam&quot; NAME=&quot;PAGE&quot;&gt; &lt;--this is query string to destination page.<br />&#160;&#160;&lt;/CONNECT&gt;<br />&lt;/LINK&gt;
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1730269070483" ID="ID_1002180661" MODIFIED="1730269074763" TEXT="PAGE_PARAMETER">
@@ -733,8 +714,7 @@
       -Modal bottom of modal window
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -798,8 +778,7 @@
       &lt;/MENU&gt;
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1730339246082" ID="ID_971863814" MODIFIED="1730339249261" TEXT="LIST">
@@ -1025,8 +1004,7 @@
       &#160;&#160;function myFunction(){...}<br />
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1730346060725" ID="ID_894690977" MODIFIED="1730346831115">
 <richcontent TYPE="NODE"><html>
@@ -1078,8 +1056,7 @@
       -custom widget based on Domain Definition like calendar
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -1098,8 +1075,7 @@
       2.facade operations mandatory field validation.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1730510887746" ID="ID_1207607794" MODIFIED="1730511046673" TEXT="Server side validation -occurs in server">
@@ -1113,8 +1089,7 @@
       business logic validation with exceptions and informational manager (can rollback).
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1730510891558" ID="ID_768426753" MODIFIED="1730510897732" TEXT="Client side validation">
