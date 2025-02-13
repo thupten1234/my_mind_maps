@@ -1,6 +1,6 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node COLOR="#000000" CREATED="1730949123363" ID="ID_1299395577" MODIFIED="1737312337441" TEXT="Curam Customization">
+<node COLOR="#000000" CREATED="1730949123363" ID="ID_1299395577" MODIFIED="1739430851807" TEXT="Curam Customization">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -16,7 +16,8 @@
       <b>what cannot be customized:</b><br />Infrastructure artifacts, Generated artifacts, Infrastructure components unless there is an external customization point.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <font NAME="SansSerif" SIZE="20"/>
 <hook NAME="accessories/plugins/AutomaticLayout.properties"/>
 <node COLOR="#0033ff" CREATED="1730949181248" FOLDED="true" HGAP="-240" ID="ID_742253712" MODIFIED="1737312445083" POSITION="right" TEXT="Curam Infrastructure" VSHIFT="-20">
@@ -1118,8 +1119,7 @@
       &#160;&#160;Ensure the OOTB facade or process operation is External
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node COLOR="#111111" CREATED="1737483319039" ID="ID_1259904712" MODIFIED="1737483811035">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -1157,8 +1157,7 @@
       <font face="Calibri" color="#0033ff">}</font>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -1176,6 +1175,17 @@
 </html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
+<node COLOR="#990000" CREATED="1739430947052" ID="ID_1707278425" MODIFIED="1739430970957" TEXT="Strategy Pattern">
+<font NAME="Consolas" SIZE="14"/>
+<node COLOR="#111111" CREATED="1739431230010" ID="ID_1644067803" MODIFIED="1739431267409" TEXT="Developer handcraft the DAO and Entity interfaces and implementations."/>
+<node COLOR="#111111" CREATED="1739431268305" ID="ID_445528065" MODIFIED="1739431530711" TEXT="Guice used to inject the default or custom implementation using @ImplementedBy or binding method in Guice Module configure(). @inject used to get reference. Add reference to your Guice module from ModuleClassName table (use dmx)"/>
+</node>
+<node COLOR="#990000" CREATED="1739430971353" ID="ID_177152152" MODIFIED="1739430975580" TEXT="Event/Listener Pattern">
+<font NAME="Consolas" SIZE="14"/>
+</node>
+<node COLOR="#990000" CREATED="1739430976416" ID="ID_804377771" MODIFIED="1739430994017" TEXT="Reference handcrafted classes">
+<font NAME="Consolas" SIZE="14"/>
+</node>
 </node>
 <node COLOR="#00b439" CREATED="1730949290808" ID="ID_1276395721" MODIFIED="1737312337434" TEXT="restful and SOAP web services">
 <edge STYLE="bezier" WIDTH="thin"/>
