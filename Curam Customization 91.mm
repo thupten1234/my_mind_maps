@@ -1,6 +1,6 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node COLOR="#000000" CREATED="1730949123363" ID="ID_1299395577" MODIFIED="1739430851807" TEXT="Curam Customization">
+<node COLOR="#000000" CREATED="1730949123363" ID="ID_1299395577" MODIFIED="1739853954864" TEXT="Curam Customization">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -16,8 +16,7 @@
       <b>what cannot be customized:</b><br />Infrastructure artifacts, Generated artifacts, Infrastructure components unless there is an external customization point.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <font NAME="SansSerif" SIZE="20"/>
 <hook NAME="accessories/plugins/AutomaticLayout.properties"/>
 <node COLOR="#0033ff" CREATED="1730949181248" FOLDED="true" HGAP="-240" ID="ID_742253712" MODIFIED="1737312445083" POSITION="right" TEXT="Curam Infrastructure" VSHIFT="-20">
@@ -399,7 +398,7 @@
 </node>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1730949190680" HGAP="61" ID="ID_98750021" MODIFIED="1737312448199" POSITION="right" TEXT="Server-side customization" VSHIFT="-107">
+<node COLOR="#0033ff" CREATED="1730949190680" HGAP="61" ID="ID_98750021" MODIFIED="1739853954867" POSITION="right" TEXT="Server-side customization" VSHIFT="-107">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -1120,41 +1119,41 @@
     </p>
   </body>
 </html></richcontent>
-<node COLOR="#111111" CREATED="1737483319039" ID="ID_1259904712" MODIFIED="1737483811035">
+<node COLOR="#111111" CREATED="1737483319039" ID="ID_1259904712" MODIFIED="1739853953580">
 <richcontent TYPE="NODE"><html>
   <head>
     
   </head>
   <body>
     <p>
-      Eg. Model CustomMaintainBankAccount facade with same operation name but return your custom struct which aggregates ootb struct.
+      <font size="3">Eg. Model CustomMaintainBankAccount facade with same operation name but return your custom struct which aggregates ootb struct. </font>
     </p>
     <p>
       
     </p>
     <p>
-      <font face="Calibri" color="#0033ff">public CustomAccountDetails prepareAccountSummary(BankAccountKey arg1) throws...{ </font>
+      <font color="#0033ff" face="Calibri" size="3">public CustomAccountDetails prepareAccountSummary(BankAccountKey arg1) throws...{ </font>
     </p>
     <p>
-      <font face="Calibri" color="#0033ff">&#160;&#160;curam.intf.MaintainBankAccount maintainBankAccount = curam.fact.MaintainBankAccountFactory.newIntance(); </font>
+      <font color="#0033ff" face="Calibri" size="3">&#160;&#160;curam.intf.MaintainBankAccount maintainBankAccount = curam.fact.MaintainBankAccountFactory.newInstance(); </font>
     </p>
     <p>
-      <font face="Calibri" color="#0033ff">&#160;&#160;AccountDetails accountDetails = maintainBankAccount.prepareAccountSummary(args)&#160;&#160;//call ootb </font>
+      <font color="#0033ff" face="Calibri" size="3">&#160;&#160;AccountDetails accountDetails = maintainBankAccount.prepareAccountSummary(args)&#160;&#160;//call ootb </font>
     </p>
     <p>
-      <font face="Calibri" color="#0033ff">&#160;&#160;CustomAccountDetails customAccountDetails = new CustomAccountDetails(); </font>
+      <font color="#0033ff" face="Calibri" size="3">&#160;&#160;CustomAccountDetails customAccountDetails = new CustomAccountDetails(); </font>
     </p>
     <p>
-      <font face="Calibri" color="#0033ff">&#160;&#160;customAccountDetails.dtls = accountDetails; </font>
+      <font color="#0033ff" face="Calibri" size="3">&#160;&#160;customAccountDetails.dtls = accountDetails; </font>
     </p>
     <p>
-      <font face="Calibri" color="#0033ff">&#160;&#160;//other custom logic </font>
+      <font color="#0033ff" face="Calibri" size="3">&#160;&#160;//other custom logic </font>
     </p>
     <p>
-      <font face="Calibri" color="#0033ff">&#160;&#160;return customAccountDetails; </font>
+      <font color="#0033ff" face="Calibri" size="3">&#160;&#160;return customAccountDetails; </font>
     </p>
     <p>
-      <font face="Calibri" color="#0033ff">}</font>
+      <font color="#0033ff" face="Calibri" size="3">}</font>
     </p>
   </body>
 </html></richcontent>
@@ -1178,10 +1177,464 @@
 <node COLOR="#990000" CREATED="1739430947052" ID="ID_1707278425" MODIFIED="1739430970957" TEXT="Strategy Pattern">
 <font NAME="Consolas" SIZE="14"/>
 <node COLOR="#111111" CREATED="1739431230010" ID="ID_1644067803" MODIFIED="1739431267409" TEXT="Developer handcraft the DAO and Entity interfaces and implementations."/>
-<node COLOR="#111111" CREATED="1739431268305" ID="ID_445528065" MODIFIED="1739431530711" TEXT="Guice used to inject the default or custom implementation using @ImplementedBy or binding method in Guice Module configure(). @inject used to get reference. Add reference to your Guice module from ModuleClassName table (use dmx)"/>
+<node COLOR="#111111" CREATED="1739852411677" ID="ID_95071337" MODIFIED="1739852438481" TEXT="Strategy pattern used to replace default DAO and Entity implementation classes with custom implementations."/>
+<node COLOR="#111111" CREATED="1739431268305" ID="ID_445528065" MODIFIED="1739852605711" TEXT="Guice used to inject the default or custom implementation using @ImplementedBy or binding method in Guice Module configure(). @inject used to get reference. &#xa;You must create an entry in the ModuleClassName table. Add reference to your Guice module from ModuleClassName table (use dmx)">
+<node COLOR="#111111" CREATED="1739853079981" ID="ID_1354303990" MODIFIED="1739853948399">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font size="3">@ImplementedBy(</font><font color="#0033ff" size="3">UniqueNumberGeneratorImpl.class</font><font size="3">) </font>
+    </p>
+    <p>
+      <font size="3">@AccessLevel(</font><font color="#cc0066" size="3">AccessLevelType.EXTERNAL</font><font size="3">) </font>
+    </p>
+    <p>
+      <font size="3">public interface </font><font color="#339900" size="3">ReferenceNumberGenerator</font><font size="3">&#160;{ &#160;&#160; </font>
+    </p>
+    <p>
+      <font size="3">&#160;&#160;&#160;@AccessLevel(</font><font color="#990000" size="3">AccessLevelType.EXTERNAL</font><font size="3">) </font>
+    </p>
+    <p>
+      <font size="3">&#160;&#160;&#160;@Implementable &#160;&#160; </font>
+    </p>
+    <p>
+      <font size="3">&#160;&#160;&#160;String </font><font color="#009999" size="3">generateReferenceNumbe</font><font size="3">r(ContractVersion contractVersion, CPMContract cpmContract) throws . . . </font>
+    </p>
+    <p>
+      <font size="3">} </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font size="3">//default implementation </font>
+    </p>
+    <p>
+      <font size="3">public class </font><font color="#0033ff" size="3">UniqueNumberGeneratorImpl</font><font size="3">&#160;implements </font><font color="#339900" size="3">ReferenceNumberGenerator</font><font size="3">&#160; { &#160;&#160; </font>
+    </p>
+    <p>
+      <font size="3">&#160;&#160;public String </font><font color="#009999" size="3">generateReferenceNumber</font><font size="3">(ContractVersion contractVersion, CPMContract cpmContract) throws AppException, InformationalException { &#160;&#160; </font>
+    </p>
+    <p>
+      <font size="3">&#160;&#160;// implementation specified here &#160;&#160; </font>
+    </p>
+    <p>
+      <font size="3">&#160;&#160;&#160;&#160;return referenceNumber; &#160;&#160; </font>
+    </p>
+    <p>
+      <font size="3">&#160;&#160;} </font>
+    </p>
+    <p>
+      <font size="3">} </font>
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node COLOR="#111111" CREATED="1739853439968" ID="ID_827351739" MODIFIED="1739854752497">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font size="3">//custom implementation </font>
+    </p>
+    <p>
+      <font size="3">public class </font><font color="#006666" size="3">CustomUniqueNumberGeneratorImpl</font><font size="3">&#160;implements </font><font color="#339900" size="3">ReferenceNumberGenerator</font><font size="3">&#160;&#160;{ </font>
+    </p>
+    <p>
+      <font size="3">&#160;&#160;&#160;private String referenceNumber; </font>
+    </p>
+    <p>
+      <font size="3">&#160;&#160;&#160;protected </font><font color="#006666" size="3">CustomUniqueNumberGeneratorImpl</font><font size="3">() {// } </font>
+    </p>
+    <p>
+      <font size="3">&#160;&#160;&#160;@Override </font>
+    </p>
+    <p>
+      <font size="3">&#160;&#160;&#160;public String </font><font color="#009999" size="3">generateReferenceNumber</font><font size="3">(ContractVersion contractVersion, CPMContract cpmContract) throws AppException, InformationalException { </font>
+    </p>
+    <p>
+      <font size="3">&#160;&#160;&#160;&#160;&#160;// Custom implementation </font>
+    </p>
+    <p>
+      <font size="3">&#160;&#160;&#160;&#160;&#160;return referenceNumber; </font>
+    </p>
+    <p>
+      <font size="3">&#160;&#160;&#160;} </font>
+    </p>
+    <p>
+      <font size="3">} </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font size="3">Guice module </font>
+    </p>
+    <p>
+      <font size="3">Module.java </font>
+    </p>
+    <p>
+      <font size="3">package </font><font color="#660099" size="3">curam.custom.cpm.impl</font><font size="3">;</font>
+    </p>
+    <p>
+      <font size="3">import com.google.inject.AbstractModule; </font>
+    </p>
+    <p>
+      <font size="3">public class </font><font color="#660099" size="3">Module</font><font size="3">&#160;extends AbstractModule { </font>
+    </p>
+    <p>
+      <font size="3">&#160;&#160;protected void configure() { </font>
+    </p>
+    <p>
+      <font size="3">&#160;&#160;&#160;&#160;bind(</font><font color="#339900" size="3">ReferenceNumberGenerator.class</font><font size="3">).to(</font><font color="#006666" size="3">CustomUniqueNumberGeneratorImpl.class</font><font size="3">); </font>
+    </p>
+    <p>
+      <font size="3">&#160;&#160;} </font>
+    </p>
+    <p>
+      <font size="3">} </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font size="3">Update ModuleClassName.dmx in your custom data manager folder </font>
+    </p>
+    <p>
+      <font size="3">&lt;?xml...?&gt; </font>
+    </p>
+    <p>
+      <font size="3">&lt;table name=&quot;ModuleClassName&quot;&gt; </font>
+    </p>
+    <p>
+      <font size="3">&#160;&lt;column name=&quot;moduleClassName&quot; type=&quot;text&quot;/&gt; </font>
+    </p>
+    <p>
+      <font size="3">&#160;&lt;row&gt;&lt;attribute name=&quot;moduleClassName&quot;&gt;&lt;value&gt;</font><font color="#660099" size="3">curam.custom.cpm.impl.Module</font><font size="3">&lt;/value&gt;&lt;/attribute&gt;&lt;/row&gt; </font>
+    </p>
+    <p>
+      <font size="3">&lt;/table&gt; </font>
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node COLOR="#111111" CREATED="1739852509422" ID="ID_1436204402" MODIFIED="1739852543246" TEXT="The configuration in Guicemodule takes precedence over any @ImplementedBy annocations in the code."/>
+<node COLOR="#111111" CREATED="1739852439138" ID="ID_722928952" MODIFIED="1739852648078" TEXT="The javadoc indicates whether the class is replaceable. @Implementable"/>
+<node COLOR="#111111" CREATED="1739853699574" ID="ID_1154904240" MODIFIED="1739853744738" TEXT="CPM module provides sample source code thatdocuments the defaultimplementation.Other PI components do not provide sample sourcecode. So consult CPM module for example code."/>
 </node>
 <node COLOR="#990000" CREATED="1739430971353" ID="ID_177152152" MODIFIED="1739430975580" TEXT="Event/Listener Pattern">
 <font NAME="Consolas" SIZE="14"/>
+<node COLOR="#111111" CREATED="1739942797663" ID="ID_949824789" LINK="EventHandlingOverview.png" MODIFIED="1739943177751" TEXT="There are 2 types of Events">
+<node COLOR="#111111" CREATED="1739942806617" ID="ID_1797743786" MODIFIED="1739945431741">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Business Events
+    </p>
+    <p>
+      The curam components provides multiple business events that can
+    </p>
+    <p>
+      &#160;be listened. Check documentation javadoc, component developer
+    </p>
+    <p>
+      &#160;guide and persistence cookbook.
+    </p>
+    <p>
+      Event interface, EventDispatcherFactory and raising events at
+    </p>
+    <p>
+      &#160;appropriate point in code are handled by Merative Curam
+    </p>
+    <p>
+      &#160;developer in the OOTB application.
+    </p>
+    <p>
+      The project developer creates the event listener and configures
+    </p>
+    <p>
+      &#160;Guice.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Business event interface names are usually ending in xxEvents.
+    </p>
+    <p>
+      &#160;The events offer pre-event, post-event, or both for each
+    </p>
+    <p>
+      &#160;business operation. Interface is marked EXTERNAL.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      The class name for the listener should follow following convention
+    </p>
+    <p>
+      IS_ProgramApplicationBICloseEventListener
+    </p>
+    <p>
+      IS = component acryonym
+    </p>
+    <p>
+      ProgramApplication = OOTB class name
+    </p>
+    <p>
+      BI = to signify Business interface
+    </p>
+    <p>
+      CloseEventListener = implements close events.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Because events can support multiple listeners.
+    </p>
+    <p>
+      The Guice module binding shoul dbe Multibinder&lt;Type&gt;
+    </p>
+  </body>
+</html>
+</richcontent>
+<node COLOR="#111111" CREATED="1739943844838" ID="ID_1514051037" MODIFIED="1739944412070">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      eg
+    </p>
+    <p>
+      package curam.custom.application.impl;
+    </p>
+    <p>
+      import curam.application.impl.ProgramApplication;
+    </p>
+    <p>
+      import curam.application.impl.ProgramApplicationEvents;
+    </p>
+    <p>
+      public class IS_ProgramApplicationBIEventListener implements ProgramApplicationEvents {
+    </p>
+    <p>
+      &#160;&#160;&#160;: : &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;@Override
+    </p>
+    <p>
+      &#160;&#160;public void postReopen(ProgramApplication programApplication) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;// Custom implementation &#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;// : : : &#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;} &#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;@Override
+    </p>
+    <p>
+      &#160;&#160;public void preReopen(ProgramApplication programApplication) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;// No implementation required
+    </p>
+    <p>
+      &#160;&#160;&#160;}
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Module.java
+    </p>
+    <p>
+      import curam.application.impl.ProgramApplicationEvents;
+    </p>
+    <p>
+      : : : :
+    </p>
+    <p>
+      public class ModuleextendsAbstractModule {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;@Override
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;protected void configure() {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Multibinder
+    </p>
+    <p>
+      programApplicationBIEventListener = Multibinder.newSetBinder(binder(), ProgramApplicationEvents.class);
+    </p>
+    <p>
+      &#160;&#160;&#160;programApplicationBIEventListener.addBinding().to( IS_ProgramApplicationBIEventListener.class);
+    </p>
+    <p>
+      &#160;&#160;}
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      * Make sure to add your Module in to the ModuleClassName.dmx
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node COLOR="#111111" CREATED="1739942810517" ID="ID_1944112578" MODIFIED="1739945387322">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Persistence Events
+    </p>
+    <p>
+      PI provides automatically distpatched events for all entities.
+    </p>
+    <p>
+      PersistnceEvents abstract class with generic for the entity class.
+    </p>
+    <p>
+      Since it is abstract class, one can implement only
+    </p>
+    <p>
+      the methods they are interested in. The methods are as follows.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      preRead(e), postRead(e)
+    </p>
+    <p>
+      preReadMulti(e), postReadMulti(e),
+    </p>
+    <p>
+      preInsert(e), postInsert(e),
+    </p>
+    <p>
+      preModify(e), postModify(e),
+    </p>
+    <p>
+      preCancel(e), postCancel(e),&#160;&#160;//logical delete
+    </p>
+    <p>
+      preRemove(e), postRemove(e)&#160;&#160;//hard delete
+    </p>
+  </body>
+</html>
+</richcontent>
+<arrowlink DESTINATION="ID_1944112578" ENDARROW="Default" ENDINCLINATION="0;0;" ID="Arrow_ID_1179882700" STARTARROW="None" STARTINCLINATION="0;0;"/>
+<linktarget COLOR="#6699ff" DESTINATION="ID_1944112578" ENDARROW="Default" ENDINCLINATION="0;0;" ID="Arrow_ID_1179882700" SOURCE="ID_1944112578" STARTARROW="None" STARTINCLINATION="0;0;"/>
+<node COLOR="#111111" CREATED="1739944918230" ID="ID_1999159323" MODIFIED="1739945328344">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      eg.
+    </p>
+    <p>
+      package curam.custom.contracts.impl;
+    </p>
+    <p>
+      public class IS_ContractVersionPIEventListener extends PersistenceEvent&lt;ContractVersion&gt;{
+    </p>
+    <p>
+      &#160;&#160;@Override
+    </p>
+    <p>
+      &#160;&#160;publi void postInsert(ContractVersion contractVersion) throws AppException, InformationalException {
+    </p>
+    <p>
+      &#160;&#160;//custom implementation
+    </p>
+    <p>
+      &#160;&#160;}
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Module.java
+    </p>
+    <p>
+      public class Module extends AbstractModule {
+    </p>
+    <p>
+      &#160;&#160;@Override
+    </p>
+    <p>
+      &#160;&#160;protected void configure(){
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;//need to use TypeLiteral because of the generic type for the entity
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;//must be multibinder since multiple listeners are supported
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;Multibinder&lt;PersistnceEvent&lt;ContractVersion&gt;&gt; listener = Multibinder.newSetBinder(binder(), new TypeLiteral&lt;PersistenceEvent&lt;ContractVersion&gt;&gt;(){});
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;listener.addBinding().to(IS_ContractVersionPIEventListener.class);
+    </p>
+    <p>
+      &#160;&#160;}
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      * dont forget to load your Module.java into&#160;&#160;the ModuleClassName.dmx
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
 </node>
 <node COLOR="#990000" CREATED="1739430976416" ID="ID_804377771" MODIFIED="1739430994017" TEXT="Reference handcrafted classes">
 <font NAME="Consolas" SIZE="14"/>
