@@ -1,7 +1,7 @@
-<map version="1.0.1">
-<!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node COLOR="#000000" CREATED="1730949123363" ID="ID_1299395577" MODIFIED="1739853954864" TEXT="Curam Customization">
-<richcontent TYPE="NOTE"><html>
+<map version="freeplane 1.12.1">
+<!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
+<node TEXT="Curam Customization" FOLDED="false" ID="ID_1299395577" CREATED="1730949123363" MODIFIED="1740389625899"><richcontent TYPE="NOTE">
+<html>
   <head>
     
   </head>
@@ -17,85 +17,108 @@
     </p>
   </body>
 </html></richcontent>
-<font NAME="SansSerif" SIZE="20"/>
-<hook NAME="accessories/plugins/AutomaticLayout.properties"/>
-<node COLOR="#0033ff" CREATED="1730949181248" FOLDED="true" HGAP="-240" ID="ID_742253712" MODIFIED="1737312445083" POSITION="right" TEXT="Curam Infrastructure" VSHIFT="-20">
-<edge STYLE="sharp_bezier" WIDTH="8"/>
-<font NAME="SansSerif" SIZE="18"/>
-<node COLOR="#00b439" CREATED="1730949211243" ID="ID_1176609013" MODIFIED="1737312337309" TEXT="Product documentation and information sources">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
-<node COLOR="#990000" CREATED="1735919625857" ID="ID_1194710158" MODIFIED="1737312337310" TEXT="Entity relationship diagrams. Bunch of pdfs with ERD-somename.pdf contain ERD reference models. Models are produced for the following areas: Core, Infrastructure, Application modules.">
+<hook NAME="MapStyle" background="#d5d4b1ff" zoom="0.9090909">
+    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_tags="UNDER_NODES" show_note_icons="true" fit_to_viewport="false" show_icons="BESIDE_NODES" showTagCategories="false" show_icon_for_attributes="true" newNodeStyle=":style:default"/>
+    <tags category_separator="::"/>
+
+<map_styles>
+<stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
+<font SIZE="24"/>
+<stylenode LOCALIZED_TEXT="styles.predefined" POSITION="bottom_or_right" STYLE="bubble">
+<stylenode LOCALIZED_TEXT="default" ID="ID_271890427" ICON_SIZE="12 pt" FORMAT_AS_HYPERLINK="false" COLOR="#000000" STYLE="fork" NUMBERED="false" FORMAT="STANDARD_FORMAT" TEXT_ALIGN="DEFAULT" TEXT_WRITING_DIRECTION="LEFT_TO_RIGHT" CHILD_NODES_LAYOUT="AUTO" VGAP_QUANTITY="2 pt" COMMON_HGAP_QUANTITY="14 pt" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1 px" BORDER_COLOR_LIKE_EDGE="true" BORDER_COLOR="#808080" BORDER_DASH_LIKE_EDGE="false" BORDER_DASH="SOLID">
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_271890427" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" STRIKETHROUGH="false" ITALIC="false"/>
+<richcontent TYPE="DETAILS" CONTENT-TYPE="plain/auto"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="plain/auto"/>
+<edge COLOR="#808080"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="defaultstyle.details"/>
+<stylenode LOCALIZED_TEXT="defaultstyle.tags">
+<font SIZE="10"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="defaultstyle.attributes">
+<font SIZE="9"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="defaultstyle.note" COLOR="#000000" BACKGROUND_COLOR="#ffffff" TEXT_ALIGN="LEFT"/>
+<stylenode LOCALIZED_TEXT="defaultstyle.floating">
+<edge STYLE="hide_edge"/>
+<cloud COLOR="#f0f0f0" SHAPE="ROUND_RECT"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="defaultstyle.selection" BACKGROUND_COLOR="#afd3f7" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#afd3f7"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="styles.user-defined" POSITION="bottom_or_right" STYLE="bubble">
+<stylenode LOCALIZED_TEXT="styles.topic" COLOR="#18898b" STYLE="fork">
+<font NAME="Liberation Sans" SIZE="10" BOLD="true"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="styles.subtopic" COLOR="#cc3300" STYLE="fork">
+<font NAME="Liberation Sans" SIZE="10" BOLD="true"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="styles.subsubtopic" COLOR="#669900">
+<font NAME="Liberation Sans" SIZE="10" BOLD="true"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="styles.important" ID="ID_67550811">
+<icon BUILTIN="yes"/>
+<arrowlink COLOR="#003399" TRANSPARENCY="255" DESTINATION="ID_67550811"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="styles.flower" COLOR="#ffffff" BACKGROUND_COLOR="#255aba" STYLE="oval" TEXT_ALIGN="CENTER" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="22 pt" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#f9d71c" BORDER_DASH_LIKE_EDGE="false" BORDER_DASH="CLOSE_DOTS" MAX_WIDTH="6 cm" MIN_WIDTH="3 cm"/>
+<stylenode TEXT="mystyle" COLOR="#990000">
 <font NAME="SansSerif" SIZE="14"/>
-</node>
-<node COLOR="#990000" CREATED="1735919531922" ID="ID_510302622" MODIFIED="1737312337319" TEXT="CADG (Curam analysis document generator) to analyze artifacts in the reference application.&#xa;- CADG generates metadata from development artifacts (domain definitions, application views and tabs, workflows, code tables, rule sets, database tables, dynamic evidence, page flows, message file, datastore schemas, page information, IEG scripts, application properties). &#xa;- Facilitates fit-gap and customization impact analysis.&#xa;- outputs html and text files used by 3rd party diff tools. output can be hosted on server to facilitate sharing.&#xa;">
-<font NAME="SansSerif" SIZE="14"/>
-</node>
-<node COLOR="#990000" CREATED="1735919644430" ID="ID_410093004" MODIFIED="1737312337322" TEXT="API javadoc">
-<font NAME="SansSerif" SIZE="14"/>
-<node COLOR="#111111" CREATED="1735921196022" ID="ID_1203984498" MODIFIED="1737312337323" TEXT="javadoc api are listed for CuramSDEJ and CuramCDEJ java classes."/>
-</node>
-<node COLOR="#990000" CREATED="1735919648598" ID="ID_1864831133" MODIFIED="1737312337323" TEXT="Curam documentation">
-<font NAME="SansSerif" SIZE="14"/>
-</node>
-</node>
-<node COLOR="#00b439" CREATED="1730949223996" ID="ID_249703667" MODIFIED="1737312337324" TEXT="customization approach">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
-</node>
-<node COLOR="#00b439" CREATED="1730949232146" ID="ID_615944966" MODIFIED="1737312337324" TEXT="impact analysis">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
-<node COLOR="#990000" CREATED="1735919493108" ID="ID_164302265" MODIFIED="1737312337324" TEXT="FitGap analysis">
-<font NAME="SansSerif" SIZE="14"/>
-<node COLOR="#111111" CREATED="1735919756102" ID="ID_1944751891" MODIFIED="1737312337324" TEXT="determine gaps between customer requirements and the current system. Done by business analyst, but can also be performed by technical role."/>
-<node COLOR="#111111" CREATED="1735919781339" ID="ID_700921066" MODIFIED="1737312337325" TEXT="impact analysis is used to determine the impact of changes to current artifacts. Done by technical roles."/>
-</node>
-<node COLOR="#990000" CREATED="1735919691445" ID="ID_323079007" MODIFIED="1737312337325" TEXT="Customization impact analysis">
-<font NAME="SansSerif" SIZE="14"/>
-</node>
-</node>
-<node COLOR="#00b439" CREATED="1730949238460" ID="ID_1478524381" MODIFIED="1737312337325" TEXT="localization">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
-</node>
-<node COLOR="#00b439" CREATED="1730949242176" ID="ID_188243426" MODIFIED="1737312337326" TEXT="installation">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
-</node>
-<node COLOR="#00b439" CREATED="1730949244335" ID="ID_340941452" MODIFIED="1737312337326" TEXT="support and upgrade">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
+</stylenode>
+</stylenode>
+<stylenode LOCALIZED_TEXT="styles.AutomaticLayout" POSITION="bottom_or_right" STYLE="bubble">
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level.root" COLOR="#000000" STYLE="oval" SHAPE_HORIZONTAL_MARGIN="10 pt" SHAPE_VERTICAL_MARGIN="10 pt">
+<font SIZE="18"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,1" COLOR="#0033ff">
+<font SIZE="16"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,2" COLOR="#00b439">
+<font SIZE="14"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,3" COLOR="#990000">
+<font SIZE="12"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,4" COLOR="#111111">
+<font SIZE="10"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,5"/>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,6"/>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,7"/>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,8"/>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,9"/>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,10"/>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,11"/>
+</stylenode>
+</stylenode>
+</map_styles>
+</hook>
+<hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Client-side customization" POSITION="top_or_left" ID="ID_801206656" CREATED="1730949196500" MODIFIED="1740389625899" HGAP_QUANTITY="75 px" VSHIFT_QUANTITY="-11 px">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Customizing pages," ID="ID_1872145217" CREATED="1730949316726" MODIFIED="1740389625899">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="uim pages are in components/mycomponent directory. Folder structure is optional but it is recommended to make it similar to existing page location. property files should be alongside the uim pages. Component with highest priority will be selected. &#xa;If you are changing vim page only, uim pages does not need to be copied.&#xa;&#xa;There are some standard folders inside the mycomponent. &#xa;`images`: the files/folders here will be copied to top-level WebContent during build process.&#xa;`javasource`: stores classes for custom data conversion and sorting&#xa;`WebContent`:  arbitrary custom resources here will be copied to top-level WebContent during build process.&#xa;&#xa;The toplevel folders&#xa;Other folders outside of mycomponent are JavaSource, project, WebContent." ID="ID_1810066196" CREATED="1735922022745" MODIFIED="1740389625900">
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1730949196500" FOLDED="true" HGAP="91" ID="ID_801206656" MODIFIED="1737312434528" POSITION="left" TEXT="Client-side customization" VSHIFT="-6">
-<edge STYLE="sharp_bezier" WIDTH="8"/>
-<font NAME="SansSerif" SIZE="18"/>
-<node COLOR="#00b439" CREATED="1730949316726" ID="ID_1872145217" MODIFIED="1737312337328" TEXT="Customizing pages,">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
-<node COLOR="#990000" CREATED="1735922022745" ID="ID_1810066196" MODIFIED="1737312337331" TEXT="uim pages are in components/mycomponent directory. Folder structure is optional but it is recommended to make it similar to existing page location. property files should be alongside the uim pages. Component with highest priority will be selected. &#xa;If you are changing vim page only, uim pages does not need to be copied.&#xa;&#xa;There are some standard folders inside the mycomponent. &#xa;`images`: the files/folders here will be copied to top-level WebContent during build process.&#xa;`javasource`: stores classes for custom data conversion and sorting&#xa;`WebContent`:  arbitrary custom resources here will be copied to top-level WebContent during build process.&#xa;&#xa;The toplevel folders&#xa;Other folders outside of mycomponent are JavaSource, project, WebContent.">
-<font NAME="SansSerif" SIZE="14"/>
+<node TEXT="property files" ID="ID_1306553290" CREATED="1730949328015" MODIFIED="1740389625903" HGAP_QUANTITY="25 px" VSHIFT_QUANTITY="-21 px">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Property files are merged. Therefore only new and the properties that are being changed need to be added to the custom file." ID="ID_219338792" CREATED="1735953638128" MODIFIED="1740389625903">
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1730949328015" HGAP="25" ID="ID_1306553290" MODIFIED="1737312337336" TEXT="property files" VSHIFT="-21">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
-<node COLOR="#990000" CREATED="1735953638128" ID="ID_219338792" MODIFIED="1737312337336" TEXT="Property files are merged. Therefore only new and the properties that are being changed need to be added to the custom file.">
-<font NAME="SansSerif" SIZE="14"/>
+<node TEXT="Global properties" ID="ID_578536697" CREATED="1736039380997" MODIFIED="1740389625903" HGAP_QUANTITY="31 px" VSHIFT_QUANTITY="51 px">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="While most customization is done with new file, following files can be changed in place.&#xa;- webclient/JavaSource/curam/omega3/ApplicationConfiguration.properties&#xa;  Application configuration values in above file.&#xa;&#xa;- webclient/JavaSource/curam/omega3/il8n/CDEJResources.properties &#xa;  Label resources values in CDEJResources properties.&#xa;&#xa;RuntimeMessages.properties&#xa;- webclient/JavasSource/curam/omega3/i18n/&#xa;&#xa;.classpath .project" ID="ID_854814155" CREATED="1736039448750" MODIFIED="1740389625903">
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
+<node TEXT="curam-config.xml &#xa;- Above contains configuration for web client UI or appearance. - eg. POPUP_PAGE, FILE_DOWNLOAD, ADDRESS_CONFIG, PAGINATION, ERROR_PAGE, LIST_ROW_COUNT &#xa;- Found in webclient/components/&lt;component&gt; folders. &#xa;- All files ending in `-config.xml` are merged. The Xyz-curam.xml file format overwrites values in `curam-config.xml`. &#xa;- The standalone config files are in XyzConfig.xml format. They are used in Widget development." ID="ID_448323113" CREATED="1736104822211" MODIFIED="1740389625906" HGAP_QUANTITY="15 px" VSHIFT_QUANTITY="11 px">
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#00b439" CREATED="1736039380997" HGAP="31" ID="ID_578536697" MODIFIED="1737312337337" TEXT="Global properties" VSHIFT="51">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
-<node COLOR="#990000" CREATED="1736039448750" ID="ID_854814155" MODIFIED="1737312337339" TEXT="While most customization is done with new file, following files can be changed in place.&#xa;- webclient/JavaSource/curam/omega3/ApplicationConfiguration.properties&#xa;  Application configuration values in above file.&#xa;&#xa;- webclient/JavaSource/curam/omega3/il8n/CDEJResources.properties &#xa;  Label resources values in CDEJResources properties.&#xa;&#xa;RuntimeMessages.properties&#xa;- webclient/JavasSource/curam/omega3/i18n/&#xa;&#xa;.classpath .project">
-<font NAME="SansSerif" SIZE="14"/>
-</node>
-<node COLOR="#990000" CREATED="1736104822211" HGAP="15" ID="ID_448323113" MODIFIED="1737312337344" TEXT="curam-config.xml &#xa;- Above contains configuration for web client UI or appearance. - eg. POPUP_PAGE, FILE_DOWNLOAD, ADDRESS_CONFIG, PAGINATION, ERROR_PAGE, LIST_ROW_COUNT &#xa;- Found in webclient/components/&lt;component&gt; folders. &#xa;- All files ending in `-config.xml` are merged. The Xyz-curam.xml file format overwrites values in `curam-config.xml`. &#xa;- The standalone config files are in XyzConfig.xml format. They are used in Widget development." VSHIFT="11">
-<font NAME="SansSerif" SIZE="14"/>
-</node>
-<node COLOR="#990000" CREATED="1736063276363" ID="ID_1586042239" MODIFIED="1737312337348">
-<richcontent TYPE="NODE"><html>
+<node ID="ID_1586042239" CREATED="1736063276363" MODIFIED="1740389625908"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -113,11 +136,13 @@
       - Files are merged.
     </p>
   </body>
-</html></richcontent>
-<font NAME="SansSerif" SIZE="14"/>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#990000" CREATED="1736063331923" ID="ID_1344191898" MODIFIED="1737312337349">
-<richcontent TYPE="NODE"><html>
+<node ID="ID_1344191898" CREATED="1736063331923" MODIFIED="1740389625909"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -129,15 +154,16 @@
       stored in webclient/JavaSource/curam/omega3/i18n
     </p>
   </body>
-</html></richcontent>
-<font NAME="SansSerif" SIZE="14"/>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1735953775994" ID="ID_529967566" MODIFIED="1737312337350" TEXT="images">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
-<node COLOR="#990000" CREATED="1735953779492" ID="ID_1830823788" MODIFIED="1737312337353">
-<richcontent TYPE="NODE"><html>
+<node TEXT="images" ID="ID_529967566" CREATED="1735953775994" MODIFIED="1740389625910">
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_1830823788" CREATED="1735953779492" MODIFIED="1740389625910"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -160,22 +186,22 @@
       </li>
     </ol>
   </body>
-</html></richcontent>
-<font NAME="SansSerif" SIZE="14"/>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1736520285511" ID="ID_331633103" MODIFIED="1737312337356" TEXT="javascript">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
-<node COLOR="#990000" CREATED="1736520296491" ID="ID_248298205" MODIFIED="1737312337357" TEXT="place javascripts in components/&lt;mycomponent&gt;/WebContent folder. Curam provides some javascript apis. Use of other API and 3rd party frameworks are not supported. Nothing prevents a developer from using these though.">
-<font NAME="SansSerif" SIZE="14"/>
+<node TEXT="javascript" ID="ID_331633103" CREATED="1736520285511" MODIFIED="1740389625911">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="place javascripts in components/&lt;mycomponent&gt;/WebContent folder. Curam provides some javascript apis. Use of other API and 3rd party frameworks are not supported. Nothing prevents a developer from using these though." ID="ID_248298205" CREATED="1736520296491" MODIFIED="1740389625911">
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1736037250165" ID="ID_830475722" MODIFIED="1737312337358" TEXT="css">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
-<node COLOR="#990000" CREATED="1736037252757" ID="ID_67805654" MODIFIED="1737312337358">
-<richcontent TYPE="NODE"><html>
+<node TEXT="css" ID="ID_830475722" CREATED="1736037250165" MODIFIED="1740389625912">
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_67805654" CREATED="1736037252757" MODIFIED="1740389625912"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -187,60 +213,58 @@
       style name must match.
     </p>
   </body>
-</html></richcontent>
-<font NAME="SansSerif" SIZE="14"/>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1730949321219" ID="ID_1370750018" MODIFIED="1737312337359" TEXT="navigation">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
-<node COLOR="#990000" CREATED="1736037434718" ID="ID_931138268" MODIFIED="1737312337359" TEXT="navigation files are set in server side. See server-side customization">
-<font NAME="SansSerif" SIZE="14"/>
+<node TEXT="navigation" ID="ID_1370750018" CREATED="1730949321219" MODIFIED="1740389625913">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="navigation files are set in server side. See server-side customization" ID="ID_931138268" CREATED="1736037434718" MODIFIED="1740389625913">
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#990000" CREATED="1736784487595" ID="ID_1024491047" MODIFIED="1737312337359" TEXT="smart-navigator  (see server side)">
-<font NAME="SansSerif" SIZE="14"/>
-</node>
-</node>
-<node COLOR="#00b439" CREATED="1736785788511" ID="ID_418578705" MODIFIED="1737312337360" TEXT="Session management">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
-<node COLOR="#990000" CREATED="1736786127053" ID="ID_978885851" MODIFIED="1737312337360" TEXT="Session starts when user logs in and session ends when user logs out.">
-<font NAME="SansSerif" SIZE="14"/>
-</node>
-<node COLOR="#990000" CREATED="1736786151268" ID="ID_653590238" MODIFIED="1737312337360" TEXT="Tab that werre open are saved in TABSESSION table. When user logs back in, tabs are restored.">
-<font NAME="SansSerif" SIZE="14"/>
-</node>
-<node COLOR="#990000" CREATED="1736786192748" ID="ID_1060982982" MODIFIED="1737312337361" TEXT="customize the default values in Application.prx, ApplicationConfiguration.properties, CDEJResources.properties">
-<font NAME="SansSerif" SIZE="14"/>
-</node>
-<node COLOR="#990000" CREATED="1736786216950" ID="ID_1984040615" MODIFIED="1737312337362" TEXT="following can be configured: Maximum number of tabs, how often tabss are saved, error mesg when max tabs reached, timeout period and warning msg">
-<font NAME="SansSerif" SIZE="14"/>
+<node TEXT="smart-navigator  (see server side)" ID="ID_1024491047" CREATED="1736784487595" MODIFIED="1740389625913">
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1736786892329" ID="ID_1746886013" MODIFIED="1737312337363" TEXT="Browser Management">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
-<node COLOR="#990000" CREATED="1736786899314" ID="ID_1596459364" MODIFIED="1737312337364" TEXT="Configure min browser version (ApplicationConfiguration.properties). Define optimal browser msg in CDEJResources.properties">
-<font NAME="SansSerif" SIZE="14"/>
+<node TEXT="Session management" ID="ID_418578705" CREATED="1736785788511" MODIFIED="1740389625913">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Session starts when user logs in and session ends when user logs out." ID="ID_978885851" CREATED="1736786127053" MODIFIED="1740389625914">
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#990000" CREATED="1736786969015" ID="ID_900672963" MODIFIED="1737312337365" TEXT="Browser button behavior: when user press back, refresh, close button, enable/disable warning msg (Application.prx)">
-<font NAME="SansSerif" SIZE="14"/>
+<node TEXT="Tab that werre open are saved in TABSESSION table. When user logs back in, tabs are restored." ID="ID_653590238" CREATED="1736786151268" MODIFIED="1740389625914">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="customize the default values in Application.prx, ApplicationConfiguration.properties, CDEJResources.properties" ID="ID_1060982982" CREATED="1736786192748" MODIFIED="1740389625915">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="following can be configured: Maximum number of tabs, how often tabss are saved, error mesg when max tabs reached, timeout period and warning msg" ID="ID_1984040615" CREATED="1736786216950" MODIFIED="1740389625916">
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1736787663340" ID="ID_1910944131" MODIFIED="1737312337366" TEXT="Autorecovery">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
-<node COLOR="#990000" CREATED="1736787670579" ID="ID_1102776284" MODIFIED="1737312337366" TEXT="Recovers data in the event of a system interruption.">
-<font NAME="SansSerif" SIZE="14"/>
+<node TEXT="Browser Management" ID="ID_1746886013" CREATED="1736786892329" MODIFIED="1740389625917">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Configure min browser version (ApplicationConfiguration.properties). Define optimal browser msg in CDEJResources.properties" ID="ID_1596459364" CREATED="1736786899314" MODIFIED="1740389625917">
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#990000" CREATED="1736787717472" ID="ID_1591595497" MODIFIED="1737312337366" TEXT="Supported for UIM pages where data is entered.">
-<font NAME="SansSerif" SIZE="14"/>
+<node TEXT="Browser button behavior: when user press back, refresh, close button, enable/disable warning msg (Application.prx)" ID="ID_900672963" CREATED="1736786969015" MODIFIED="1740389625917">
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#990000" CREATED="1736787782795" ID="ID_594959410" MODIFIED="1737312337366" TEXT="Supports only 1 record per user, which represent the last model the user interacted with.">
-<font NAME="SansSerif" SIZE="14"/>
 </node>
-<node COLOR="#990000" CREATED="1736787833120" ID="ID_1629855763" MODIFIED="1737312337367">
-<richcontent TYPE="NODE"><html>
+<node TEXT="Autorecovery" ID="ID_1910944131" CREATED="1736787663340" MODIFIED="1740389625918">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Recovers data in the event of a system interruption." ID="ID_1102776284" CREATED="1736787670579" MODIFIED="1740389625918">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="Supported for UIM pages where data is entered." ID="ID_1591595497" CREATED="1736787717472" MODIFIED="1740389625918">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="Supports only 1 record per user, which represent the last model the user interacted with." ID="ID_594959410" CREATED="1736787782795" MODIFIED="1740389625918">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node ID="ID_1629855763" CREATED="1736787833120" MODIFIED="1740389625919"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -270,17 +294,18 @@
       tabSessionUpdatePeriodThreshold
     </p>
   </body>
-</html></richcontent>
-<font NAME="SansSerif" SIZE="14"/>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1730949330896" ID="ID_633071442" MODIFIED="1737312337369" TEXT="Options for customizing widgets">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
-<node COLOR="#990000" CREATED="1736789424447" ID="ID_1936577311" MODIFIED="1737312337369" TEXT="Domain plugin classes determine how an attribute is handled and looks">
-<font NAME="SansSerif" SIZE="14"/>
-<node COLOR="#111111" CREATED="1736789496891" ID="ID_618330234" MODIFIED="1737312337369">
-<richcontent TYPE="NODE"><html>
+<node TEXT="Options for customizing widgets" ID="ID_633071442" CREATED="1730949330896" MODIFIED="1740389625920">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Domain plugin classes determine how an attribute is handled and looks" ID="ID_1936577311" CREATED="1736789424447" MODIFIED="1740389625921">
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_618330234" CREATED="1736789496891" MODIFIED="1740389625921"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -292,10 +317,13 @@
       There are 3 types of plugins for conversion and sorting.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#111111" CREATED="1736789506722" ID="ID_486401408" MODIFIED="1737312337370">
-<richcontent TYPE="NODE"><html>
+<node ID="ID_486401408" CREATED="1736789506722" MODIFIED="1740389625922"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -316,44 +344,74 @@
       Custom select-renderer and marshal plugins are not currently supported in Curam
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#111111" CREATED="1736789346909" ID="ID_1075370409" MODIFIED="1737312337372" TEXT="Custom Widget Development Framework (CWDF)">
-<node COLOR="#111111" CREATED="1736800901918" ID="ID_547048213" MODIFIED="1737312337372" TEXT="Combines html created from java, css, javascripts, images."/>
-<node COLOR="#111111" CREATED="1736800930159" ID="ID_533833619" MODIFIED="1737312337372" TEXT="Developer CANNOT extend out of the box renderers"/>
-<node COLOR="#111111" CREATED="1736800949011" ID="ID_861479481" MODIFIED="1737312337372" TEXT="Steps">
-<node COLOR="#111111" CREATED="1736800952691" ID="ID_1409528305" MODIFIED="1737312337372" TEXT="1. define a domain definition in RSAD"/>
-<node COLOR="#111111" CREATED="1736800973343" ID="ID_732725979" MODIFIED="1737312337372" TEXT="2. define the facade method and return struct."/>
-<node COLOR="#111111" CREATED="1736800993311" ID="ID_218300650" MODIFIED="1737312337372" TEXT="3. implement java renderer class in client project"/>
-<node COLOR="#111111" CREATED="1736801008236" ID="ID_1127963042" MODIFIED="1737312337372" TEXT="4. associate the domain definition with the renderer in DomainsConfig.xml"/>
+<node TEXT="Custom Widget Development Framework (CWDF)" ID="ID_1075370409" CREATED="1736789346909" MODIFIED="1740389625922">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Combines html created from java, css, javascripts, images." ID="ID_547048213" CREATED="1736800901918" MODIFIED="1740389625922">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="Developer CANNOT extend out of the box renderers" ID="ID_533833619" CREATED="1736800930159" MODIFIED="1740389625923">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="Steps" ID="ID_861479481" CREATED="1736800949011" MODIFIED="1740389625923">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="1. define a domain definition in RSAD" ID="ID_1409528305" CREATED="1736800952691" MODIFIED="1740389625923">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="2. define the facade method and return struct." ID="ID_732725979" CREATED="1736800973343" MODIFIED="1740389625923">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="3. implement java renderer class in client project" ID="ID_218300650" CREATED="1736800993311" MODIFIED="1740389625923">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="4. associate the domain definition with the renderer in DomainsConfig.xml" ID="ID_1127963042" CREATED="1736801008236" MODIFIED="1740389625923">
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node COLOR="#111111" CREATED="1736801891569" ID="ID_4400050" MODIFIED="1737312337372" TEXT="UI Addons Development Environment is collection of open source tools and libraries that can be used to extend UIM with javascript component "/>
-<node COLOR="#111111" CREATED="1736801930582" ID="ID_937235274" MODIFIED="1737312337373" TEXT="It enables rapid development, based on Carbon Design system."/>
-<node COLOR="#111111" CREATED="1736802007114" ID="ID_308631975" MODIFIED="1737312337373" TEXT="When you install UI Addon dev environment; carbon, react, graphQL and apollo are downloaded by npm."/>
-<node COLOR="#111111" CREATED="1736803799269" ID="ID_580588080" MODIFIED="1737312337373" TEXT="Card component &gt; Apollo GraphQL client &gt; GraphQL backend server &gt; Facade &gt; data"/>
 </node>
-<node COLOR="#990000" CREATED="1736874186098" ID="ID_1260032206" MODIFIED="1737312337373" TEXT="Configuring OOTB Widgets">
-<font NAME="SansSerif" SIZE="14"/>
-<node COLOR="#111111" CREATED="1736874194110" ID="ID_1610527640" MODIFIED="1737312337373" TEXT="update configuration xml files or property files. perform `build client`"/>
-<node COLOR="#111111" CREATED="1736874221820" ID="ID_283154822" MODIFIED="1737312337373" TEXT="xml files are in &lt;component&gt; folders. Create a version of the file with same name. Files are merged based on component order."/>
-<node COLOR="#111111" CREATED="1736874252459" ID="ID_1386798877" MODIFIED="1737312337374" TEXT="property files: create property file with same name, create property with same name and update the value/text. perform `build client`"/>
+<node TEXT="UI Addons Development Environment is collection of open source tools and libraries that can be used to extend UIM with javascript component " ID="ID_4400050" CREATED="1736801891569" MODIFIED="1740389625923">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="It enables rapid development, based on Carbon Design system." ID="ID_937235274" CREATED="1736801930582" MODIFIED="1740389625924">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="When you install UI Addon dev environment; carbon, react, graphQL and apollo are downloaded by npm." ID="ID_308631975" CREATED="1736802007114" MODIFIED="1740389625924">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="Card component &gt; Apollo GraphQL client &gt; GraphQL backend server &gt; Facade &gt; data" ID="ID_580588080" CREATED="1736803799269" MODIFIED="1740389625925">
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1736875236648" ID="ID_1858499394" MODIFIED="1737312337375" TEXT="Pod">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
-<node COLOR="#990000" CREATED="1736875279968" ID="ID_1200193720" MODIFIED="1737312337375" TEXT="Pod is user interface widget that can be placed on a client page inside a pod container.">
-<font NAME="SansSerif" SIZE="14"/>
+<node TEXT="Configuring OOTB Widgets" ID="ID_1260032206" CREATED="1736874186098" MODIFIED="1740389625925">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="update configuration xml files or property files. perform `build client`" ID="ID_1610527640" CREATED="1736874194110" MODIFIED="1740389625925">
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#990000" CREATED="1736875300836" ID="ID_1364117727" MODIFIED="1737312337376" TEXT="Pod can contain variety of contents including chart, links, calendars etc. User homepages contain pods that proper important and relevant activities.">
-<font NAME="SansSerif" SIZE="14"/>
+<node TEXT="xml files are in &lt;component&gt; folders. Create a version of the file with same name. Files are merged based on component order." ID="ID_283154822" CREATED="1736874221820" MODIFIED="1740389625926">
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#990000" CREATED="1736875315827" ID="ID_950258195" MODIFIED="1737312337377" TEXT="Users can Reposition pod, show/hide pod.">
-<font NAME="SansSerif" SIZE="14"/>
+<node TEXT="property files: create property file with same name, create property with same name and update the value/text. perform `build client`" ID="ID_1386798877" CREATED="1736874252459" MODIFIED="1740389625926">
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#990000" CREATED="1736875332871" ID="ID_1020697603" MODIFIED="1737312337379">
-<richcontent TYPE="NODE"><html>
+</node>
+</node>
+<node TEXT="Pod" ID="ID_1858499394" CREATED="1736875236648" MODIFIED="1740389625927">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Pod is user interface widget that can be placed on a client page inside a pod container." ID="ID_1200193720" CREATED="1736875279968" MODIFIED="1740389625927">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="Pod can contain variety of contents including chart, links, calendars etc. User homepages contain pods that proper important and relevant activities." ID="ID_1364117727" CREATED="1736875300836" MODIFIED="1740389625928">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="Users can Reposition pod, show/hide pod." ID="ID_950258195" CREATED="1736875315827" MODIFIED="1740389625929">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node ID="ID_1020697603" CREATED="1736875332871" MODIFIED="1740389625929"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -371,11 +429,13 @@
       &#160;
     </p>
   </body>
-</html></richcontent>
-<font NAME="SansSerif" SIZE="14"/>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#990000" CREATED="1736876838511" ID="ID_1102251230" MODIFIED="1737312337386">
-<richcontent TYPE="NODE"><html>
+<node ID="ID_1102251230" CREATED="1736876838511" MODIFIED="1740389625930"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -393,13 +453,62 @@
       Define DMX file to load PAGECONFIG (contain which pods are available on the page) and USERPAGECONFIG (user's customization). Or make the adjustment in admin application and extract the DMX.
     </p>
   </body>
-</html></richcontent>
-<font NAME="SansSerif" SIZE="14"/>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1730949190680" HGAP="61" ID="ID_98750021" MODIFIED="1739853954867" POSITION="right" TEXT="Server-side customization" VSHIFT="-107">
-<richcontent TYPE="NOTE"><html>
+<node TEXT="Curam Infrastructure" POSITION="bottom_or_right" ID="ID_742253712" CREATED="1730949181248" MODIFIED="1740389625931" HGAP_QUANTITY="-94 px" VSHIFT_QUANTITY="4470 px">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Product documentation and information sources" ID="ID_1176609013" CREATED="1730949211243" MODIFIED="1740389625931">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Entity relationship diagrams. Bunch of pdfs with ERD-somename.pdf contain ERD reference models. Models are produced for the following areas: Core, Infrastructure, Application modules." ID="ID_1194710158" CREATED="1735919625857" MODIFIED="1740389625932">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="CADG (Curam analysis document generator) to analyze artifacts in the reference application.&#xa;- CADG generates metadata from development artifacts (domain definitions, application views&#xa; and tabs, workflows, code tables, rule sets, database tables, dynamic evidence, page flows, &#xa;message file, datastore schemas, page information, IEG scripts, application properties). &#xa;- Facilitates fit-gap and customization impact analysis.&#xa;- outputs html and text files used by 3rd party diff tools. output can be hosted on server to facilitate sharing.&#xa;" ID="ID_510302622" CREATED="1735919531922" MODIFIED="1740389625933">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="API javadoc" ID="ID_410093004" CREATED="1735919644430" MODIFIED="1740389625935">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="javadoc api are listed for CuramSDEJ and CuramCDEJ java classes." ID="ID_1203984498" CREATED="1735921196022" MODIFIED="1740389625935">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+</node>
+<node TEXT="Curam documentation" ID="ID_1864831133" CREATED="1735919648598" MODIFIED="1740389625935">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+</node>
+<node TEXT="customization approach" ID="ID_249703667" CREATED="1730949223996" MODIFIED="1740389625935">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="impact analysis" ID="ID_615944966" CREATED="1730949232146" MODIFIED="1740389625936">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="FitGap analysis" ID="ID_164302265" CREATED="1735919493108" MODIFIED="1740389625936">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="determine gaps between customer requirements and the current system. Done by business analyst, but can also be performed by technical role." ID="ID_1944751891" CREATED="1735919756102" MODIFIED="1740389625936">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="impact analysis is used to determine the impact of changes to current artifacts. Done by technical roles." ID="ID_700921066" CREATED="1735919781339" MODIFIED="1740389625936">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+</node>
+<node TEXT="Customization impact analysis" ID="ID_323079007" CREATED="1735919691445" MODIFIED="1740389625937">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+</node>
+<node TEXT="localization" ID="ID_1478524381" CREATED="1730949238460" MODIFIED="1740389625937">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="installation" ID="ID_188243426" CREATED="1730949242176" MODIFIED="1740389625937">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="support and upgrade" ID="ID_340941452" CREATED="1730949244335" MODIFIED="1740389625937">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+</node>
+<node TEXT="Server-side customization" POSITION="bottom_or_right" ID="ID_98750021" CREATED="1730949190680" MODIFIED="1740389625937" HGAP_QUANTITY="111 px" VSHIFT_QUANTITY="-2921 px"><richcontent TYPE="NOTE">
+<html>
   <head>
     
   </head>
@@ -430,16 +539,15 @@
     </p>
   </body>
 </html></richcontent>
-<edge STYLE="sharp_bezier" WIDTH="8"/>
-<font NAME="SansSerif" SIZE="18"/>
-<node COLOR="#00b439" CREATED="1737041380663" HGAP="29" ID="ID_354246700" MODIFIED="1737312489407" TEXT="customizing server artifacts" VSHIFT="494">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
-<node COLOR="#990000" CREATED="1730949251736" HGAP="115" ID="ID_783667650" MODIFIED="1737312337391" TEXT="customizing non-source artifacts (messages and codetables)" VSHIFT="707">
-<font NAME="SansSerif" SIZE="14"/>
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="customizing server artifacts" ID="ID_354246700" CREATED="1737041380663" MODIFIED="1740389625937" HGAP_QUANTITY="96 px" VSHIFT_QUANTITY="1527 px">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="customizing non-source artifacts (messages and codetables)" ID="ID_783667650" CREATED="1730949251736" MODIFIED="1740389625937" HGAP_QUANTITY="58 px" VSHIFT_QUANTITY="1066 px">
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#990000" CREATED="1737041395317" ID="ID_1814073148" MODIFIED="1737312337393">
-<richcontent TYPE="NODE"><html>
+<node ID="ID_1814073148" CREATED="1737041395317" MODIFIED="1740389625937" HGAP_QUANTITY="34 px" VSHIFT_QUANTITY="-104 px"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -448,16 +556,18 @@
       All changes must be in your custom component folder.&#160;
     </p>
     <p>
-      - uim files can be anywhere in the custom folder. Others must be in similar folder like codetable, data, message, model, properties, source. Navigation files should be in clientapps
+      - uim files can be anywhere in the custom folder. Others must be in similar folder<br />like codetable, data, message, model, properties, source. Navigation files should be in clientapps
     </p>
     <p>
-      - each component can have their own Application.prx in &lt;custom&gt;\properties\Application.prx file. It is merged based on SERVER_COMPONENT_ORDER
+      - each component can have their own Application.prx in &lt;custom&gt;\properties\Application.prx file.<br />It is merged based on SERVER_COMPONENT_ORDER
     </p>
   </body>
-</html></richcontent>
-<font NAME="SansSerif" SIZE="14"/>
-<node COLOR="#111111" CREATED="1737042719735" HGAP="34" ID="ID_578875210" MODIFIED="1737312337396" VSHIFT="157">
-<richcontent TYPE="NODE"><html>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_578875210" CREATED="1737042719735" MODIFIED="1740389625939" HGAP_QUANTITY="34 px" VSHIFT_QUANTITY="157 px"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -478,9 +588,12 @@
       - if message contain placeholder, changing no. of placeholder will affect any code using this message.
     </p>
   </body>
-</html></richcontent>
-<node COLOR="#111111" CREATED="1737049815760" ID="ID_485691510" MODIFIED="1737312337396">
-<richcontent TYPE="NODE"><html>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_485691510" CREATED="1737049815760" MODIFIED="1740389625939"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -504,10 +617,13 @@
       -once the changes are made, extract the entry from VALIDATIONCONFIGURATION to a DMX file so that it is reloaded when database is rebuilt.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#111111" CREATED="1737053288787" ID="ID_638386079" MODIFIED="1737312337399">
-<richcontent TYPE="NODE"><html>
+<node ID="ID_638386079" CREATED="1737053288787" MODIFIED="1740389625940"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -531,11 +647,14 @@
       <font face="Calibri">&lt;/messages&gt; </font>
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node COLOR="#111111" CREATED="1737051206953" HGAP="23" ID="ID_852809019" MODIFIED="1737312337400" VSHIFT="67">
-<richcontent TYPE="NODE"><html>
+<node ID="ID_852809019" CREATED="1737051206953" MODIFIED="1740389625940" HGAP_QUANTITY="23 px" VSHIFT_QUANTITY="67 px"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -562,9 +681,12 @@
       - Certain code table that are marked as restricted should not be customized. The analysis documentation indicates this.
     </p>
   </body>
-</html></richcontent>
-<node COLOR="#111111" CREATED="1737053248745" ID="ID_792205663" MODIFIED="1737312337404">
-<richcontent TYPE="NODE"><html>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_792205663" CREATED="1737053248745" MODIFIED="1740389625941"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -597,11 +719,14 @@
       <font face="Calibri">&lt;/codetables&gt;</font>
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node COLOR="#111111" CREATED="1737052468905" HGAP="35" ID="ID_1312985647" MODIFIED="1737312337405" VSHIFT="-92">
-<richcontent TYPE="NODE"><html>
+<node ID="ID_1312985647" CREATED="1737052468905" MODIFIED="1740389625941" HGAP_QUANTITY="35 px" VSHIFT_QUANTITY="-92 px"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -631,9 +756,12 @@
       -ensure primary keys don't conflict with OOTB keys. ie use a custom range.
     </p>
   </body>
-</html></richcontent>
-<node COLOR="#111111" CREATED="1737053784841" HGAP="41" ID="ID_1550767609" MODIFIED="1737312337409" VSHIFT="48">
-<richcontent TYPE="NODE"><html>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_1550767609" CREATED="1737053784841" MODIFIED="1740389625942" HGAP_QUANTITY="41 px" VSHIFT_QUANTITY="48 px"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -648,10 +776,13 @@
       To exclude a dmx file: set override attribute on the &lt;table override=&quot;true&quot;&gt;. The dmx file must be in the data folder structure as OOTB table to override. eg \data\demo
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#111111" CREATED="1737053454877" HGAP="57" ID="ID_954040505" MODIFIED="1737312337411" VSHIFT="67">
-<richcontent TYPE="NODE"><html>
+<node ID="ID_954040505" CREATED="1737053454877" MODIFIED="1740389625942" HGAP_QUANTITY="57 px" VSHIFT_QUANTITY="67 px"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -693,10 +824,13 @@
       <font face="Calibri">&lt;/table&gt;</font>
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#111111" CREATED="1737056202555" HGAP="57" ID="ID_1842328333" MODIFIED="1737312337412" VSHIFT="7">
-<richcontent TYPE="NODE"><html>
+<node ID="ID_1842328333" CREATED="1737056202555" MODIFIED="1740389625943" HGAP_QUANTITY="57 px" VSHIFT_QUANTITY="7 px"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -714,9 +848,12 @@
       <font face="SansSerif">-update this file to load handcrafted sql file. </font>
     </p>
   </body>
-</html></richcontent>
-<node COLOR="#111111" CREATED="1737056517223" HGAP="57" ID="ID_489455436" MODIFIED="1737312337413" VSHIFT="76">
-<richcontent TYPE="NODE"><html>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_489455436" CREATED="1737056517223" MODIFIED="1740389625943" HGAP_QUANTITY="57 px" VSHIFT_QUANTITY="76 px"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -764,11 +901,14 @@
       <font face="Calibri">&lt;/target&gt;</font>
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node COLOR="#111111" CREATED="1737062482657" ID="ID_502304953" MODIFIED="1737312337415">
-<richcontent TYPE="NODE"><html>
+<node ID="ID_502304953" CREATED="1737062482657" MODIFIED="1740389625943"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -795,12 +935,15 @@
       If table contains CLOB or BLOB data, they are stored as files and its path is included in the dmx file.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
 </node>
-<node COLOR="#990000" CREATED="1737042418500" HGAP="34" ID="ID_1546024764" MODIFIED="1737312337416" VSHIFT="-1086">
-<richcontent TYPE="NODE"><html>
+<node ID="ID_1546024764" CREATED="1737042418500" MODIFIED="1740389625943" HGAP_QUANTITY="71 px" VSHIFT_QUANTITY="-1194 px"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -818,15 +961,16 @@
       - location: <font face="Monospaced">EJBSserver\project\properties\Bootstrap.properties</font>
     </p>
   </body>
-</html></richcontent>
-<font NAME="SansSerif" SIZE="14"/>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1737122893654" ID="ID_721742146" MODIFIED="1737312337423" TEXT="Processing class architecture">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
-<node COLOR="#990000" CREATED="1737123375978" ID="ID_1662903697" MODIFIED="1737312337424">
-<richcontent TYPE="NODE"><html>
+<node TEXT="Processing class architecture" ID="ID_721742146" CREATED="1737122893654" MODIFIED="1740389625944">
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_1662903697" CREATED="1737123375978" MODIFIED="1740389625944" HGAP_QUANTITY="31.25 pt" VSHIFT_QUANTITY="-30 pt"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -865,10 +1009,12 @@
       Database table
     </p>
   </body>
-</html></richcontent>
-<font NAME="SansSerif" SIZE="14"/>
-<node COLOR="#111111" CREATED="1737123498018" ID="ID_1848531474" MODIFIED="1737312337425">
-<richcontent TYPE="NODE"><html>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_1848531474" CREATED="1737123498018" MODIFIED="1740389625946"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -883,10 +1029,13 @@
       -These includes Web services, REST services, HTML client, Batch drivers
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#111111" CREATED="1737123559910" ID="ID_1089692709" MODIFIED="1737312337426">
-<richcontent TYPE="NODE"><html>
+<node ID="ID_1089692709" CREATED="1737123559910" MODIFIED="1740389625946"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -922,10 +1071,13 @@
       &#160;&#160;&#160;Error handling
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#111111" CREATED="1737124174929" ID="ID_1325667643" MODIFIED="1737312337427">
-<richcontent TYPE="NODE"><html>
+<node ID="ID_1325667643" CREATED="1737124174929" MODIFIED="1740389625947"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -943,10 +1095,13 @@
       - components developed using Persistence Infrastructure do no t have modeled service layer classes.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#111111" CREATED="1737124409923" ID="ID_461673211" MODIFIED="1737312337427">
-<richcontent TYPE="NODE"><html>
+<node ID="ID_461673211" CREATED="1737124409923" MODIFIED="1740389625948"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -967,15 +1122,22 @@
       - Entity stereotype operations invoke data access layer operations
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node COLOR="#990000" CREATED="1737148002833" ID="ID_1150725986" MODIFIED="1737312337428" TEXT="OOTB source">
-<font NAME="SansSerif" SIZE="14"/>
-<node COLOR="#111111" CREATED="1737148072861" ID="ID_108787652" MODIFIED="1737312337428" TEXT="All application components are prebuilt jar files"/>
-<node COLOR="#111111" CREATED="1737148104458" ID="ID_859671232" MODIFIED="1737312337428" TEXT="Source is provided for limited set of components for documentation purpose"/>
-<node COLOR="#111111" CREATED="1737148120522" ID="ID_821775519" MODIFIED="1737312337428">
-<richcontent TYPE="NODE"><html>
+<node TEXT="OOTB source" ID="ID_1150725986" CREATED="1737148002833" MODIFIED="1740389625948">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="All application components are prebuilt jar files" ID="ID_108787652" CREATED="1737148072861" MODIFIED="1740389625949">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="Source is provided for limited set of components for documentation purpose" ID="ID_859671232" CREATED="1737148104458" MODIFIED="1740389625949">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node ID="ID_821775519" CREATED="1737148120522" MODIFIED="1740389625949"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -990,17 +1152,27 @@
       EJBServer\components\&lt;component_name&gt;\sample : contains sample source code
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#111111" CREATED="1737149047491" ID="ID_1982912132" MODIFIED="1737312337429" TEXT="AccessLevel">
-<node COLOR="#111111" CREATED="1737148999885" ID="ID_920738903" MODIFIED="1737312337429" TEXT="Classes and operations are marked with @AccessLevel(AccessLevelType.EXTERNAL) or INTERNAL or RESTRICTED"/>
-<node COLOR="#111111" CREATED="1737149055517" ID="ID_1134308765" MODIFIED="1737312337430" TEXT="When none provided, assume INTERNAL. Warning message will be shown. Use of INTERNAL api is discouraged but is not enforced. Eclipse shows a discouraged warning if your custom code references an internal API.&#xa;"/>
-<node COLOR="#111111" CREATED="1737149213165" ID="ID_265812388" MODIFIED="1737312337431" TEXT="Use of RESTRICTED api shows error in Ecliipse"/>
+<node TEXT="AccessLevel" ID="ID_1982912132" CREATED="1737149047491" MODIFIED="1740389625950">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Classes and operations are marked with @AccessLevel(AccessLevelType.EXTERNAL) or INTERNAL or RESTRICTED" ID="ID_920738903" CREATED="1737148999885" MODIFIED="1740389625950">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="When none provided, assume INTERNAL. Warning message will be shown. Use of INTERNAL api is discouraged but is not enforced. Eclipse shows a discouraged warning if your custom code references an internal API.&#xa;" ID="ID_1134308765" CREATED="1737149055517" MODIFIED="1740389625950">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="Use of RESTRICTED api shows error in Ecliipse" ID="ID_265812388" CREATED="1737149213165" MODIFIED="1740389625950">
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1730949268587" ID="ID_1366320371" MODIFIED="1737312337431">
-<richcontent TYPE="NODE"><html>
+</node>
+<node ID="ID_1366320371" CREATED="1730949268587" MODIFIED="1740389625951"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -1009,11 +1181,12 @@
       Customizing Modeled classes
     </p>
   </body>
-</html></richcontent>
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
-<node COLOR="#990000" CREATED="1737150210930" ID="ID_219348341" MODIFIED="1737312337432">
-<richcontent TYPE="NODE"><html>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_219348341" CREATED="1737150210930" MODIFIED="1740389625951"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -1040,10 +1213,12 @@
       -Relationships
     </p>
   </body>
-</html></richcontent>
-<font NAME="SansSerif" SIZE="14"/>
-<node COLOR="#111111" CREATED="1737313089492" ID="ID_712101415" MODIFIED="1737384173777">
-<richcontent TYPE="NODE"><html>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_712101415" CREATED="1737313089492" MODIFIED="1740389625952"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -1052,31 +1227,34 @@
       <b>Domain Definitions </b>
     </p>
     <p>
-      -You cannot change fundamental data type. Instead model a new domain definition and wrap it in your own processing.
+      -You cannot change fundamental data type. Instead model<br />a new domain definition and wrap it in your own processing.
     </p>
     <p>
-      -You cannot change certain application domain definitions that are listed in Compliancy guide. eg NOTE_TEXT, ACTION_TAKEN, RICH_TEXT
+      -You cannot change certain application domain definitions that<br />are listed in Compliancy guide. eg NOTE_TEXT, ACTION_TAKEN, RICH_TEXT
     </p>
     <p>
-      -Certain options can be customized or enabled/disabled. eg. Pattern Match, Default, Convert to Uppercase etc.
+      -Certain options can be customized or enabled/disabled.<br />eg. Pattern Match, Default, Convert to Uppercase etc.
     </p>
     <p>
-      -You can increase string length of a domain definition, but cannot reduce its length
+      -You can increase string length of a domain definition,<br />but cannot reduce its length
     </p>
     <p>
-      -Before changing a domain definition, use Analysis documentation to determine attribtues that are affected by the change.
+      -Before changing a domain definition, use Analysis documentation to<br />determine attribtues that are affected by the change.
     </p>
     <p>
-      -Domain definition is overridden by create new one with same name prefixed with an asterisk. For example, *FULL_NAME. At build time, this gets used instead of the original one. Only 1 override allowed.
+      -Domain definition is overridden by create new one with same name<br />prefixed with an asterisk. For example, *FULL_NAME. At build time,<br />this gets used instead of the original one. Only 1 override allowed.
     </p>
     <p>
-      -Curam Development Compliancy guide contain list of allowed and discouraged overrides for domain definitions.
+      -Curam Development Compliancy guide contain list of allowed and<br />discouraged overrides for domain definitions.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#111111" CREATED="1737477948645" ID="ID_1998611539" MODIFIED="1737479319077">
-<richcontent TYPE="NODE"><html>
+<node ID="ID_1998611539" CREATED="1737477948645" MODIFIED="1740389625954"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -1091,13 +1269,16 @@
       - New struct added in your custom package.
     </p>
     <p>
-      - To add attribute to application struct: aggregate it in your newly modeled struct, then add new attributes to the new struct.
+      - To add attribute to application struct: aggregate it in your<br />newly modeled struct, then add new attributes to the new struct.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#111111" CREATED="1737483059886" ID="ID_965714835" MODIFIED="1737483889533">
-<richcontent TYPE="NODE"><html>
+<node ID="ID_965714835" CREATED="1737483059886" MODIFIED="1740389625954"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -1106,21 +1287,24 @@
       <b>Facade</b>
     </p>
     <p>
-      - Cannot change existing OOTB facade because other parts of the application may be using it.
+      - Cannot change existing OOTB facade because other parts<br />of the application may be using it.
     </p>
     <p>
-      - So create new facade with same method/operation name and call the OOTB operation from this operation.
+      - So create new facade with same method/operation name<br />and call the OOTB operation from this operation.
     </p>
     <p>
-      &#160;&#160;Then aggregate that result to your custom struct, add your custom logic results to the custom struct and return that.
+      &#160;&#160;Then aggregate that result to your custom struct, add your<br />custom logic results to the custom struct and return that.
     </p>
     <p>
       &#160;&#160;Ensure the OOTB facade or process operation is External
     </p>
   </body>
-</html></richcontent>
-<node COLOR="#111111" CREATED="1737483319039" ID="ID_1259904712" MODIFIED="1739853953580">
-<richcontent TYPE="NODE"><html>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_1259904712" CREATED="1737483319039" MODIFIED="1740389625955"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -1156,13 +1340,16 @@
       <font color="#0033ff" face="Calibri" size="3">}</font>
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1730949275356" ID="ID_329532217" MODIFIED="1737312337434">
-<richcontent TYPE="NODE"><html>
+<node ID="ID_329532217" CREATED="1730949275356" MODIFIED="1740389625955"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -1171,70 +1358,79 @@
       Customizing Non-modeled classes.
     </p>
   </body>
-</html></richcontent>
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
-<node COLOR="#990000" CREATED="1739430947052" ID="ID_1707278425" MODIFIED="1739430970957" TEXT="Strategy Pattern">
-<font NAME="Consolas" SIZE="14"/>
-<node COLOR="#111111" CREATED="1739431230010" ID="ID_1644067803" MODIFIED="1739431267409" TEXT="Developer handcraft the DAO and Entity interfaces and implementations."/>
-<node COLOR="#111111" CREATED="1739852411677" ID="ID_95071337" MODIFIED="1739852438481" TEXT="Strategy pattern used to replace default DAO and Entity implementation classes with custom implementations."/>
-<node COLOR="#111111" CREATED="1739431268305" ID="ID_445528065" MODIFIED="1739852605711" TEXT="Guice used to inject the default or custom implementation using @ImplementedBy or binding method in Guice Module configure(). @inject used to get reference. &#xa;You must create an entry in the ModuleClassName table. Add reference to your Guice module from ModuleClassName table (use dmx)">
-<node COLOR="#111111" CREATED="1739853079981" ID="ID_1354303990" MODIFIED="1739853948399">
-<richcontent TYPE="NODE"><html>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Strategy Pattern" ID="ID_1707278425" CREATED="1739430947052" MODIFIED="1740389625956">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Developer handcraft the DAO and Entity interfaces and implementations." ID="ID_1644067803" CREATED="1739431230010" MODIFIED="1740389625956">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="Strategy pattern used to replace default DAO and Entity implementation classes with custom implementations." ID="ID_95071337" CREATED="1739852411677" MODIFIED="1740389625956">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="Guice used to inject the default or custom implementation using&#xa;@ImplementedBy or binding method in Guice Module configure().&#xa;@inject used to get reference. &#xa;You must create an entry in the ModuleClassName table. &#xa;Add reference to your Guice module from ModuleClassName table (use dmx)" ID="ID_445528065" CREATED="1739431268305" MODIFIED="1740389625957">
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_1354303990" CREATED="1739853079981" MODIFIED="1740389625958"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
   <body>
     <p>
-      <font size="3">@ImplementedBy(</font><font color="#0033ff" size="3">UniqueNumberGeneratorImpl.class</font><font size="3">) </font>
+      <span style="font-size: small;">@ImplementedBy(</span><span style="color: #0033ff; font-size: small;">UniqueNumberGeneratorImpl.class</span><span style="font-size: small;">) </span>
     </p>
     <p>
-      <font size="3">@AccessLevel(</font><font color="#cc0066" size="3">AccessLevelType.EXTERNAL</font><font size="3">) </font>
+      <span style="font-size: small;">@AccessLevel(</span><span style="color: #cc0066; font-size: small;">AccessLevelType.EXTERNAL</span><span style="font-size: small;">) </span>
     </p>
     <p>
-      <font size="3">public interface </font><font color="#339900" size="3">ReferenceNumberGenerator</font><font size="3">&#160;{ &#160;&#160; </font>
+      <span style="font-size: small;">public interface </span><span style="color: #339900; font-size: small;">ReferenceNumberGenerator</span><span style="font-size: small;">&#xa0;{ &#xa0;&#xa0; </span>
     </p>
     <p>
-      <font size="3">&#160;&#160;&#160;@AccessLevel(</font><font color="#990000" size="3">AccessLevelType.EXTERNAL</font><font size="3">) </font>
+      <span style="font-size: small;">&#xa0;&#xa0;&#xa0;@AccessLevel(</span><span style="color: #990000; font-size: small;">AccessLevelType.EXTERNAL</span><span style="font-size: small;">) </span>
     </p>
     <p>
-      <font size="3">&#160;&#160;&#160;@Implementable &#160;&#160; </font>
+      <span style="font-size: small;">&#xa0;&#xa0;&#xa0;@Implementable &#xa0;&#xa0; </span>
     </p>
     <p>
-      <font size="3">&#160;&#160;&#160;String </font><font color="#009999" size="3">generateReferenceNumbe</font><font size="3">r(ContractVersion contractVersion, CPMContract cpmContract) throws . . . </font>
+      <span style="font-size: small;">&#xa0;&#xa0;&#xa0;String </span><span style="color: #009999; font-size: small;">generateReferenceNumbe</span><span style="font-size: small;">r(ContractVersion contractVersion, CPMContract cpmContract) throws . . . </span>
     </p>
     <p>
-      <font size="3">} </font>
+      <span style="font-size: small;">} </span>
     </p>
     <p>
       
     </p>
     <p>
-      <font size="3">//default implementation </font>
+      <span style="font-size: small;">//default implementation </span>
     </p>
     <p>
-      <font size="3">public class </font><font color="#0033ff" size="3">UniqueNumberGeneratorImpl</font><font size="3">&#160;implements </font><font color="#339900" size="3">ReferenceNumberGenerator</font><font size="3">&#160; { &#160;&#160; </font>
+      <span style="font-size: small;">public class </span><span style="color: #0033ff; font-size: small;">UniqueNumberGeneratorImpl</span><span style="font-size: small;">&#xa0;implements </span><span style="color: #339900; font-size: small;">ReferenceNumberGenerator</span><span style="font-size: small;">&#xa0;&#xa0;{ &#xa0;&#xa0; </span>
     </p>
     <p>
-      <font size="3">&#160;&#160;public String </font><font color="#009999" size="3">generateReferenceNumber</font><font size="3">(ContractVersion contractVersion, CPMContract cpmContract) throws AppException, InformationalException { &#160;&#160; </font>
+      <span style="font-size: small;">&#xa0;&#xa0;public String </span><span style="color: #009999; font-size: small;">generateReferenceNumber</span><span style="font-size: small;">(ContractVersion contractVersion, CPMContract cpmContract) throws AppException, InformationalException { &#xa0;&#xa0; </span>
     </p>
     <p>
-      <font size="3">&#160;&#160;// implementation specified here &#160;&#160; </font>
+      <span style="font-size: small;">&#xa0;&#xa0;// implementation specified here &#xa0;&#xa0; </span>
     </p>
     <p>
-      <font size="3">&#160;&#160;&#160;&#160;return referenceNumber; &#160;&#160; </font>
+      <span style="font-size: small;">&#xa0;&#xa0;&#xa0;&#xa0;return referenceNumber; &#xa0;&#xa0; </span>
     </p>
     <p>
-      <font size="3">&#160;&#160;} </font>
+      <span style="font-size: small;">&#xa0;&#xa0;} </span>
     </p>
     <p>
-      <font size="3">} </font>
+      <span style="font-size: small;">} </span>
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#111111" CREATED="1739853439968" ID="ID_827351739" MODIFIED="1739854752497">
-<richcontent TYPE="NODE"><html>
+<node ID="ID_827351739" CREATED="1739853439968" MODIFIED="1740389625958"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -1321,18 +1517,40 @@
       <font size="3">&lt;/table&gt; </font>
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node COLOR="#111111" CREATED="1739852509422" ID="ID_1436204402" MODIFIED="1739852543246" TEXT="The configuration in Guicemodule takes precedence over any @ImplementedBy annocations in the code."/>
-<node COLOR="#111111" CREATED="1739852439138" ID="ID_722928952" MODIFIED="1739852648078" TEXT="The javadoc indicates whether the class is replaceable. @Implementable"/>
-<node COLOR="#111111" CREATED="1739853699574" ID="ID_1154904240" MODIFIED="1739853744738" TEXT="CPM module provides sample source code thatdocuments the defaultimplementation.Other PI components do not provide sample sourcecode. So consult CPM module for example code."/>
+<node TEXT="The configuration in Guicemodule takes precedence over any @ImplementedBy annocations in the code." ID="ID_1436204402" CREATED="1739852509422" MODIFIED="1740389625959">
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#990000" CREATED="1739430971353" ID="ID_177152152" MODIFIED="1739430975580" TEXT="Event/Listener Pattern">
-<font NAME="Consolas" SIZE="14"/>
-<node COLOR="#111111" CREATED="1739942797663" ID="ID_949824789" LINK="EventHandlingOverview.png" MODIFIED="1739943177751" TEXT="There are 2 types of Events">
-<node COLOR="#111111" CREATED="1739942806617" ID="ID_1797743786" MODIFIED="1739945431741">
-<richcontent TYPE="NODE"><html>
+<node TEXT="The javadoc indicates whether the class is replaceable. @Implementable" ID="ID_722928952" CREATED="1739852439138" MODIFIED="1740389625959">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node ID="ID_1154904240" CREATED="1739853699574" MODIFIED="1740389625960"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      CPM module provides sample source code that documents the default implementation.<br />Other PI components do not provide sample sourcecode.<br />So consult CPM module for example code.
+    </p>
+  </body>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+</node>
+<node TEXT="Event/Listener Pattern" ID="ID_177152152" CREATED="1739430971353" MODIFIED="1740389625960">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="There are 2 types of Events" ID="ID_949824789" CREATED="1739942797663" MODIFIED="1740389625960" LINK="EventHandlingOverview.png">
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_1797743786" CREATED="1739942806617" MODIFIED="1740389625961"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -1409,8 +1627,10 @@
   </body>
 </html>
 </richcontent>
-<node COLOR="#111111" CREATED="1739943844838" ID="ID_1514051037" MODIFIED="1739944412070">
-<richcontent TYPE="NODE"><html>
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_1514051037" CREATED="1739943844838" MODIFIED="1740389625961"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -1511,10 +1731,12 @@
   </body>
 </html>
 </richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node COLOR="#111111" CREATED="1739942810517" ID="ID_1944112578" MODIFIED="1739945387322">
-<richcontent TYPE="NODE"><html>
+<node ID="ID_1944112578" CREATED="1739942810517" MODIFIED="1740389625961"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -1558,10 +1780,12 @@
   </body>
 </html>
 </richcontent>
-<arrowlink DESTINATION="ID_1944112578" ENDARROW="Default" ENDINCLINATION="0;0;" ID="Arrow_ID_1179882700" STARTARROW="None" STARTINCLINATION="0;0;"/>
+<arrowlink DESTINATION="ID_1944112578" STARTINCLINATION="0 pt;0 pt;" ENDINCLINATION="0 pt;0 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <linktarget COLOR="#6699ff" DESTINATION="ID_1944112578" ENDARROW="Default" ENDINCLINATION="0;0;" ID="Arrow_ID_1179882700" SOURCE="ID_1944112578" STARTARROW="None" STARTINCLINATION="0;0;"/>
-<node COLOR="#111111" CREATED="1739944918230" ID="ID_1999159323" MODIFIED="1739945328344">
-<richcontent TYPE="NODE"><html>
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_1999159323" CREATED="1739944918230" MODIFIED="1740389625961"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -1632,49 +1856,577 @@
   </body>
 </html>
 </richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
 </node>
 </node>
-<node COLOR="#990000" CREATED="1739430976416" ID="ID_804377771" MODIFIED="1739430994017" TEXT="Reference handcrafted classes">
-<font NAME="Consolas" SIZE="14"/>
+<node TEXT="Referencing handcrafted APIs" ID="ID_804377771" CREATED="1739430976416" MODIFIED="1740389625962">
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_1893053949" CREATED="1740032520673" MODIFIED="1740389625962"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      In classic (modeled) service layer classes:
+    </p>
+    <p>
+      the RSAD generates the entity factories.
+    </p>
+    <p>
+      In non-modeled aka handcrafted service layer,
+    </p>
+    <p>
+      the DAO class is created by the developer.
+    </p>
+  </body>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_1878242951" CREATED="1740032734720" MODIFIED="1740389625962"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font size="2">public class MyFacade extends curam.facade.base.MyFacade { </font>
+    </p>
+    <p>
+      <font size="2">&#160;&#160;@Inject&#160;&#160;&#160;&#160;&#160;//1 </font>
+    </p>
+    <p>
+      <font size="2">&#160;&#160;protect MyEntityDAO myEntityDAO; </font>
+    </p>
+    <p>
+      <font size="2">&#160;&#160;public MyFacade(){ </font>
+    </p>
+    <p>
+      <font size="2">&#160;&#160;&#160;&#160;GuiceWrapper.getInjector().injectMembers(this);&#160;&#160;&#160;//2 </font>
+    </p>
+    <p>
+      <font size="2">&#160;&#160;} </font>
+    </p>
+    <p>
+      <font size="2">&#160;&#160;public MyEntityDetail getBlahblah(MyEntityKey key){ </font>
+    </p>
+    <p>
+      <font size="2">&#160;&#160;&#160;&#160;MyEntity myEntity = myEntityDAO.get(key.myID);&#160;&#160;//3 </font>
+    </p>
+    <p>
+      <font size="2">&#160;&#160;&#160;&#160;result = new MyEntityDetail(); </font>
+    </p>
+    <p>
+      <font size="2">&#160;&#160;&#160;&#160;result.details.key = myEntity.getID();&#160;&#160;//4 map result to return struct. </font>
+    </p>
+    <p>
+      <font size="2">&#160;&#160;&#160;&#160;result.details.name = myEntity.getName(); </font>
+    </p>
+    <p>
+      <font size="2">&#160;&#160;&#160;&#160;return result; </font>
+    </p>
+    <p>
+      <font size="2">&#160;&#160;} </font>
+    </p>
+    <p>
+      <font size="2">} </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font size="2">//one of the key difference between DAO and classic factory. </font>
+    </p>
+    <p>
+      <font size="2">DAO has get(id) method to get the entity. This entity has its details or key already set. </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font size="2">But in classic factory, you use the factory to create an empty instance first (factory.newInstance()), </font>
+    </p>
+    <p>
+      <font size="2">then set the details or key on that empty instance, </font>
+    </p>
+    <p>
+      <font size="2">then call the operation (read, modify, delete, insert etc).</font>
+    </p>
+  </body>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node ID="ID_408071617" CREATED="1740114468745" MODIFIED="1740389625962"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font size="2">Create Interfaces </font>
+    </p>
+    <p>
+      <font size="2">Create entity interface that extends curam.util.peristence.StandardEntity; </font>
+    </p>
+    <p>
+      <font size="2">Create entity DAO interface that extends curam.util.persistence.StandardDAO&lt;Entity&gt;; </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font size="2">Create implementation </font>
+    </p>
+    <p>
+      <font size="2">To implement the entity interface, first you must model the entity with stereotyped operations. </font>
+    </p>
+    <p>
+      <font size="2">PI can generate an adapter code from the model. </font>
+    </p>
+    <p>
+      <font size="2">To enable this generation of adapter code, add the name of the db table into&#160;&#160;EJBServer/components/custom/properties/adapters.properties file. </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font size="2">To implement the DAO </font>
+    </p>
+    <p>
+      <font size="2">You can do following but requires lot of work. </font>
+    </p>
+    <p>
+      <font size="2">public class MyEntityDAOImpl implements MyEntityDAO { </font>
+    </p>
+    <p>
+      <font size="2">} </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font size="2">Instead do following so that many boilerplate functionalities can be derived from StandardDAOImpl </font>
+    </p>
+    <p>
+      <font size="2">public class MyEntityDAOImpl extends StandardDAOImpl&lt;MyEntity, MyEntityDtls&gt; implements MyEntityDAO { </font>
+    </p>
+    <p>
+      <font size="2">&#160;&#160;&#160;&#160;private static MyEntityAdapter adapter&#160;&#160;= new MyEntityAdapter();&#160; </font>
+    </p>
+    <p>
+      <font size="2">&#160;&#160;&#160;&#160;//the generated adapter by PI. Make it static so that there is shared instance among all entities </font>
+    </p>
+    <p>
+      <font size="2">&#160;.. then use the adapter to interact with db table. </font>
+    </p>
+    <p>
+      <font size="2">}</font>
+    </p>
+  </body>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1730949290808" ID="ID_1276395721" MODIFIED="1737312337434" TEXT="restful and SOAP web services">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
 </node>
-<node COLOR="#00b439" CREATED="1730949303374" ID="ID_1060609789" MODIFIED="1737312337434" TEXT="deferred processes">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
 </node>
-<node COLOR="#00b439" CREATED="1730949308294" ID="ID_1295784917" MODIFIED="1737312337436" TEXT="EVX events">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
+<node TEXT="restful and SOAP web services" ID="ID_1276395721" CREATED="1730949290808" MODIFIED="1740389625963">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="SOAP" ID="ID_362006984" CREATED="1740256264860" MODIFIED="1740389625963">
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_928292304" CREATED="1740256354623" MODIFIED="1740389625963"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Built on Apache Axis2
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Client -&gt; WS Proxy Stub -&gt; SOAP/XML over TCP/IP -&gt; WS Proxy Stub-&gt; Server
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      WSProxy: Web Proxy stub converts SOAP/XML to/from java Objects.
+    </p>
+    <p>
+      So application code on both server and client work with java objects.
+    </p>
+    <p>
+      Curam generates the stub from the WSDL file.
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_1105887622" CREATED="1740257966461" MODIFIED="1740389625964"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Developing outbound web service using Axis2
+    </p>
+    <ol>
+      <li>
+        Include WSDL file in EJBServer/components/&lt;custom&gt;/axis folder
+      </li>
+      <li>
+        Add location of the WSDL file to ws_outbound.xml
+      </li>
+      <li>
+        Generate stub with `build wsconnector2`. Generated source is in EJBServer/build/svr/wsc2/java/src/wsconnector folder
+      </li>
+      <li>
+        Create a client and invoke the web service using the generated stubs
+      </li>
+      <li>
+        Test. For testing, disable Curam authentication for the web service.
+      </li>
+    </ol>
+  </body>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#00b439" CREATED="1730949311159" ID="ID_1193873982" MODIFIED="1737312337436" TEXT="batch processes">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
+<node ID="ID_300279167" CREATED="1740259298927" MODIFIED="1740389625964"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Developing inbound web service
+    </p>
+    <ol>
+      <li>
+        Model the class as &lt;&lt;wsinbound&gt;&gt; and add operations.
+
+        <ol type="a">
+          <li>
+            Model a &lt;&lt;wsinbound&gt;&gt; class (uses Axis2 web service)
+          </li>
+          <li>
+            Set WS_Binding_Style in the Curam properties panel to &quot;Document (default&quot;) and<br />
+          </li>
+          <li>
+            set the WS_Is_XML_Document to true.
+          </li>
+          <li>
+            Add operations of type &lt;&lt;default&gt;&gt; with single argument and return org.w3c.dom.Document
+          </li>
+        </ol>
+      </li>
+      <li>
+        Build the server application. Server now generates WSDL,stub and other outputs. Generated in build/svr/gen/wsc2 folder. Stub, Services.xml(wsdl) and ws_inbound.xml
+      </li>
+      <li>
+        Implement the business logic for the server.
+      </li>
+      <li>
+        Build the web services EAR file and install in App Server
+      </li>
+      <li>
+        Provide security info for the service.
+      </li>
+      <li>
+        Test
+      </li>
+    </ol>
+  </body>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node COLOR="#00b439" CREATED="1736037491018" ID="ID_336547130" MODIFIED="1737312337436" TEXT="navigation">
-<edge STYLE="bezier" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="16"/>
-<node COLOR="#990000" CREATED="1736784921510" ID="ID_1048562780" MODIFIED="1737312337436" TEXT="general">
-<font NAME="SansSerif" SIZE="14"/>
-<node COLOR="#111111" CREATED="1736037495012" ID="ID_1276569755" MODIFIED="1737312337436" TEXT="navigation is defined in server project"/>
-<node COLOR="#111111" CREATED="1736037555765" ID="ID_350802930" MODIFIED="1737312337436" TEXT="ootb navigation files are in ootb_components/tab folder"/>
-<node COLOR="#111111" CREATED="1736037584957" ID="ID_300285467" MODIFIED="1737312337436" TEXT="custom navigation should be in my_components/clientapps folder"/>
-<node COLOR="#111111" CREATED="1736038672965" ID="ID_117934205" MODIFIED="1737312337436" TEXT="ootb components navigation files are merged. But custom components navigation are not merged.&#xa;Therefore, run build inserttabconfiguration -Ddir.tab.merge=C:/output . Copy the merged navigation files to your custom component `clientapps` folder and modify there. Then run build inserttabconfiguration or build database."/>
-<node COLOR="#111111" CREATED="1736037620321" ID="ID_882900516" MODIFIED="1737312337437" TEXT="treat artifact and properties file as unit. ie they must be same name."/>
-<node COLOR="#111111" CREATED="1736037769778" ID="ID_400284418" MODIFIED="1737312337437" TEXT="build inserttabconfiguration or build database"/>
 </node>
-<node COLOR="#990000" CREATED="1736784857066" ID="ID_161709955" MODIFIED="1737312337438" TEXT="smart navigator">
-<font NAME="SansSerif" SIZE="14"/>
-<node COLOR="#111111" CREATED="1736784953453" ID="ID_1760953922" MODIFIED="1737312337438" TEXT="Optional search feature that can be configured and customized."/>
-<node COLOR="#111111" CREATED="1736784976157" ID="ID_1903816137" MODIFIED="1737312337438" TEXT="enable in .app file"/>
-<node COLOR="#111111" CREATED="1736784986869" ID="ID_317751970" MODIFIED="1737312337438" TEXT="supports several attributes like Default initial text, Debounce time, Number of recent searches saved, Keywords, URL targets"/>
-<node COLOR="#111111" CREATED="1736785025577" ID="ID_1261762587" MODIFIED="1737312337439">
-<richcontent TYPE="NODE"><html>
+</node>
+<node TEXT="REST" ID="ID_785786167" CREATED="1740256269086" MODIFIED="1740389625964">
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_927570255" CREATED="1740286404229" MODIFIED="1740389625964"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Developing REST API in Curam
+    </p>
+    <ol>
+      <li>
+        Design the api: determine the resource and operations to expose.
+      </li>
+      <li>
+        Model and document the API in RSAD: define REST facade class, operations and structs.
+      </li>
+      <li>
+        Implement the REST facade&#160;class for the API
+      </li>
+      <li>
+        Configure the API: create a configuration file to map the REST requests with facade code.
+      </li>
+      <li>
+        Test
+      </li>
+    </ol>
+  </body>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="Swagger is used to document the REST API" ID="ID_980676941" CREATED="1740287884903" MODIFIED="1740389625965">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+</node>
+<node ID="ID_1988194053" CREATED="1740256303849" MODIFIED="1740389625965"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Inbound/outbound
+    </p>
+    <p>
+      Inbound: we are server
+    </p>
+    <p>
+      Outbound: we are client.
+    </p>
+  </body>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+</node>
+<node TEXT="Processing types in Curam" ID="ID_1659286901" CREATED="1740290062566" MODIFIED="1740389625966">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Online" ID="ID_1056497777" CREATED="1740290124593" MODIFIED="1740389625966">
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_975823762" CREATED="1740290198957" MODIFIED="1740389625966"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      - Functions/operations invoked from client pages in
+    </p>
+    <p>
+      real time on the application server
+    </p>
+    <p>
+      - Response to user is immediate.
+    </p>
+    <p>
+      - Default process
+    </p>
+  </body>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+</node>
+<node TEXT="Deferred" ID="ID_1594455993" CREATED="1740290128512" MODIFIED="1740389625966">
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_1294497510" CREATED="1740290300343" MODIFIED="1740389625967"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      - Process invoked from client page but takes longer than&#160;user would wait.
+    </p>
+    <p>
+      - Process is queued and completed in the background.
+    </p>
+    <p>
+      - User is either informed when process completes
+    </p>
+    <p>
+      or refreshes their page to see the result.
+    </p>
+  </body>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Model theDeferred Process" ID="ID_1077868029" CREATED="1740388605238" MODIFIED="1740389625898">
+<node TEXT="Model a &lt;&lt;wmdpactivity&gt;&gt; operation for a BPO class" ID="ID_704514670" CREATED="1740388728973" MODIFIED="1740389625967"/>
+<node TEXT="Specity following parameters: ticketID, inst_data_id, flag&#xa;&#xa;&lt;&lt;wmdpactivity&gt; allocateManualPmtToFC (ticketID: WM_TICKET_ID, inst_data_id:WM_INST_DATA_ID, flag:WM_BOOLEAN)" ID="ID_922886266" CREATED="1740388756722" MODIFIED="1740389625967"/>
+</node>
+<node TEXT="Implement the Deferred Process in impl" ID="ID_956196379" CREATED="1740388927094" MODIFIED="1740389625968"/>
+<node TEXT="Add the Deferred Process to the DPProcess Table with dmx file. Includes ProcessName, InterfaceName, MethodName, TicketType, Subject fields." ID="ID_630782219" CREATED="1740388974622" MODIFIED="1740389625968"/>
+<node ID="ID_343677113" CREATED="1740389053805" MODIFIED="1740390505471"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Enact the deferred process (ie call from UI). Before calling startProcess, we must save the data into the db which the deferred process impl will need. The impl code receives the id of the data, which then it can use to get the data from the db.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <span style="font-family: Courier New;">.. </span>
+    </p>
+    <p>
+      <span style="font-family: Courier New;">DeferredProcessing dp = DeferredProcessingFactory.newInstance(); </span>
+    </p>
+    <p>
+      <span style="font-family: Courier New;">dp.startProcess(OPERATION_NAME, DATA_ID);</span>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="Test and troubleshot" ID="ID_1504124721" CREATED="1740389392765" MODIFIED="1740389625968"/>
+</node>
+</node>
+<node TEXT="Timed" ID="ID_1789372008" CREATED="1740290132327" MODIFIED="1740389625968">
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_1416418564" CREATED="1740290453339" MODIFIED="1740389625968"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      -Client visible methods started with timer at specific point in future.&#160;
+    </p>
+    <p>
+      -could be once off or repeating
+    </p>
+    <p>
+      -eg. pending application expires if not completed in 2 days.
+    </p>
+  </body>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+</node>
+<node TEXT="EVX events" ID="ID_1295784917" CREATED="1730949308294" MODIFIED="1740389625969">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="process started when an event is raised." ID="ID_219507048" CREATED="1740290579479" MODIFIED="1740389625969">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+</node>
+<node TEXT="Workflow" ID="ID_663686200" CREATED="1740290152878" MODIFIED="1740389625969">
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_337270761" CREATED="1740290627347" MODIFIED="1740389625969"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      -complex business process that consists of series of automatic or manual steps.
+    </p>
+    <p>
+      -process&#160;&#160;can take seconds, days or weeks to complete.
+    </p>
+    <p>
+      -For eg, when caseworker leaves,
+    </p>
+    <p>
+      start workflow to transfer their cases to other workers.
+    </p>
+  </body>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+</node>
+<node TEXT="batch processes" ID="ID_1193873982" CREATED="1730949311159" MODIFIED="1740389625969">
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_625600540" CREATED="1740290733960" MODIFIED="1740389625970"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      - Batch process executes tasks/jobs on group of records during a batch window.
+    </p>
+    <p>
+      - Eg: batch job to generate payments.
+    </p>
+  </body>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+</node>
+</node>
+<node TEXT="navigation" ID="ID_336547130" CREATED="1736037491018" MODIFIED="1740389625970">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="general" ID="ID_1048562780" CREATED="1736784921510" MODIFIED="1740389625970">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="navigation is defined in server project" ID="ID_1276569755" CREATED="1736037495012" MODIFIED="1740389625970">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="ootb navigation files are in ootb_components/tab folder" ID="ID_350802930" CREATED="1736037555765" MODIFIED="1740389625970">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="custom navigation should be in my_components/clientapps folder" ID="ID_300285467" CREATED="1736037584957" MODIFIED="1740389625970">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="ootb components navigation files are merged. But custom components navigation are not merged.&#xa;Therefore, run build inserttabconfiguration -Ddir.tab.merge=C:/output . Copy the merged navigation files to your custom component `clientapps` folder and modify there. Then run build inserttabconfiguration or build database." ID="ID_117934205" CREATED="1736038672965" MODIFIED="1740389625971">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="treat artifact and properties file as unit. ie they must be same name." ID="ID_882900516" CREATED="1736037620321" MODIFIED="1740389625972">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="build inserttabconfiguration or build database" ID="ID_400284418" CREATED="1736037769778" MODIFIED="1740389625972">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+</node>
+<node TEXT="smart navigator" ID="ID_161709955" CREATED="1736784857066" MODIFIED="1740389625972">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Optional search feature that can be configured and customized." ID="ID_1760953922" CREATED="1736784953453" MODIFIED="1740389625972">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="enable in .app file" ID="ID_1903816137" CREATED="1736784976157" MODIFIED="1740389625976">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="supports several attributes like Default initial text, Debounce time, Number of recent searches saved, Keywords, URL targets" ID="ID_317751970" CREATED="1736784986869" MODIFIED="1740389625976">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node ID="ID_1261762587" CREATED="1736785025577" MODIFIED="1740389625977"><richcontent TYPE="NODE">
+
+<html>
   <head>
     
   </head>
@@ -1698,7 +2450,9 @@
       Customization: custom search targets can be defined and applied using Guice dependency injection mechanism.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
 </node>
