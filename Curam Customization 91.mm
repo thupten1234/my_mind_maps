@@ -1,6 +1,6 @@
 <map version="freeplane 1.12.1">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="Curam Customization" FOLDED="false" ID="ID_1299395577" CREATED="1730949123363" MODIFIED="1740389625899"><richcontent TYPE="NOTE">
+<node TEXT="Curam Customization" FOLDED="false" ID="ID_1299395577" CREATED="1730949123363" MODIFIED="1740985616827" STYLE="bubble"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -17,8 +17,8 @@
     </p>
   </body>
 </html></richcontent>
-<hook NAME="MapStyle" background="#d5d4b1ff" zoom="0.9090909">
-    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_tags="UNDER_NODES" show_note_icons="true" fit_to_viewport="false" show_icons="BESIDE_NODES" showTagCategories="false" show_icon_for_attributes="true" newNodeStyle=":style:default"/>
+<hook NAME="MapStyle" background="#d5d4b1ff" zoom="1.21">
+    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_icon_for_attributes="true" show_tags="UNDER_NODES" show_note_icons="true" fit_to_viewport="false" show_icons="BESIDE_NODES" showTagCategories="false" newNodeStyle=":style:default"/>
     <tags category_separator="::"/>
 
 <map_styles>
@@ -94,29 +94,29 @@
 </hook>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Client-side customization" POSITION="top_or_left" ID="ID_801206656" CREATED="1730949196500" MODIFIED="1740389625899" HGAP_QUANTITY="75 px" VSHIFT_QUANTITY="-11 px">
+<node TEXT="Client-side customization" FOLDED="true" POSITION="top_or_left" ID="ID_801206656" CREATED="1730949196500" MODIFIED="1740985616827" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Customizing pages," ID="ID_1872145217" CREATED="1730949316726" MODIFIED="1740389625899">
+<node TEXT="Customizing pages," ID="ID_1872145217" CREATED="1730949316726" MODIFIED="1740985616827" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="uim pages are in components/mycomponent directory. Folder structure is optional but it is recommended to make it similar to existing page location. property files should be alongside the uim pages. Component with highest priority will be selected. &#xa;If you are changing vim page only, uim pages does not need to be copied.&#xa;&#xa;There are some standard folders inside the mycomponent. &#xa;`images`: the files/folders here will be copied to top-level WebContent during build process.&#xa;`javasource`: stores classes for custom data conversion and sorting&#xa;`WebContent`:  arbitrary custom resources here will be copied to top-level WebContent during build process.&#xa;&#xa;The toplevel folders&#xa;Other folders outside of mycomponent are JavaSource, project, WebContent." ID="ID_1810066196" CREATED="1735922022745" MODIFIED="1740389625900">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-</node>
-<node TEXT="property files" ID="ID_1306553290" CREATED="1730949328015" MODIFIED="1740389625903" HGAP_QUANTITY="25 px" VSHIFT_QUANTITY="-21 px">
-<edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Property files are merged. Therefore only new and the properties that are being changed need to be added to the custom file." ID="ID_219338792" CREATED="1735953638128" MODIFIED="1740389625903">
+<node TEXT="uim pages are in components/mycomponent directory. Folder structure is optional but it is recommended to make it similar to existing page location. property files should be alongside the uim pages. Component with highest priority will be selected. &#xa;If you are changing vim page only, uim pages does not need to be copied.&#xa;&#xa;There are some standard folders inside the mycomponent. &#xa;`images`: the files/folders here will be copied to top-level WebContent during build process.&#xa;`javasource`: stores classes for custom data conversion and sorting&#xa;`WebContent`:  arbitrary custom resources here will be copied to top-level WebContent during build process.&#xa;&#xa;The toplevel folders&#xa;Other folders outside of mycomponent are JavaSource, project, WebContent." ID="ID_1810066196" CREATED="1735922022745" MODIFIED="1740985616828" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="Global properties" ID="ID_578536697" CREATED="1736039380997" MODIFIED="1740389625903" HGAP_QUANTITY="31 px" VSHIFT_QUANTITY="51 px">
+<node TEXT="property files" ID="ID_1306553290" CREATED="1730949328015" MODIFIED="1740985616830" HGAP_QUANTITY="25 px" VSHIFT_QUANTITY="-21 px" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="While most customization is done with new file, following files can be changed in place.&#xa;- webclient/JavaSource/curam/omega3/ApplicationConfiguration.properties&#xa;  Application configuration values in above file.&#xa;&#xa;- webclient/JavaSource/curam/omega3/il8n/CDEJResources.properties &#xa;  Label resources values in CDEJResources properties.&#xa;&#xa;RuntimeMessages.properties&#xa;- webclient/JavasSource/curam/omega3/i18n/&#xa;&#xa;.classpath .project" ID="ID_854814155" CREATED="1736039448750" MODIFIED="1740389625903">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="curam-config.xml &#xa;- Above contains configuration for web client UI or appearance. - eg. POPUP_PAGE, FILE_DOWNLOAD, ADDRESS_CONFIG, PAGINATION, ERROR_PAGE, LIST_ROW_COUNT &#xa;- Found in webclient/components/&lt;component&gt; folders. &#xa;- All files ending in `-config.xml` are merged. The Xyz-curam.xml file format overwrites values in `curam-config.xml`. &#xa;- The standalone config files are in XyzConfig.xml format. They are used in Widget development." ID="ID_448323113" CREATED="1736104822211" MODIFIED="1740389625906" HGAP_QUANTITY="15 px" VSHIFT_QUANTITY="11 px">
+<node TEXT="Property files are merged. Therefore only new and the properties that are being changed need to be added to the custom file." ID="ID_219338792" CREATED="1735953638128" MODIFIED="1740985616830" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_1586042239" CREATED="1736063276363" MODIFIED="1740389625908"><richcontent TYPE="NODE">
+</node>
+<node TEXT="Global properties" ID="ID_578536697" CREATED="1736039380997" MODIFIED="1740985616831" HGAP_QUANTITY="31 px" VSHIFT_QUANTITY="51 px" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="While most customization is done with new file, following files can be changed in place.&#xa;- webclient/JavaSource/curam/omega3/ApplicationConfiguration.properties&#xa;  Application configuration values in above file.&#xa;&#xa;- webclient/JavaSource/curam/omega3/il8n/CDEJResources.properties &#xa;  Label resources values in CDEJResources properties.&#xa;&#xa;RuntimeMessages.properties&#xa;- webclient/JavasSource/curam/omega3/i18n/&#xa;&#xa;.classpath .project" ID="ID_854814155" CREATED="1736039448750" MODIFIED="1740985616832" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="curam-config.xml &#xa;- Above contains configuration for web client UI or appearance. - eg. POPUP_PAGE, FILE_DOWNLOAD, ADDRESS_CONFIG, PAGINATION, ERROR_PAGE, LIST_ROW_COUNT &#xa;- Found in webclient/components/&lt;component&gt; folders. &#xa;- All files ending in `-config.xml` are merged. The Xyz-curam.xml file format overwrites values in `curam-config.xml`. &#xa;- The standalone config files are in XyzConfig.xml format. They are used in Widget development." ID="ID_448323113" CREATED="1736104822211" MODIFIED="1740985616833" HGAP_QUANTITY="15 px" VSHIFT_QUANTITY="11 px" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node ID="ID_1586042239" CREATED="1736063276363" MODIFIED="1740985616835" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -140,7 +140,7 @@
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_1344191898" CREATED="1736063331923" MODIFIED="1740389625909"><richcontent TYPE="NODE">
+<node ID="ID_1344191898" CREATED="1736063331923" MODIFIED="1740985616835" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -159,9 +159,9 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="images" ID="ID_529967566" CREATED="1735953775994" MODIFIED="1740389625910">
+<node TEXT="images" ID="ID_529967566" CREATED="1735953775994" MODIFIED="1740985616836" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_1830823788" CREATED="1735953779492" MODIFIED="1740389625910"><richcontent TYPE="NODE">
+<node ID="ID_1830823788" CREATED="1735953779492" MODIFIED="1740985616836" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -191,15 +191,15 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="javascript" ID="ID_331633103" CREATED="1736520285511" MODIFIED="1740389625911">
+<node TEXT="javascript" ID="ID_331633103" CREATED="1736520285511" MODIFIED="1740985616836" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="place javascripts in components/&lt;mycomponent&gt;/WebContent folder. Curam provides some javascript apis. Use of other API and 3rd party frameworks are not supported. Nothing prevents a developer from using these though." ID="ID_248298205" CREATED="1736520296491" MODIFIED="1740389625911">
+<node TEXT="place javascripts in components/&lt;mycomponent&gt;/WebContent folder. Curam provides some javascript apis. Use of other API and 3rd party frameworks are not supported. Nothing prevents a developer from using these though." ID="ID_248298205" CREATED="1736520296491" MODIFIED="1740985616836" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="css" ID="ID_830475722" CREATED="1736037250165" MODIFIED="1740389625912">
+<node TEXT="css" ID="ID_830475722" CREATED="1736037250165" MODIFIED="1740985616837" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_67805654" CREATED="1736037252757" MODIFIED="1740389625912"><richcontent TYPE="NODE">
+<node ID="ID_67805654" CREATED="1736037252757" MODIFIED="1740985616838" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -218,51 +218,51 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="navigation" ID="ID_1370750018" CREATED="1730949321219" MODIFIED="1740389625913">
+<node TEXT="navigation" ID="ID_1370750018" CREATED="1730949321219" MODIFIED="1740985616838" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="navigation files are set in server side. See server-side customization" ID="ID_931138268" CREATED="1736037434718" MODIFIED="1740389625913">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="smart-navigator  (see server side)" ID="ID_1024491047" CREATED="1736784487595" MODIFIED="1740389625913">
+<node TEXT="navigation files are set in server side. See server-side customization" ID="ID_931138268" CREATED="1736037434718" MODIFIED="1740985616838" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-</node>
-<node TEXT="Session management" ID="ID_418578705" CREATED="1736785788511" MODIFIED="1740389625913">
-<edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Session starts when user logs in and session ends when user logs out." ID="ID_978885851" CREATED="1736786127053" MODIFIED="1740389625914">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="Tab that werre open are saved in TABSESSION table. When user logs back in, tabs are restored." ID="ID_653590238" CREATED="1736786151268" MODIFIED="1740389625914">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="customize the default values in Application.prx, ApplicationConfiguration.properties, CDEJResources.properties" ID="ID_1060982982" CREATED="1736786192748" MODIFIED="1740389625915">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="following can be configured: Maximum number of tabs, how often tabss are saved, error mesg when max tabs reached, timeout period and warning msg" ID="ID_1984040615" CREATED="1736786216950" MODIFIED="1740389625916">
+<node TEXT="smart-navigator  (see server side)" ID="ID_1024491047" CREATED="1736784487595" MODIFIED="1740985616839" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="Browser Management" ID="ID_1746886013" CREATED="1736786892329" MODIFIED="1740389625917">
+<node TEXT="Session management" ID="ID_418578705" CREATED="1736785788511" MODIFIED="1740985616839" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Configure min browser version (ApplicationConfiguration.properties). Define optimal browser msg in CDEJResources.properties" ID="ID_1596459364" CREATED="1736786899314" MODIFIED="1740389625917">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="Browser button behavior: when user press back, refresh, close button, enable/disable warning msg (Application.prx)" ID="ID_900672963" CREATED="1736786969015" MODIFIED="1740389625917">
+<node TEXT="Session starts when user logs in and session ends when user logs out." ID="ID_978885851" CREATED="1736786127053" MODIFIED="1740985616839" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-</node>
-<node TEXT="Autorecovery" ID="ID_1910944131" CREATED="1736787663340" MODIFIED="1740389625918">
-<edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Recovers data in the event of a system interruption." ID="ID_1102776284" CREATED="1736787670579" MODIFIED="1740389625918">
+<node TEXT="Tab that werre open are saved in TABSESSION table. When user logs back in, tabs are restored." ID="ID_653590238" CREATED="1736786151268" MODIFIED="1740985616840" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="Supported for UIM pages where data is entered." ID="ID_1591595497" CREATED="1736787717472" MODIFIED="1740389625918">
+<node TEXT="customize the default values in Application.prx, ApplicationConfiguration.properties, CDEJResources.properties" ID="ID_1060982982" CREATED="1736786192748" MODIFIED="1740985616841" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="Supports only 1 record per user, which represent the last model the user interacted with." ID="ID_594959410" CREATED="1736787782795" MODIFIED="1740389625918">
+<node TEXT="following can be configured: Maximum number of tabs, how often tabss are saved, error mesg when max tabs reached, timeout period and warning msg" ID="ID_1984040615" CREATED="1736786216950" MODIFIED="1740985616842" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_1629855763" CREATED="1736787833120" MODIFIED="1740389625919"><richcontent TYPE="NODE">
+</node>
+<node TEXT="Browser Management" ID="ID_1746886013" CREATED="1736786892329" MODIFIED="1740985616843" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Configure min browser version (ApplicationConfiguration.properties). Define optimal browser msg in CDEJResources.properties" ID="ID_1596459364" CREATED="1736786899314" MODIFIED="1740985616843" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="Browser button behavior: when user press back, refresh, close button, enable/disable warning msg (Application.prx)" ID="ID_900672963" CREATED="1736786969015" MODIFIED="1740985616844" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+</node>
+<node TEXT="Autorecovery" ID="ID_1910944131" CREATED="1736787663340" MODIFIED="1740985616845" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Recovers data in the event of a system interruption." ID="ID_1102776284" CREATED="1736787670579" MODIFIED="1740985616845" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="Supported for UIM pages where data is entered." ID="ID_1591595497" CREATED="1736787717472" MODIFIED="1740985616846" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="Supports only 1 record per user, which represent the last model the user interacted with." ID="ID_594959410" CREATED="1736787782795" MODIFIED="1740985616846" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node ID="ID_1629855763" CREATED="1736787833120" MODIFIED="1740985616847" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -299,11 +299,11 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="Options for customizing widgets" ID="ID_633071442" CREATED="1730949330896" MODIFIED="1740389625920">
+<node TEXT="Options for customizing widgets" ID="ID_633071442" CREATED="1730949330896" MODIFIED="1740985616847" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Domain plugin classes determine how an attribute is handled and looks" ID="ID_1936577311" CREATED="1736789424447" MODIFIED="1740389625921">
+<node TEXT="Domain plugin classes determine how an attribute is handled and looks" ID="ID_1936577311" CREATED="1736789424447" MODIFIED="1740985616848" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_618330234" CREATED="1736789496891" MODIFIED="1740389625921"><richcontent TYPE="NODE">
+<node ID="ID_618330234" CREATED="1736789496891" MODIFIED="1740985616849" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -321,7 +321,7 @@
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_486401408" CREATED="1736789506722" MODIFIED="1740389625922"><richcontent TYPE="NODE">
+<node ID="ID_486401408" CREATED="1736789506722" MODIFIED="1740985616849" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -348,68 +348,68 @@
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="Custom Widget Development Framework (CWDF)" ID="ID_1075370409" CREATED="1736789346909" MODIFIED="1740389625922">
+<node TEXT="Custom Widget Development Framework (CWDF)" ID="ID_1075370409" CREATED="1736789346909" MODIFIED="1740985616849" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Combines html created from java, css, javascripts, images." ID="ID_547048213" CREATED="1736800901918" MODIFIED="1740389625922">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="Developer CANNOT extend out of the box renderers" ID="ID_533833619" CREATED="1736800930159" MODIFIED="1740389625923">
+<node TEXT="Combines html created from java, css, javascripts, images." ID="ID_547048213" CREATED="1736800901918" MODIFIED="1740985616850" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="Steps" ID="ID_861479481" CREATED="1736800949011" MODIFIED="1740389625923">
-<edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="1. define a domain definition in RSAD" ID="ID_1409528305" CREATED="1736800952691" MODIFIED="1740389625923">
+<node TEXT="Developer CANNOT extend out of the box renderers" ID="ID_533833619" CREATED="1736800930159" MODIFIED="1740985616850" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="2. define the facade method and return struct." ID="ID_732725979" CREATED="1736800973343" MODIFIED="1740389625923">
+<node TEXT="Steps" ID="ID_861479481" CREATED="1736800949011" MODIFIED="1740985616850" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="1. define a domain definition in RSAD" ID="ID_1409528305" CREATED="1736800952691" MODIFIED="1740985616850" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="3. implement java renderer class in client project" ID="ID_218300650" CREATED="1736800993311" MODIFIED="1740389625923">
+<node TEXT="2. define the facade method and return struct." ID="ID_732725979" CREATED="1736800973343" MODIFIED="1740985616851" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="4. associate the domain definition with the renderer in DomainsConfig.xml" ID="ID_1127963042" CREATED="1736801008236" MODIFIED="1740389625923">
+<node TEXT="3. implement java renderer class in client project" ID="ID_218300650" CREATED="1736800993311" MODIFIED="1740985616851" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-</node>
-</node>
-<node TEXT="UI Addons Development Environment is collection of open source tools and libraries that can be used to extend UIM with javascript component " ID="ID_4400050" CREATED="1736801891569" MODIFIED="1740389625923">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="It enables rapid development, based on Carbon Design system." ID="ID_937235274" CREATED="1736801930582" MODIFIED="1740389625924">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="When you install UI Addon dev environment; carbon, react, graphQL and apollo are downloaded by npm." ID="ID_308631975" CREATED="1736802007114" MODIFIED="1740389625924">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="Card component &gt; Apollo GraphQL client &gt; GraphQL backend server &gt; Facade &gt; data" ID="ID_580588080" CREATED="1736803799269" MODIFIED="1740389625925">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-</node>
-<node TEXT="Configuring OOTB Widgets" ID="ID_1260032206" CREATED="1736874186098" MODIFIED="1740389625925">
-<edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="update configuration xml files or property files. perform `build client`" ID="ID_1610527640" CREATED="1736874194110" MODIFIED="1740389625925">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="xml files are in &lt;component&gt; folders. Create a version of the file with same name. Files are merged based on component order." ID="ID_283154822" CREATED="1736874221820" MODIFIED="1740389625926">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="property files: create property file with same name, create property with same name and update the value/text. perform `build client`" ID="ID_1386798877" CREATED="1736874252459" MODIFIED="1740389625926">
+<node TEXT="4. associate the domain definition with the renderer in DomainsConfig.xml" ID="ID_1127963042" CREATED="1736801008236" MODIFIED="1740985616851" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
 </node>
-<node TEXT="Pod" ID="ID_1858499394" CREATED="1736875236648" MODIFIED="1740389625927">
-<edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Pod is user interface widget that can be placed on a client page inside a pod container." ID="ID_1200193720" CREATED="1736875279968" MODIFIED="1740389625927">
+<node TEXT="UI Addons Development Environment is collection of open source tools and libraries that can be used to extend UIM with javascript component " ID="ID_4400050" CREATED="1736801891569" MODIFIED="1740985616852" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="Pod can contain variety of contents including chart, links, calendars etc. User homepages contain pods that proper important and relevant activities." ID="ID_1364117727" CREATED="1736875300836" MODIFIED="1740389625928">
+<node TEXT="It enables rapid development, based on Carbon Design system." ID="ID_937235274" CREATED="1736801930582" MODIFIED="1740985616853" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="Users can Reposition pod, show/hide pod." ID="ID_950258195" CREATED="1736875315827" MODIFIED="1740389625929">
+<node TEXT="When you install UI Addon dev environment; carbon, react, graphQL and apollo are downloaded by npm." ID="ID_308631975" CREATED="1736802007114" MODIFIED="1740985616854" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_1020697603" CREATED="1736875332871" MODIFIED="1740389625929"><richcontent TYPE="NODE">
+<node TEXT="Card component &gt; Apollo GraphQL client &gt; GraphQL backend server &gt; Facade &gt; data" ID="ID_580588080" CREATED="1736803799269" MODIFIED="1740985616855" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+</node>
+<node TEXT="Configuring OOTB Widgets" ID="ID_1260032206" CREATED="1736874186098" MODIFIED="1740985616856" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="update configuration xml files or property files. perform `build client`" ID="ID_1610527640" CREATED="1736874194110" MODIFIED="1740985616856" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="xml files are in &lt;component&gt; folders. Create a version of the file with same name. Files are merged based on component order." ID="ID_283154822" CREATED="1736874221820" MODIFIED="1740985616857" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="property files: create property file with same name, create property with same name and update the value/text. perform `build client`" ID="ID_1386798877" CREATED="1736874252459" MODIFIED="1740985616858" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+</node>
+</node>
+<node TEXT="Pod" ID="ID_1858499394" CREATED="1736875236648" MODIFIED="1740985616858" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Pod is user interface widget that can be placed on a client page inside a pod container." ID="ID_1200193720" CREATED="1736875279968" MODIFIED="1740985616859" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="Pod can contain variety of contents including chart, links, calendars etc. User homepages contain pods that proper important and relevant activities." ID="ID_1364117727" CREATED="1736875300836" MODIFIED="1740985616860" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="Users can Reposition pod, show/hide pod." ID="ID_950258195" CREATED="1736875315827" MODIFIED="1740985616861" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node ID="ID_1020697603" CREATED="1736875332871" MODIFIED="1740985616861" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -433,7 +433,7 @@
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_1102251230" CREATED="1736876838511" MODIFIED="1740389625930"><richcontent TYPE="NODE">
+<node ID="ID_1102251230" CREATED="1736876838511" MODIFIED="1740985616862" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -459,55 +459,55 @@
 </node>
 </node>
 </node>
-<node TEXT="Curam Infrastructure" POSITION="bottom_or_right" ID="ID_742253712" CREATED="1730949181248" MODIFIED="1740389625931" HGAP_QUANTITY="-94 px" VSHIFT_QUANTITY="4470 px">
+<node TEXT="Curam Infrastructure" FOLDED="true" POSITION="bottom_or_right" ID="ID_742253712" CREATED="1730949181248" MODIFIED="1740985616862" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Product documentation and information sources" ID="ID_1176609013" CREATED="1730949211243" MODIFIED="1740389625931">
+<node TEXT="Product documentation and information sources" ID="ID_1176609013" CREATED="1730949211243" MODIFIED="1740638364256" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Entity relationship diagrams. Bunch of pdfs with ERD-somename.pdf contain ERD reference models. Models are produced for the following areas: Core, Infrastructure, Application modules." ID="ID_1194710158" CREATED="1735919625857" MODIFIED="1740389625932">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="CADG (Curam analysis document generator) to analyze artifacts in the reference application.&#xa;- CADG generates metadata from development artifacts (domain definitions, application views&#xa; and tabs, workflows, code tables, rule sets, database tables, dynamic evidence, page flows, &#xa;message file, datastore schemas, page information, IEG scripts, application properties). &#xa;- Facilitates fit-gap and customization impact analysis.&#xa;- outputs html and text files used by 3rd party diff tools. output can be hosted on server to facilitate sharing.&#xa;" ID="ID_510302622" CREATED="1735919531922" MODIFIED="1740389625933">
+<node TEXT="Entity relationship diagrams. Bunch of pdfs with ERD-somename.pdf contain ERD reference models. Models are produced for the following areas: Core, Infrastructure, Application modules." ID="ID_1194710158" CREATED="1735919625857" MODIFIED="1740638364256" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="API javadoc" ID="ID_410093004" CREATED="1735919644430" MODIFIED="1740389625935">
-<edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="javadoc api are listed for CuramSDEJ and CuramCDEJ java classes." ID="ID_1203984498" CREATED="1735921196022" MODIFIED="1740389625935">
+<node TEXT="CADG (Curam analysis document generator) to analyze artifacts in the reference application.&#xa;- CADG generates metadata from development artifacts (domain definitions, application views&#xa; and tabs, workflows, code tables, rule sets, database tables, dynamic evidence, page flows, &#xa;message file, datastore schemas, page information, IEG scripts, application properties). &#xa;- Facilitates fit-gap and customization impact analysis.&#xa;- outputs html and text files used by 3rd party diff tools. output can be hosted on server to facilitate sharing.&#xa;" ID="ID_510302622" CREATED="1735919531922" MODIFIED="1740638364257" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-</node>
-<node TEXT="Curam documentation" ID="ID_1864831133" CREATED="1735919648598" MODIFIED="1740389625935">
+<node TEXT="API javadoc" ID="ID_410093004" CREATED="1735919644430" MODIFIED="1740638364258" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="javadoc api are listed for CuramSDEJ and CuramCDEJ java classes." ID="ID_1203984498" CREATED="1735921196022" MODIFIED="1740638364258" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="customization approach" ID="ID_249703667" CREATED="1730949223996" MODIFIED="1740389625935">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="impact analysis" ID="ID_615944966" CREATED="1730949232146" MODIFIED="1740389625936">
-<edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="FitGap analysis" ID="ID_164302265" CREATED="1735919493108" MODIFIED="1740389625936">
-<edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="determine gaps between customer requirements and the current system. Done by business analyst, but can also be performed by technical role." ID="ID_1944751891" CREATED="1735919756102" MODIFIED="1740389625936">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="impact analysis is used to determine the impact of changes to current artifacts. Done by technical roles." ID="ID_700921066" CREATED="1735919781339" MODIFIED="1740389625936">
+<node TEXT="Curam documentation" ID="ID_1864831133" CREATED="1735919648598" MODIFIED="1740638364258" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="Customization impact analysis" ID="ID_323079007" CREATED="1735919691445" MODIFIED="1740389625937">
+<node TEXT="customization approach" ID="ID_249703667" CREATED="1730949223996" MODIFIED="1740638364259" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="impact analysis" ID="ID_615944966" CREATED="1730949232146" MODIFIED="1740638364259" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="FitGap analysis" ID="ID_164302265" CREATED="1735919493108" MODIFIED="1740638364259" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="determine gaps between customer requirements and the current system. Done by business analyst, but can also be performed by technical role." ID="ID_1944751891" CREATED="1735919756102" MODIFIED="1740638364259" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="impact analysis is used to determine the impact of changes to current artifacts. Done by technical roles." ID="ID_700921066" CREATED="1735919781339" MODIFIED="1740638364259" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="localization" ID="ID_1478524381" CREATED="1730949238460" MODIFIED="1740389625937">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="installation" ID="ID_188243426" CREATED="1730949242176" MODIFIED="1740389625937">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="support and upgrade" ID="ID_340941452" CREATED="1730949244335" MODIFIED="1740389625937">
+<node TEXT="Customization impact analysis" ID="ID_323079007" CREATED="1735919691445" MODIFIED="1740638364260" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="Server-side customization" POSITION="bottom_or_right" ID="ID_98750021" CREATED="1730949190680" MODIFIED="1740389625937" HGAP_QUANTITY="111 px" VSHIFT_QUANTITY="-2921 px"><richcontent TYPE="NOTE">
+<node TEXT="localization" ID="ID_1478524381" CREATED="1730949238460" MODIFIED="1740638364260" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="installation" ID="ID_188243426" CREATED="1730949242176" MODIFIED="1740638364260" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="support and upgrade" ID="ID_340941452" CREATED="1730949244335" MODIFIED="1740638364260" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+</node>
+<node TEXT="Server-side customization" POSITION="bottom_or_right" ID="ID_98750021" CREATED="1730949190680" MODIFIED="1740985616863" STYLE="bubble"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -540,12 +540,12 @@
   </body>
 </html></richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="customizing server artifacts" ID="ID_354246700" CREATED="1737041380663" MODIFIED="1740389625937" HGAP_QUANTITY="96 px" VSHIFT_QUANTITY="1527 px">
+<node TEXT="customizing server artifacts" FOLDED="true" ID="ID_354246700" CREATED="1737041380663" MODIFIED="1740985616866" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="customizing non-source artifacts (messages and codetables)" ID="ID_783667650" CREATED="1730949251736" MODIFIED="1740389625937" HGAP_QUANTITY="58 px" VSHIFT_QUANTITY="1066 px">
+<node TEXT="customizing non-source artifacts (messages and codetables)" ID="ID_783667650" CREATED="1730949251736" MODIFIED="1740638364260" HGAP_QUANTITY="58 px" VSHIFT_QUANTITY="1066 px" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_1814073148" CREATED="1737041395317" MODIFIED="1740389625937" HGAP_QUANTITY="34 px" VSHIFT_QUANTITY="-104 px"><richcontent TYPE="NODE">
+<node ID="ID_1814073148" CREATED="1737041395317" MODIFIED="1740638364261" HGAP_QUANTITY="34 px" VSHIFT_QUANTITY="-104 px" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -565,7 +565,7 @@
 </html>
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_578875210" CREATED="1737042719735" MODIFIED="1740389625939" HGAP_QUANTITY="34 px" VSHIFT_QUANTITY="157 px"><richcontent TYPE="NODE">
+<node ID="ID_578875210" CREATED="1737042719735" MODIFIED="1740638364261" HGAP_QUANTITY="34 px" VSHIFT_QUANTITY="157 px" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -591,7 +591,7 @@
 </html>
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_485691510" CREATED="1737049815760" MODIFIED="1740389625939"><richcontent TYPE="NODE">
+<node ID="ID_485691510" CREATED="1737049815760" MODIFIED="1740638364261" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -621,7 +621,7 @@
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_638386079" CREATED="1737053288787" MODIFIED="1740389625940"><richcontent TYPE="NODE">
+<node ID="ID_638386079" CREATED="1737053288787" MODIFIED="1740638364261" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -652,7 +652,7 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node ID="ID_852809019" CREATED="1737051206953" MODIFIED="1740389625940" HGAP_QUANTITY="23 px" VSHIFT_QUANTITY="67 px"><richcontent TYPE="NODE">
+<node ID="ID_852809019" CREATED="1737051206953" MODIFIED="1740638364261" HGAP_QUANTITY="23 px" VSHIFT_QUANTITY="67 px" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -684,7 +684,7 @@
 </html>
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_792205663" CREATED="1737053248745" MODIFIED="1740389625941"><richcontent TYPE="NODE">
+<node ID="ID_792205663" CREATED="1737053248745" MODIFIED="1740638364262" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -724,7 +724,7 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node ID="ID_1312985647" CREATED="1737052468905" MODIFIED="1740389625941" HGAP_QUANTITY="35 px" VSHIFT_QUANTITY="-92 px"><richcontent TYPE="NODE">
+<node ID="ID_1312985647" CREATED="1737052468905" MODIFIED="1740638364262" HGAP_QUANTITY="35 px" VSHIFT_QUANTITY="-92 px" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -759,7 +759,7 @@
 </html>
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_1550767609" CREATED="1737053784841" MODIFIED="1740389625942" HGAP_QUANTITY="41 px" VSHIFT_QUANTITY="48 px"><richcontent TYPE="NODE">
+<node ID="ID_1550767609" CREATED="1737053784841" MODIFIED="1740638364262" HGAP_QUANTITY="41 px" VSHIFT_QUANTITY="48 px" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -780,7 +780,7 @@
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_954040505" CREATED="1737053454877" MODIFIED="1740389625942" HGAP_QUANTITY="57 px" VSHIFT_QUANTITY="67 px"><richcontent TYPE="NODE">
+<node ID="ID_954040505" CREATED="1737053454877" MODIFIED="1740638364262" HGAP_QUANTITY="57 px" VSHIFT_QUANTITY="67 px" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -828,7 +828,7 @@
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_1842328333" CREATED="1737056202555" MODIFIED="1740389625943" HGAP_QUANTITY="57 px" VSHIFT_QUANTITY="7 px"><richcontent TYPE="NODE">
+<node ID="ID_1842328333" CREATED="1737056202555" MODIFIED="1740638364263" HGAP_QUANTITY="57 px" VSHIFT_QUANTITY="7 px" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -851,7 +851,7 @@
 </html>
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_489455436" CREATED="1737056517223" MODIFIED="1740389625943" HGAP_QUANTITY="57 px" VSHIFT_QUANTITY="76 px"><richcontent TYPE="NODE">
+<node ID="ID_489455436" CREATED="1737056517223" MODIFIED="1740638364263" HGAP_QUANTITY="57 px" VSHIFT_QUANTITY="76 px" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -906,7 +906,7 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node ID="ID_502304953" CREATED="1737062482657" MODIFIED="1740389625943"><richcontent TYPE="NODE">
+<node ID="ID_502304953" CREATED="1737062482657" MODIFIED="1740638364263" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -941,7 +941,7 @@
 </node>
 </node>
 </node>
-<node ID="ID_1546024764" CREATED="1737042418500" MODIFIED="1740389625943" HGAP_QUANTITY="71 px" VSHIFT_QUANTITY="-1194 px"><richcontent TYPE="NODE">
+<node ID="ID_1546024764" CREATED="1737042418500" MODIFIED="1740638364263" HGAP_QUANTITY="71 px" VSHIFT_QUANTITY="-1194 px" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -966,9 +966,9 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="Processing class architecture" ID="ID_721742146" CREATED="1737122893654" MODIFIED="1740389625944">
+<node TEXT="Processing class architecture" FOLDED="true" ID="ID_721742146" CREATED="1737122893654" MODIFIED="1740985616866" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_1662903697" CREATED="1737123375978" MODIFIED="1740389625944" HGAP_QUANTITY="31.25 pt" VSHIFT_QUANTITY="-30 pt"><richcontent TYPE="NODE">
+<node ID="ID_1662903697" CREATED="1737123375978" MODIFIED="1740638364263" HGAP_QUANTITY="31.25 pt" VSHIFT_QUANTITY="-30 pt" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1012,7 +1012,7 @@
 </html>
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_1848531474" CREATED="1737123498018" MODIFIED="1740389625946"><richcontent TYPE="NODE">
+<node ID="ID_1848531474" CREATED="1737123498018" MODIFIED="1740638364264" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1033,7 +1033,7 @@
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_1089692709" CREATED="1737123559910" MODIFIED="1740389625946"><richcontent TYPE="NODE">
+<node ID="ID_1089692709" CREATED="1737123559910" MODIFIED="1740638364264" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1075,7 +1075,7 @@
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_1325667643" CREATED="1737124174929" MODIFIED="1740389625947"><richcontent TYPE="NODE">
+<node ID="ID_1325667643" CREATED="1737124174929" MODIFIED="1740638364264" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1099,7 +1099,7 @@
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_461673211" CREATED="1737124409923" MODIFIED="1740389625948"><richcontent TYPE="NODE">
+<node ID="ID_461673211" CREATED="1737124409923" MODIFIED="1740638364264" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1127,15 +1127,15 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="OOTB source" ID="ID_1150725986" CREATED="1737148002833" MODIFIED="1740389625948">
+<node TEXT="OOTB source" ID="ID_1150725986" CREATED="1737148002833" MODIFIED="1740638364264" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="All application components are prebuilt jar files" ID="ID_108787652" CREATED="1737148072861" MODIFIED="1740389625949">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="Source is provided for limited set of components for documentation purpose" ID="ID_859671232" CREATED="1737148104458" MODIFIED="1740389625949">
+<node TEXT="All application components are prebuilt jar files" ID="ID_108787652" CREATED="1737148072861" MODIFIED="1740638364264" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_821775519" CREATED="1737148120522" MODIFIED="1740389625949"><richcontent TYPE="NODE">
+<node TEXT="Source is provided for limited set of components for documentation purpose" ID="ID_859671232" CREATED="1737148104458" MODIFIED="1740638364265" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node ID="ID_821775519" CREATED="1737148120522" MODIFIED="1740638364265" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1156,21 +1156,21 @@
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="AccessLevel" ID="ID_1982912132" CREATED="1737149047491" MODIFIED="1740389625950">
+<node TEXT="AccessLevel" ID="ID_1982912132" CREATED="1737149047491" MODIFIED="1740638364265" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Classes and operations are marked with @AccessLevel(AccessLevelType.EXTERNAL) or INTERNAL or RESTRICTED" ID="ID_920738903" CREATED="1737148999885" MODIFIED="1740389625950">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="When none provided, assume INTERNAL. Warning message will be shown. Use of INTERNAL api is discouraged but is not enforced. Eclipse shows a discouraged warning if your custom code references an internal API.&#xa;" ID="ID_1134308765" CREATED="1737149055517" MODIFIED="1740389625950">
+<node TEXT="Classes and operations are marked with @AccessLevel(AccessLevelType.EXTERNAL) or INTERNAL or RESTRICTED" ID="ID_920738903" CREATED="1737148999885" MODIFIED="1740638364265" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="Use of RESTRICTED api shows error in Ecliipse" ID="ID_265812388" CREATED="1737149213165" MODIFIED="1740389625950">
+<node TEXT="When none provided, assume INTERNAL. Warning message will be shown. Use of INTERNAL api is discouraged but is not enforced. Eclipse shows a discouraged warning if your custom code references an internal API.&#xa;" ID="ID_1134308765" CREATED="1737149055517" MODIFIED="1740638364266" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="Use of RESTRICTED api shows error in Ecliipse" ID="ID_265812388" CREATED="1737149213165" MODIFIED="1740638364266" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
 </node>
 </node>
-<node ID="ID_1366320371" CREATED="1730949268587" MODIFIED="1740389625951"><richcontent TYPE="NODE">
+<node FOLDED="true" ID="ID_1366320371" CREATED="1730949268587" MODIFIED="1740985616867" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1184,7 +1184,7 @@
 </html>
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_219348341" CREATED="1737150210930" MODIFIED="1740389625951"><richcontent TYPE="NODE">
+<node ID="ID_219348341" CREATED="1737150210930" MODIFIED="1740638364267" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1216,7 +1216,7 @@
 </html>
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_712101415" CREATED="1737313089492" MODIFIED="1740389625952"><richcontent TYPE="NODE">
+<node ID="ID_712101415" CREATED="1737313089492" MODIFIED="1740638364267" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1252,7 +1252,7 @@
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_1998611539" CREATED="1737477948645" MODIFIED="1740389625954"><richcontent TYPE="NODE">
+<node ID="ID_1998611539" CREATED="1737477948645" MODIFIED="1740638364267" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1276,7 +1276,7 @@
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_965714835" CREATED="1737483059886" MODIFIED="1740389625954"><richcontent TYPE="NODE">
+<node ID="ID_965714835" CREATED="1737483059886" MODIFIED="1740638364267" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1302,7 +1302,7 @@
 </html>
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_1259904712" CREATED="1737483319039" MODIFIED="1740389625955"><richcontent TYPE="NODE">
+<node ID="ID_1259904712" CREATED="1737483319039" MODIFIED="1740638364267" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1347,7 +1347,7 @@
 </node>
 </node>
 </node>
-<node ID="ID_329532217" CREATED="1730949275356" MODIFIED="1740389625955"><richcontent TYPE="NODE">
+<node FOLDED="true" ID="ID_329532217" CREATED="1730949275356" MODIFIED="1740985616867" STYLE="bubble" VGAP_QUANTITY="2 pt" COMMON_HGAP_QUANTITY="14 pt"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1361,17 +1361,17 @@
 </html>
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Strategy Pattern" ID="ID_1707278425" CREATED="1739430947052" MODIFIED="1740389625956">
+<node TEXT="Strategy Pattern" ID="ID_1707278425" CREATED="1739430947052" MODIFIED="1740638364268" STYLE="bubble" VGAP_QUANTITY="2 pt" COMMON_HGAP_QUANTITY="14 pt">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Developer handcraft the DAO and Entity interfaces and implementations." ID="ID_1644067803" CREATED="1739431230010" MODIFIED="1740389625956">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="Strategy pattern used to replace default DAO and Entity implementation classes with custom implementations." ID="ID_95071337" CREATED="1739852411677" MODIFIED="1740389625956">
+<node TEXT="Developer handcraft the DAO and Entity interfaces and implementations." ID="ID_1644067803" CREATED="1739431230010" MODIFIED="1740638364268" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="Guice used to inject the default or custom implementation using&#xa;@ImplementedBy or binding method in Guice Module configure().&#xa;@inject used to get reference. &#xa;You must create an entry in the ModuleClassName table. &#xa;Add reference to your Guice module from ModuleClassName table (use dmx)" ID="ID_445528065" CREATED="1739431268305" MODIFIED="1740389625957">
+<node TEXT="Strategy pattern used to replace default DAO and Entity implementation classes with custom implementations." ID="ID_95071337" CREATED="1739852411677" MODIFIED="1740638364268" STYLE="bubble" HGAP_QUANTITY="36.5 pt" VSHIFT_QUANTITY="110.25 pt">
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_1354303990" CREATED="1739853079981" MODIFIED="1740389625958"><richcontent TYPE="NODE">
+</node>
+<node TEXT="Guice used to inject the default or custom implementation using&#xa;@ImplementedBy or binding method in Guice Module configure().&#xa;@inject used to get reference. &#xa;You must create an entry in the ModuleClassName table. &#xa;Add reference to your Guice module from ModuleClassName table (use dmx)" ID="ID_445528065" CREATED="1739431268305" MODIFIED="1740638364268" STYLE="bubble" VSHIFT_QUANTITY="28.5 pt" VGAP_QUANTITY="2 pt" COMMON_HGAP_QUANTITY="14 pt">
+<edge STYLE="bezier" WIDTH="2"/>
+<node ID="ID_1354303990" CREATED="1739853079981" MODIFIED="1740711152091" STYLE="bubble" HGAP_QUANTITY="212.74999 pt" VSHIFT_QUANTITY="14.25 pt"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1379,56 +1379,56 @@
   </head>
   <body>
     <p>
-      <span style="font-size: small;">@ImplementedBy(</span><span style="color: #0033ff; font-size: small;">UniqueNumberGeneratorImpl.class</span><span style="font-size: small;">) </span>
+      <span style="font-size: 10pt;">@ImplementedBy(</span><span style="color: #0033ff; font-size: 10pt;">UniqueNumberGeneratorImpl.class</span><span style="font-size: 10pt;">) </span>
     </p>
     <p>
-      <span style="font-size: small;">@AccessLevel(</span><span style="color: #cc0066; font-size: small;">AccessLevelType.EXTERNAL</span><span style="font-size: small;">) </span>
+      <span style="font-size: 10pt;">@AccessLevel(</span><span style="color: #cc0066; font-size: 10pt;">AccessLevelType.EXTERNAL</span><span style="font-size: 10pt;">) </span>
     </p>
     <p>
-      <span style="font-size: small;">public interface </span><span style="color: #339900; font-size: small;">ReferenceNumberGenerator</span><span style="font-size: small;">&#xa0;{ &#xa0;&#xa0; </span>
+      <span style="font-size: 10pt;">public interface </span><span style="color: #339900; font-size: 10pt;">ReferenceNumberGenerator</span><span style="font-size: 10pt;">&#xa0;{ &#xa0;&#xa0; </span>
     </p>
     <p>
-      <span style="font-size: small;">&#xa0;&#xa0;&#xa0;@AccessLevel(</span><span style="color: #990000; font-size: small;">AccessLevelType.EXTERNAL</span><span style="font-size: small;">) </span>
+      <span style="font-size: 10pt;">&#xa0;&#xa0;&#xa0;@AccessLevel(</span><span style="color: #990000; font-size: 10pt;">AccessLevelType.EXTERNAL</span><span style="font-size: 10pt;">) </span>
     </p>
     <p>
-      <span style="font-size: small;">&#xa0;&#xa0;&#xa0;@Implementable &#xa0;&#xa0; </span>
+      <span style="font-size: 10pt;">&#xa0;&#xa0;&#xa0;@Implementable &#xa0;&#xa0; </span>
     </p>
     <p>
-      <span style="font-size: small;">&#xa0;&#xa0;&#xa0;String </span><span style="color: #009999; font-size: small;">generateReferenceNumbe</span><span style="font-size: small;">r(ContractVersion contractVersion, CPMContract cpmContract) throws . . . </span>
+      <span style="font-size: 10pt;">&#xa0;&#xa0;&#xa0;String </span><span style="color: #009999; font-size: 10pt;">generateReferenceNumbe</span><span style="font-size: 10pt;">r(ContractVersion contractVersion, CPMContract cpmContract) throws . . . </span>
     </p>
     <p>
-      <span style="font-size: small;">} </span>
+      <span style="font-size: 10pt;">} </span>
     </p>
     <p>
       
     </p>
     <p>
-      <span style="font-size: small;">//default implementation </span>
+      <span style="font-size: 10pt;">//default implementation </span>
     </p>
     <p>
-      <span style="font-size: small;">public class </span><span style="color: #0033ff; font-size: small;">UniqueNumberGeneratorImpl</span><span style="font-size: small;">&#xa0;implements </span><span style="color: #339900; font-size: small;">ReferenceNumberGenerator</span><span style="font-size: small;">&#xa0;&#xa0;{ &#xa0;&#xa0; </span>
+      <span style="font-size: 10pt;">public class </span><span style="color: #0033ff; font-size: 10pt;">UniqueNumberGeneratorImpl</span><span style="font-size: 10pt;">&#xa0;implements </span><span style="color: #339900; font-size: 10pt;">ReferenceNumberGenerator</span><span style="font-size: 10pt;">&#xa0;&#xa0;{ &#xa0;&#xa0; </span>
     </p>
     <p>
-      <span style="font-size: small;">&#xa0;&#xa0;public String </span><span style="color: #009999; font-size: small;">generateReferenceNumber</span><span style="font-size: small;">(ContractVersion contractVersion, CPMContract cpmContract) throws AppException, InformationalException { &#xa0;&#xa0; </span>
+      <span style="font-size: 10pt;">&#xa0;&#xa0;public String </span><span style="color: #009999; font-size: 10pt;">generateReferenceNumber</span><span style="font-size: 10pt;">(ContractVersion contractVersion, CPMContract cpmContract) throws AppException, InformationalException { &#xa0;&#xa0; </span>
     </p>
     <p>
-      <span style="font-size: small;">&#xa0;&#xa0;// implementation specified here &#xa0;&#xa0; </span>
+      <span style="font-size: 10pt;">&#xa0;&#xa0;// implementation specified here &#xa0;&#xa0; </span>
     </p>
     <p>
-      <span style="font-size: small;">&#xa0;&#xa0;&#xa0;&#xa0;return referenceNumber; &#xa0;&#xa0; </span>
+      <span style="font-size: 10pt;">&#xa0;&#xa0;&#xa0;&#xa0;return referenceNumber; &#xa0;&#xa0; </span>
     </p>
     <p>
-      <span style="font-size: small;">&#xa0;&#xa0;} </span>
+      <span style="font-size: 10pt;">&#xa0;&#xa0;} </span>
     </p>
     <p>
-      <span style="font-size: small;">} </span>
+      <span style="font-size: 10pt;">} </span>
     </p>
   </body>
 </html>
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_827351739" CREATED="1739853439968" MODIFIED="1740389625958"><richcontent TYPE="NODE">
+<node ID="ID_827351739" CREATED="1739853439968" MODIFIED="1740711168765" STYLE="bubble" HGAP_QUANTITY="211.99999 pt" VSHIFT_QUANTITY="-128.25 pt"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1436,85 +1436,85 @@
   </head>
   <body>
     <p>
-      <font size="3">//custom implementation </font>
+      <span style="font-size: 10pt;">//custom implementation </span>
     </p>
     <p>
-      <font size="3">public class </font><font color="#006666" size="3">CustomUniqueNumberGeneratorImpl</font><font size="3">&#160;implements </font><font color="#339900" size="3">ReferenceNumberGenerator</font><font size="3">&#160;&#160;{ </font>
+      <span style="font-size: 10pt;">public class </span><span style="color: #006666; font-size: 10pt;">CustomUniqueNumberGeneratorImpl</span><span style="font-size: 10pt;">&#xa0;implements </span><span style="color: #339900; font-size: 10pt;">ReferenceNumberGenerator</span><span style="font-size: 10pt;">&#xa0;&#xa0;{ </span>
     </p>
     <p>
-      <font size="3">&#160;&#160;&#160;private String referenceNumber; </font>
+      <span style="font-size: 10pt;">&#xa0;&#xa0;&#xa0;private String referenceNumber; </span>
     </p>
     <p>
-      <font size="3">&#160;&#160;&#160;protected </font><font color="#006666" size="3">CustomUniqueNumberGeneratorImpl</font><font size="3">() {// } </font>
+      <span style="font-size: 10pt;">&#xa0;&#xa0;&#xa0;protected </span><span style="color: #006666; font-size: 10pt;">CustomUniqueNumberGeneratorImpl</span><span style="font-size: 10pt;">() {// } </span>
     </p>
     <p>
-      <font size="3">&#160;&#160;&#160;@Override </font>
+      <span style="font-size: 10pt;">&#xa0;&#xa0;&#xa0;@Override </span>
     </p>
     <p>
-      <font size="3">&#160;&#160;&#160;public String </font><font color="#009999" size="3">generateReferenceNumber</font><font size="3">(ContractVersion contractVersion, CPMContract cpmContract) throws AppException, InformationalException { </font>
+      <span style="font-size: 10pt;">&#xa0;&#xa0;&#xa0;public String </span><span style="color: #009999; font-size: 10pt;">generateReferenceNumber</span><span style="font-size: 10pt;">(ContractVersion contractVersion, CPMContract cpmContract) throws AppException, InformationalException { </span>
     </p>
     <p>
-      <font size="3">&#160;&#160;&#160;&#160;&#160;// Custom implementation </font>
+      <span style="font-size: 10pt;">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;// Custom implementation </span>
     </p>
     <p>
-      <font size="3">&#160;&#160;&#160;&#160;&#160;return referenceNumber; </font>
+      <span style="font-size: 10pt;">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;return referenceNumber; </span>
     </p>
     <p>
-      <font size="3">&#160;&#160;&#160;} </font>
+      <span style="font-size: 10pt;">&#xa0;&#xa0;&#xa0;} </span>
     </p>
     <p>
-      <font size="3">} </font>
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      <font size="3">Guice module </font>
-    </p>
-    <p>
-      <font size="3">Module.java </font>
-    </p>
-    <p>
-      <font size="3">package </font><font color="#660099" size="3">curam.custom.cpm.impl</font><font size="3">;</font>
-    </p>
-    <p>
-      <font size="3">import com.google.inject.AbstractModule; </font>
-    </p>
-    <p>
-      <font size="3">public class </font><font color="#660099" size="3">Module</font><font size="3">&#160;extends AbstractModule { </font>
-    </p>
-    <p>
-      <font size="3">&#160;&#160;protected void configure() { </font>
-    </p>
-    <p>
-      <font size="3">&#160;&#160;&#160;&#160;bind(</font><font color="#339900" size="3">ReferenceNumberGenerator.class</font><font size="3">).to(</font><font color="#006666" size="3">CustomUniqueNumberGeneratorImpl.class</font><font size="3">); </font>
-    </p>
-    <p>
-      <font size="3">&#160;&#160;} </font>
-    </p>
-    <p>
-      <font size="3">} </font>
+      <span style="font-size: 10pt;">} </span>
     </p>
     <p>
       
     </p>
     <p>
-      <font size="3">Update ModuleClassName.dmx in your custom data manager folder </font>
+      <span style="font-size: 10pt;">Guice module </span>
     </p>
     <p>
-      <font size="3">&lt;?xml...?&gt; </font>
+      <span style="font-size: 10pt;">Module.java </span>
     </p>
     <p>
-      <font size="3">&lt;table name=&quot;ModuleClassName&quot;&gt; </font>
+      <span style="font-size: 10pt;">package </span><span style="color: #660099; font-size: 10pt;">curam.custom.cpm.impl</span><span style="font-size: 10pt;">; </span>
     </p>
     <p>
-      <font size="3">&#160;&lt;column name=&quot;moduleClassName&quot; type=&quot;text&quot;/&gt; </font>
+      <span style="font-size: 10pt;">import com.google.inject.AbstractModule; </span>
     </p>
     <p>
-      <font size="3">&#160;&lt;row&gt;&lt;attribute name=&quot;moduleClassName&quot;&gt;&lt;value&gt;</font><font color="#660099" size="3">curam.custom.cpm.impl.Module</font><font size="3">&lt;/value&gt;&lt;/attribute&gt;&lt;/row&gt; </font>
+      <span style="font-size: 10pt;">public class </span><span style="color: #660099; font-size: 10pt;">Module</span><span style="font-size: 10pt;">&#xa0;extends AbstractModule { </span>
     </p>
     <p>
-      <font size="3">&lt;/table&gt; </font>
+      <span style="font-size: 10pt;">&#xa0;&#xa0;protected void configure() { </span>
+    </p>
+    <p>
+      <span style="font-size: 10pt;">&#xa0;&#xa0;&#xa0;&#xa0;bind(</span><span style="color: #339900; font-size: 10pt;">ReferenceNumberGenerator.class</span><span style="font-size: 10pt;">).to(</span><span style="color: #006666; font-size: 10pt;">CustomUniqueNumberGeneratorImpl.class</span><span style="font-size: 10pt;">); </span>
+    </p>
+    <p>
+      <span style="font-size: 10pt;">&#xa0;&#xa0;} </span>
+    </p>
+    <p>
+      <span style="font-size: 10pt;">} </span>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <span style="font-size: 10pt;">Update ModuleClassName.dmx in your custom data manager folder </span>
+    </p>
+    <p>
+      <span style="font-size: 10pt;">&lt;?xml...?&gt; </span>
+    </p>
+    <p>
+      <span style="font-size: 10pt;">&lt;table name=&quot;ModuleClassName&quot;&gt; </span>
+    </p>
+    <p>
+      <span style="font-size: 10pt;">&#xa0;&lt;column name=&quot;moduleClassName&quot; type=&quot;text&quot;/&gt; </span>
+    </p>
+    <p>
+      <span style="font-size: 10pt;">&#xa0;&lt;row&gt;&lt;attribute name=&quot;moduleClassName&quot;&gt;&lt;value&gt;</span><span style="color: #660099; font-size: 10pt;">curam.custom.cpm.impl.Module</span><span style="font-size: 10pt;">&lt;/value&gt;&lt;/attribute&gt;&lt;/row&gt; </span>
+    </p>
+    <p>
+      <span style="font-size: 10pt;">&lt;/table&gt; </span>
     </p>
   </body>
 </html>
@@ -1522,13 +1522,13 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="The configuration in Guicemodule takes precedence over any @ImplementedBy annocations in the code." ID="ID_1436204402" CREATED="1739852509422" MODIFIED="1740389625959">
+<node TEXT="The configuration in Guicemodule takes precedence over any @ImplementedBy annocations in the code." ID="ID_1436204402" CREATED="1739852509422" MODIFIED="1740638364270" STYLE="bubble" HGAP_QUANTITY="25.25 pt" VSHIFT_QUANTITY="-94.5 pt">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="The javadoc indicates whether the class is replaceable. @Implementable" ID="ID_722928952" CREATED="1739852439138" MODIFIED="1740389625959">
+<node TEXT="The javadoc indicates whether the class is replaceable. @Implementable" ID="ID_722928952" CREATED="1739852439138" MODIFIED="1740638364270" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_1154904240" CREATED="1739853699574" MODIFIED="1740389625960"><richcontent TYPE="NODE">
+<node ID="ID_1154904240" CREATED="1739853699574" MODIFIED="1740638364271" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1544,11 +1544,11 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="Event/Listener Pattern" ID="ID_177152152" CREATED="1739430971353" MODIFIED="1740389625960">
+<node TEXT="Event/Listener Pattern" ID="ID_177152152" CREATED="1739430971353" MODIFIED="1740711245631" STYLE="bubble" HGAP_QUANTITY="84.5 pt" VSHIFT_QUANTITY="-110.25 pt">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="There are 2 types of Events" ID="ID_949824789" CREATED="1739942797663" MODIFIED="1740389625960" LINK="EventHandlingOverview.png">
+<node TEXT="There are 2 types of Events" ID="ID_949824789" CREATED="1739942797663" MODIFIED="1740638364271" LINK="EventHandlingOverview.png" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_1797743786" CREATED="1739942806617" MODIFIED="1740389625961"><richcontent TYPE="NODE">
+<node ID="ID_1797743786" CREATED="1739942806617" MODIFIED="1740638364271" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1628,7 +1628,7 @@
 </html>
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_1514051037" CREATED="1739943844838" MODIFIED="1740389625961"><richcontent TYPE="NODE">
+<node ID="ID_1514051037" CREATED="1739943844838" MODIFIED="1740638364272" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1734,7 +1734,7 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node ID="ID_1944112578" CREATED="1739942810517" MODIFIED="1740389625961"><richcontent TYPE="NODE">
+<node ID="ID_1944112578" CREATED="1739942810517" MODIFIED="1740638364272" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1781,9 +1781,9 @@
 </html>
 </richcontent>
 <arrowlink DESTINATION="ID_1944112578" STARTINCLINATION="0 pt;0 pt;" ENDINCLINATION="0 pt;0 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
-<linktarget COLOR="#6699ff" DESTINATION="ID_1944112578" ENDARROW="Default" ENDINCLINATION="0;0;" ID="Arrow_ID_1179882700" SOURCE="ID_1944112578" STARTARROW="None" STARTINCLINATION="0;0;"/>
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_1999159323" CREATED="1739944918230" MODIFIED="1740389625961"><richcontent TYPE="NODE">
+<linktarget COLOR="#6699ff" DESTINATION="ID_1944112578" ENDARROW="Default" ENDINCLINATION="0;0;" ID="Arrow_ID_1179882700" SOURCE="ID_1944112578" STARTARROW="None" STARTINCLINATION="0;0;"/>
+<node ID="ID_1999159323" CREATED="1739944918230" MODIFIED="1740638364272" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1861,9 +1861,9 @@
 </node>
 </node>
 </node>
-<node TEXT="Referencing handcrafted APIs" ID="ID_804377771" CREATED="1739430976416" MODIFIED="1740389625962">
+<node TEXT="Referencing handcrafted APIs" ID="ID_804377771" CREATED="1739430976416" MODIFIED="1740638364273" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_1893053949" CREATED="1740032520673" MODIFIED="1740389625962"><richcontent TYPE="NODE">
+<node ID="ID_1893053949" CREATED="1740032520673" MODIFIED="1740638364273" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1886,7 +1886,7 @@
 </html>
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_1878242951" CREATED="1740032734720" MODIFIED="1740389625962"><richcontent TYPE="NODE">
+<node ID="ID_1878242951" CREATED="1740032734720" MODIFIED="1740638364273" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1964,7 +1964,7 @@
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_408071617" CREATED="1740114468745" MODIFIED="1740389625962"><richcontent TYPE="NODE">
+<node ID="ID_408071617" CREATED="1740114468745" MODIFIED="1740638364273" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -2039,11 +2039,11 @@
 </node>
 </node>
 </node>
-<node TEXT="restful and SOAP web services" ID="ID_1276395721" CREATED="1730949290808" MODIFIED="1740389625963">
+<node TEXT="restful and SOAP web services" FOLDED="true" ID="ID_1276395721" CREATED="1730949290808" MODIFIED="1740985616868" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="SOAP" ID="ID_362006984" CREATED="1740256264860" MODIFIED="1740389625963">
+<node TEXT="SOAP" ID="ID_362006984" CREATED="1740256264860" MODIFIED="1740638364274" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_928292304" CREATED="1740256354623" MODIFIED="1740389625963"><richcontent TYPE="NODE">
+<node ID="ID_928292304" CREATED="1740256354623" MODIFIED="1740638364274" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -2078,7 +2078,7 @@
 </html>
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_1105887622" CREATED="1740257966461" MODIFIED="1740389625964"><richcontent TYPE="NODE">
+<node ID="ID_1105887622" CREATED="1740257966461" MODIFIED="1740638364274" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -2110,7 +2110,7 @@
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_300279167" CREATED="1740259298927" MODIFIED="1740389625964"><richcontent TYPE="NODE">
+<node ID="ID_300279167" CREATED="1740259298927" MODIFIED="1740638364274" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -2162,9 +2162,9 @@
 </node>
 </node>
 </node>
-<node TEXT="REST" ID="ID_785786167" CREATED="1740256269086" MODIFIED="1740389625964">
+<node TEXT="REST" ID="ID_785786167" CREATED="1740256269086" MODIFIED="1740638364275" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_927570255" CREATED="1740286404229" MODIFIED="1740389625964"><richcontent TYPE="NODE">
+<node ID="ID_927570255" CREATED="1740286404229" MODIFIED="1740638364275" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -2196,11 +2196,11 @@
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="Swagger is used to document the REST API" ID="ID_980676941" CREATED="1740287884903" MODIFIED="1740389625965">
+<node TEXT="Swagger is used to document the REST API" ID="ID_980676941" CREATED="1740287884903" MODIFIED="1740638364275" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node ID="ID_1988194053" CREATED="1740256303849" MODIFIED="1740389625965"><richcontent TYPE="NODE">
+<node ID="ID_1988194053" CREATED="1740256303849" MODIFIED="1740638364275" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -2222,11 +2222,11 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="Processing types in Curam" ID="ID_1659286901" CREATED="1740290062566" MODIFIED="1740389625966">
+<node TEXT="Processing types in Curam" FOLDED="true" ID="ID_1659286901" CREATED="1740290062566" MODIFIED="1740985616868" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Online" ID="ID_1056497777" CREATED="1740290124593" MODIFIED="1740389625966">
+<node TEXT="Online" ID="ID_1056497777" CREATED="1740290124593" MODIFIED="1740638364275" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_975823762" CREATED="1740290198957" MODIFIED="1740389625966"><richcontent TYPE="NODE">
+<node ID="ID_975823762" CREATED="1740290198957" MODIFIED="1740638364275" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -2251,9 +2251,9 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="Deferred" ID="ID_1594455993" CREATED="1740290128512" MODIFIED="1740389625966">
+<node TEXT="Deferred" ID="ID_1594455993" CREATED="1740290128512" MODIFIED="1740638364275" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_1294497510" CREATED="1740290300343" MODIFIED="1740389625967"><richcontent TYPE="NODE">
+<node ID="ID_1294497510" CREATED="1740290300343" MODIFIED="1740638364275" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -2276,13 +2276,13 @@
 </html>
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Model theDeferred Process" ID="ID_1077868029" CREATED="1740388605238" MODIFIED="1740389625898">
-<node TEXT="Model a &lt;&lt;wmdpactivity&gt;&gt; operation for a BPO class" ID="ID_704514670" CREATED="1740388728973" MODIFIED="1740389625967"/>
-<node TEXT="Specity following parameters: ticketID, inst_data_id, flag&#xa;&#xa;&lt;&lt;wmdpactivity&gt; allocateManualPmtToFC (ticketID: WM_TICKET_ID, inst_data_id:WM_INST_DATA_ID, flag:WM_BOOLEAN)" ID="ID_922886266" CREATED="1740388756722" MODIFIED="1740389625967"/>
+<node TEXT="Model theDeferred Process" ID="ID_1077868029" CREATED="1740388605238" MODIFIED="1740638364275" STYLE="bubble">
+<node TEXT="Model a &lt;&lt;wmdpactivity&gt;&gt; operation for a BPO class" ID="ID_704514670" CREATED="1740388728973" MODIFIED="1740638364276" STYLE="bubble"/>
+<node TEXT="Specity following parameters: ticketID, inst_data_id, flag&#xa;&#xa;&lt;&lt;wmdpactivity&gt; allocateManualPmtToFC (ticketID: WM_TICKET_ID, inst_data_id:WM_INST_DATA_ID, flag:WM_BOOLEAN)" ID="ID_922886266" CREATED="1740388756722" MODIFIED="1740638364276" STYLE="bubble"/>
 </node>
-<node TEXT="Implement the Deferred Process in impl" ID="ID_956196379" CREATED="1740388927094" MODIFIED="1740389625968"/>
-<node TEXT="Add the Deferred Process to the DPProcess Table with dmx file. Includes ProcessName, InterfaceName, MethodName, TicketType, Subject fields." ID="ID_630782219" CREATED="1740388974622" MODIFIED="1740389625968"/>
-<node ID="ID_343677113" CREATED="1740389053805" MODIFIED="1740390505471"><richcontent TYPE="NODE">
+<node TEXT="Implement the Deferred Process in impl" ID="ID_956196379" CREATED="1740388927094" MODIFIED="1740638364276" STYLE="bubble"/>
+<node TEXT="Add the Deferred Process to the DPProcess Table with dmx file. Includes ProcessName, InterfaceName, MethodName, TicketType, Subject fields." ID="ID_630782219" CREATED="1740388974622" MODIFIED="1740638364276" STYLE="bubble"/>
+<node ID="ID_343677113" CREATED="1740389053805" MODIFIED="1740638364277" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -2308,12 +2308,12 @@
 </html>
 </richcontent>
 </node>
-<node TEXT="Test and troubleshot" ID="ID_1504124721" CREATED="1740389392765" MODIFIED="1740389625968"/>
+<node TEXT="Test and troubleshot" ID="ID_1504124721" CREATED="1740389392765" MODIFIED="1740638364277" STYLE="bubble"/>
 </node>
 </node>
-<node TEXT="Timed" ID="ID_1789372008" CREATED="1740290132327" MODIFIED="1740389625968">
+<node TEXT="Timed" ID="ID_1789372008" CREATED="1740290132327" MODIFIED="1740638364277" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_1416418564" CREATED="1740290453339" MODIFIED="1740389625968"><richcontent TYPE="NODE">
+<node ID="ID_1416418564" CREATED="1740290453339" MODIFIED="1740638364277" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -2335,15 +2335,21 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="EVX events" ID="ID_1295784917" CREATED="1730949308294" MODIFIED="1740389625969">
+<node TEXT="EVX events" ID="ID_1295784917" CREATED="1730949308294" MODIFIED="1740638364277" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="process started when an event is raised." ID="ID_219507048" CREATED="1740290579479" MODIFIED="1740389625969">
+<node TEXT="process started when an event is raised.&#xa;Curam provides 2 mechanisms for implementing events:&#xa;1. Persistence Infrastructure events&#xa;2. Event (EFX) files&#xa;&#xa;Developers can define custom listeners that listen to ootb events.&#xa;Developers can create their own events, listeners and raise those events." ID="ID_219507048" CREATED="1740290579479" MODIFIED="1740638364277" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Define the event in an EVX file" LOCALIZED_STYLE_REF="default" ID="ID_407858155" CREATED="1740542296393" MODIFIED="1740638364279" STYLE="bubble"/>
+<node TEXT="Define event handlers and filters in handler_config.xml" LOCALIZED_STYLE_REF="default" ID="ID_572645686" CREATED="1740542645248" MODIFIED="1740638364279" STYLE="bubble"/>
+<node TEXT="build evgen, build database" LOCALIZED_STYLE_REF="default" ID="ID_372406905" CREATED="1740542656799" MODIFIED="1740638364279" STYLE="bubble"/>
+<node TEXT="Write code to raise the event" LOCALIZED_STYLE_REF="default" ID="ID_616494426" CREATED="1740542664355" MODIFIED="1740638364279" STYLE="bubble"/>
+<node TEXT="Write code for the event filter and  event handler" LOCALIZED_STYLE_REF="default" ID="ID_126050022" CREATED="1740542673084" MODIFIED="1740638364279" STYLE="bubble"/>
+<node TEXT="processing is synchronous. That is, when the event is raised, it is handled within the same transaction." LOCALIZED_STYLE_REF="default" ID="ID_1518851813" CREATED="1740542698795" MODIFIED="1740638364279" STYLE="bubble"/>
 </node>
 </node>
-<node TEXT="Workflow" ID="ID_663686200" CREATED="1740290152878" MODIFIED="1740389625969">
+<node TEXT="Workflow" ID="ID_663686200" CREATED="1740290152878" MODIFIED="1740638364279" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_337270761" CREATED="1740290627347" MODIFIED="1740389625969"><richcontent TYPE="NODE">
+<node ID="ID_337270761" CREATED="1740290627347" MODIFIED="1740638364279" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -2368,9 +2374,11 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="batch processes" ID="ID_1193873982" CREATED="1730949311159" MODIFIED="1740389625969">
+<node TEXT="batch processes" ID="ID_1193873982" CREATED="1730949311159" MODIFIED="1740638364280" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_625600540" CREATED="1740290733960" MODIFIED="1740389625970"><richcontent TYPE="NODE">
+<node TEXT="- Batch process executes tasks/jobs on group of records during a batch window.&#xa;- Eg: batch job to generate payments.&#xa;- caching and streaming can be used to improve batch performance.&#xa;-curam suports deferred processing and starting workflows from within batch jobs.But only asynchronously by way of writing to database tables that the application checks when it runs." ID="ID_625600540" CREATED="1740290733960" MODIFIED="1740638364280" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+<node LOCALIZED_STYLE_REF="default" ID="ID_474025193" CREATED="1740637731833" MODIFIED="1740638364281" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -2378,53 +2386,148 @@
   </head>
   <body>
     <p>
-      - Batch process executes tasks/jobs on group of records during a batch window.
+      <span style="font-weight: bold;">Developing batch job (non-streamed)</span>
     </p>
     <p>
-      - Eg: batch job to generate payments.
+      Model process class with a single &lt;&lt;batch&gt;&gt; stereotyped method. Operation can take only 1 &lt;&lt;struct&gt;&gt; parameter. It must be flat and not aggregate any other struct. Should return void.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <span style="font-weight: bold;">To run: </span>
+    </p>
+    <p>
+      <span style="font-weight: bold;">- </span><span style="font-weight: normal;">batch&#xa0;&#xa0;processes/operations are never run directly from code. They must be called from antscript calls the batch launcher which then invokes the batch job process.</span><br/>
+    </p>
+    <p>
+      <span style="font-weight: normal;">run from scheduler&#xa0;or directly with `build runbatch` or </span>
+    </p>
+    <p>
+      <span style="font-weight: normal;">`build runbatch -Dprogram.name=my.package.SampleBatch.processJob`&#xa0; </span>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <span style="font-weight: bold;">Reporting </span>
+    </p>
+    <p>
+      <span style="font-weight: normal;">-batch&#xa0;job return error code and typically a report.</span>
+    </p>
+    <p>
+      <span style="font-weight: normal;">-email is sent to curam.batchlauncher.erroremail.recipeint. </span>
+    </p>
+    <p>
+      <span style="font-weight: normal;">-check BatchLauncher&lt;DATETIME&gt;.log for errors.</span>
     </p>
   </body>
 </html>
 </richcontent>
-<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node LOCALIZED_STYLE_REF="default" ID="ID_316278535" CREATED="1740637740705" MODIFIED="1740638364237" STYLE="bubble"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <span style="font-weight: bold;">Chunking and Streaming </span><span style="font-weight: normal;">work hand in hand. </span>
+    </p>
+    <p>
+      <span style="font-weight: normal;">Chunking is splitting the data to be processed into small sets. </span>
+    </p>
+    <p>
+      <span style="font-weight: normal;">Streaming is running the processing streams in parallel to speed execution. </span>
+    </p>
+    <p>
+      <span style="font-weight: normal;">With help from business analyst, the developer is the only person who can decide whether chunking and streaming is required. </span>
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>
+</richcontent>
 </node>
 </node>
 </node>
-<node TEXT="navigation" ID="ID_336547130" CREATED="1736037491018" MODIFIED="1740389625970">
+</node>
+<node TEXT="Localization" LOCALIZED_STYLE_REF="AutomaticLayout.level,5" ID="ID_717209724" CREATED="1740711555312" MODIFIED="1740985616868" STYLE="bubble">
+<node LOCALIZED_STYLE_REF="default" ID="ID_95414306" CREATED="1740723890051" MODIFIED="1740985616871" STYLE="bubble"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        Curam supports for multiple locales (language + region variations) eg en_US, en_UK
+      </li>
+      <li>
+        Language is defined when Curam is installed.
+      </li>
+      <li>
+        Then Curam implementation is configured for language and regional variations.
+      </li>
+      <li>
+        End users can select the language to work in dynamically.
+      </li>
+      <li>
+        Product ensures that text for the user's language is displayed.
+      </li>
+      <li>
+        Citizen engagement/ universal access uses different localization technique from the curam server.
+      </li>
+    </ul>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="Areas of Curam impacted by Localization&#xa;Field labels, Address layout, Number format, Currencies, Date time layout, Dropdown codetables and error/info messages, navigation files (tab text, navigation labels etc), widget" LOCALIZED_STYLE_REF="default" ID="ID_1354746339" CREATED="1740984727154" MODIFIED="1740985616872" STYLE="bubble"/>
+<node TEXT="English + 13 languages support&#xa;Regionalization guide provides details for setting Locales. Settings in Application.prx, ApplicationConfiguration.properties, and bootstrap.properties&#xa;CDEJResource.properties, Image.properties, i18n.properties, Calendar.properties, FrequencyPatternSelector.properties, GanttChart.properties" LOCALIZED_STYLE_REF="default" ID="ID_540182056" CREATED="1740985084240" MODIFIED="1740986311202" STYLE="bubble"/>
+<node TEXT="`set LOCALE_LIST=en_CA,fr_CA`&#xa;add translated text to the property file. MyPage.properties, MyPage_fr_CA.properties. Make sure the language is set in LOCALE_LIST.&#xa;&#xa;COMPONENT_ORDER does not need to be manually added with `custom_fr`. They are sought and prepended during build (ie custom_fr, custom,..)" LOCALIZED_STYLE_REF="default" ID="ID_437645086" CREATED="1740985331178" MODIFIED="1740985616823" STYLE="bubble"/>
+<node TEXT="Fallback mechanism&#xa;If exact Language_Region is found, it is used. ie fr_CA&#xa;If exact not found, discard the region and only check for language ie fr&#xa;If still not found, fallback to default language ie en.&#xa;region by itself is never checked. ie CA is never used by itself.&#xa;&#xa;properties file format&#xa;Filename_languagecode_REGIONCODE&#xa;eg. Filename_fr_CA.properties" LOCALIZED_STYLE_REF="default" ID="ID_226450893" CREATED="1740985844840" MODIFIED="1740986199981"/>
+<node TEXT="The ootb messge xml and custom component message xml files are merged. ie the final xml contain messages from both files." LOCALIZED_STYLE_REF="default" ID="ID_1044647024" CREATED="1740986023880" MODIFIED="1740986101981"/>
+</node>
+<node TEXT="navigation" FOLDED="true" ID="ID_336547130" CREATED="1736037491018" MODIFIED="1740985616874" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="general" ID="ID_1048562780" CREATED="1736784921510" MODIFIED="1740389625970">
+<node TEXT="" LOCALIZED_STYLE_REF="default" ID="ID_1414139627" CREATED="1740711318174" MODIFIED="1740711318174"/>
+<node TEXT="general" ID="ID_1048562780" CREATED="1736784921510" MODIFIED="1740638364281" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="navigation is defined in server project" ID="ID_1276569755" CREATED="1736037495012" MODIFIED="1740389625970">
+<node TEXT="navigation is defined in server project" ID="ID_1276569755" CREATED="1736037495012" MODIFIED="1740638364281" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="ootb navigation files are in ootb_components/tab folder" ID="ID_350802930" CREATED="1736037555765" MODIFIED="1740389625970">
+<node TEXT="ootb navigation files are in ootb_components/tab folder" ID="ID_350802930" CREATED="1736037555765" MODIFIED="1740638364281" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="custom navigation should be in my_components/clientapps folder" ID="ID_300285467" CREATED="1736037584957" MODIFIED="1740389625970">
+<node TEXT="custom navigation should be in my_components/clientapps folder" ID="ID_300285467" CREATED="1736037584957" MODIFIED="1740638364281" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="ootb components navigation files are merged. But custom components navigation are not merged.&#xa;Therefore, run build inserttabconfiguration -Ddir.tab.merge=C:/output . Copy the merged navigation files to your custom component `clientapps` folder and modify there. Then run build inserttabconfiguration or build database." ID="ID_117934205" CREATED="1736038672965" MODIFIED="1740389625971">
+<node TEXT="ootb components navigation files are merged. But custom components navigation are not merged.&#xa;Therefore, run build inserttabconfiguration -Ddir.tab.merge=C:/output . Copy the merged navigation files to your custom component `clientapps` folder and modify there. Then run build inserttabconfiguration or build database." ID="ID_117934205" CREATED="1736038672965" MODIFIED="1740638364282" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="treat artifact and properties file as unit. ie they must be same name." ID="ID_882900516" CREATED="1736037620321" MODIFIED="1740389625972">
+<node TEXT="treat artifact and properties file as unit. ie they must be same name." ID="ID_882900516" CREATED="1736037620321" MODIFIED="1740638364282" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="build inserttabconfiguration or build database" ID="ID_400284418" CREATED="1736037769778" MODIFIED="1740389625972">
+<node TEXT="build inserttabconfiguration or build database" ID="ID_400284418" CREATED="1736037769778" MODIFIED="1740638364283" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="smart navigator" ID="ID_161709955" CREATED="1736784857066" MODIFIED="1740389625972">
+<node TEXT="smart navigator" ID="ID_161709955" CREATED="1736784857066" MODIFIED="1740638364283" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Optional search feature that can be configured and customized." ID="ID_1760953922" CREATED="1736784953453" MODIFIED="1740389625972">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="enable in .app file" ID="ID_1903816137" CREATED="1736784976157" MODIFIED="1740389625976">
+<node TEXT="Optional search feature that can be configured and customized." ID="ID_1760953922" CREATED="1736784953453" MODIFIED="1740638364283" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="supports several attributes like Default initial text, Debounce time, Number of recent searches saved, Keywords, URL targets" ID="ID_317751970" CREATED="1736784986869" MODIFIED="1740389625976">
+<node TEXT="enable in .app file" ID="ID_1903816137" CREATED="1736784976157" MODIFIED="1740638364283" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_1261762587" CREATED="1736785025577" MODIFIED="1740389625977"><richcontent TYPE="NODE">
+<node TEXT="supports several attributes like Default initial text, Debounce time, Number of recent searches saved, Keywords, URL targets" ID="ID_317751970" CREATED="1736784986869" MODIFIED="1740638364283" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node ID="ID_1261762587" CREATED="1736785025577" MODIFIED="1740638364284" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
