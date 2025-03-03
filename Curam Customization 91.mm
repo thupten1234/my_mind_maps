@@ -2491,6 +2491,40 @@
 <node TEXT="`set LOCALE_LIST=en_CA,fr_CA`&#xa;add translated text to the property file. MyPage.properties, MyPage_fr_CA.properties. Make sure the language is set in LOCALE_LIST.&#xa;&#xa;COMPONENT_ORDER does not need to be manually added with `custom_fr`. They are sought and prepended during build (ie custom_fr, custom,..)" LOCALIZED_STYLE_REF="default" ID="ID_437645086" CREATED="1740985331178" MODIFIED="1740985616823" STYLE="bubble"/>
 <node TEXT="Fallback mechanism&#xa;If exact Language_Region is found, it is used. ie fr_CA&#xa;If exact not found, discard the region and only check for language ie fr&#xa;If still not found, fallback to default language ie en.&#xa;region by itself is never checked. ie CA is never used by itself.&#xa;&#xa;properties file format&#xa;Filename_languagecode_REGIONCODE&#xa;eg. Filename_fr_CA.properties" LOCALIZED_STYLE_REF="default" ID="ID_226450893" CREATED="1740985844840" MODIFIED="1740986199981"/>
 <node TEXT="The ootb messge xml and custom component message xml files are merged. ie the final xml contain messages from both files." LOCALIZED_STYLE_REF="default" ID="ID_1044647024" CREATED="1740986023880" MODIFIED="1740986101981"/>
+<node TEXT="Text elements are stored as LocalizableText records rather than plain strings.&#xa;For eg, for To support Add translation to Organisation Name.&#xa;Organisation table &lt;-&gt;LocalizableText table &lt;-&gt; TextTranslation table" LOCALIZED_STYLE_REF="default" ID="ID_1070071081" CREATED="1741039212471" MODIFIED="1741039378029"/>
+</node>
+<node TEXT="Support tools and Resources" LOCALIZED_STYLE_REF="default" ID="ID_1099373644" CREATED="1741039444060" MODIFIED="1741039450975">
+<node LOCALIZED_STYLE_REF="default" ID="ID_1852793889" CREATED="1741039599362" MODIFIED="1741041377020"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      - Curam uses 4 digit release numbering based on IBM VRMF (Version, Release, Modification, Fix pack)
+    </p>
+    <p>
+      - Fix pack contain customer raised and proactive defect fixes and minor enhancements. A fix pack may contain many iFixes.
+    </p>
+    <p>
+      -eg 8.0.2.1-iFix12.
+    </p>
+    <p>
+      - Higher version cumulatively contains all lower versions. for eg. iFix12 contains iFix11 contains iFix10 etc.<br/>
+    </p>
+    <p>
+      - Install guide available for Installing the release, and Installing fixpack and iFix
+    </p>
+    <p>
+      -Curam UA or Citizen Engagement has 3 digit code released on regular basis eg. monthly.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="Support paths&#xa;Long term support (LTS) - You only get critical fix and security patches for the version you bought/install.&#xa;Continous Delivery (CD) - You get LTS +  new feature and enhancements." LOCALIZED_STYLE_REF="default" ID="ID_815606012" CREATED="1741041378384" MODIFIED="1741041449568"/>
+<node TEXT="Installing curam development environment&#xa;- Determine pre-requisite&#xa;- Install initial 3rd party products&#xa;- install curam platform, install fixes&#xa;- install and configure remaining 3rd party products&#xa;- Perform builds, run application&#xa;Can be installed on bare metal, virtual machines or Docker containers." LOCALIZED_STYLE_REF="default" ID="ID_1282081153" CREATED="1741042227493" MODIFIED="1741042344286"/>
 </node>
 <node TEXT="navigation" FOLDED="true" ID="ID_336547130" CREATED="1736037491018" MODIFIED="1740985616874" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
