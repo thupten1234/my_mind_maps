@@ -1,6 +1,6 @@
 <map version="freeplane 1.12.1">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="Curam Customization" FOLDED="false" ID="ID_1299395577" CREATED="1730949123363" MODIFIED="1740985616827" STYLE="bubble"><richcontent TYPE="NOTE">
+<node TEXT="Curam Customization" FOLDED="false" ID="ID_1299395577" CREATED="1730949123363" MODIFIED="1741147087566" STYLE="bubble" VGAP_QUANTITY="2 pt" COMMON_HGAP_QUANTITY="14 pt"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -94,29 +94,29 @@
 </hook>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Client-side customization" FOLDED="true" POSITION="top_or_left" ID="ID_801206656" CREATED="1730949196500" MODIFIED="1740985616827" STYLE="bubble">
+<node TEXT="Client-side customization" FOLDED="true" POSITION="top_or_left" ID="ID_801206656" CREATED="1730949196500" MODIFIED="1741147087565" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Customizing pages," ID="ID_1872145217" CREATED="1730949316726" MODIFIED="1740985616827" STYLE="bubble">
+<node TEXT="Customizing pages," ID="ID_1872145217" CREATED="1730949316726" MODIFIED="1741051224453" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="uim pages are in components/mycomponent directory. Folder structure is optional but it is recommended to make it similar to existing page location. property files should be alongside the uim pages. Component with highest priority will be selected. &#xa;If you are changing vim page only, uim pages does not need to be copied.&#xa;&#xa;There are some standard folders inside the mycomponent. &#xa;`images`: the files/folders here will be copied to top-level WebContent during build process.&#xa;`javasource`: stores classes for custom data conversion and sorting&#xa;`WebContent`:  arbitrary custom resources here will be copied to top-level WebContent during build process.&#xa;&#xa;The toplevel folders&#xa;Other folders outside of mycomponent are JavaSource, project, WebContent." ID="ID_1810066196" CREATED="1735922022745" MODIFIED="1740985616828" STYLE="bubble">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-</node>
-<node TEXT="property files" ID="ID_1306553290" CREATED="1730949328015" MODIFIED="1740985616830" HGAP_QUANTITY="25 px" VSHIFT_QUANTITY="-21 px" STYLE="bubble">
-<edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Property files are merged. Therefore only new and the properties that are being changed need to be added to the custom file." ID="ID_219338792" CREATED="1735953638128" MODIFIED="1740985616830" STYLE="bubble">
+<node TEXT="uim pages are in components/mycomponent directory. Folder structure is optional but it is recommended to make it similar to existing page location. property files should be alongside the uim pages. Component with highest priority will be selected. &#xa;If you are changing vim page only, uim pages does not need to be copied.&#xa;&#xa;There are some standard folders inside the mycomponent. &#xa;`images`: the files/folders here will be copied to top-level WebContent during build process.&#xa;`javasource`: stores classes for custom data conversion and sorting&#xa;`WebContent`:  arbitrary custom resources here will be copied to top-level WebContent during build process.&#xa;&#xa;The toplevel folders&#xa;Other folders outside of mycomponent are JavaSource, project, WebContent." ID="ID_1810066196" CREATED="1735922022745" MODIFIED="1741051224454" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="Global properties" ID="ID_578536697" CREATED="1736039380997" MODIFIED="1740985616831" HGAP_QUANTITY="31 px" VSHIFT_QUANTITY="51 px" STYLE="bubble">
+<node TEXT="property files" ID="ID_1306553290" CREATED="1730949328015" MODIFIED="1741051224456" HGAP_QUANTITY="25 px" VSHIFT_QUANTITY="-21 px" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="While most customization is done with new file, following files can be changed in place.&#xa;- webclient/JavaSource/curam/omega3/ApplicationConfiguration.properties&#xa;  Application configuration values in above file.&#xa;&#xa;- webclient/JavaSource/curam/omega3/il8n/CDEJResources.properties &#xa;  Label resources values in CDEJResources properties.&#xa;&#xa;RuntimeMessages.properties&#xa;- webclient/JavasSource/curam/omega3/i18n/&#xa;&#xa;.classpath .project" ID="ID_854814155" CREATED="1736039448750" MODIFIED="1740985616832" STYLE="bubble">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="curam-config.xml &#xa;- Above contains configuration for web client UI or appearance. - eg. POPUP_PAGE, FILE_DOWNLOAD, ADDRESS_CONFIG, PAGINATION, ERROR_PAGE, LIST_ROW_COUNT &#xa;- Found in webclient/components/&lt;component&gt; folders. &#xa;- All files ending in `-config.xml` are merged. The Xyz-curam.xml file format overwrites values in `curam-config.xml`. &#xa;- The standalone config files are in XyzConfig.xml format. They are used in Widget development." ID="ID_448323113" CREATED="1736104822211" MODIFIED="1740985616833" HGAP_QUANTITY="15 px" VSHIFT_QUANTITY="11 px" STYLE="bubble">
+<node TEXT="Property files are merged. Therefore only new and the properties that are being changed need to be added to the custom file." ID="ID_219338792" CREATED="1735953638128" MODIFIED="1741051224456" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_1586042239" CREATED="1736063276363" MODIFIED="1740985616835" STYLE="bubble"><richcontent TYPE="NODE">
+</node>
+<node TEXT="Global properties" ID="ID_578536697" CREATED="1736039380997" MODIFIED="1741051224457" HGAP_QUANTITY="31 px" VSHIFT_QUANTITY="51 px" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="While most customization is done with new file, following files can be changed in place.&#xa;- webclient/JavaSource/curam/omega3/ApplicationConfiguration.properties&#xa;  Application configuration values in above file.&#xa;&#xa;- webclient/JavaSource/curam/omega3/il8n/CDEJResources.properties &#xa;  Label resources values in CDEJResources properties.&#xa;&#xa;RuntimeMessages.properties&#xa;- webclient/JavasSource/curam/omega3/i18n/&#xa;&#xa;.classpath .project" ID="ID_854814155" CREATED="1736039448750" MODIFIED="1741051224457" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="curam-config.xml &#xa;- Above contains configuration for web client UI or appearance. - eg. POPUP_PAGE, FILE_DOWNLOAD, ADDRESS_CONFIG, PAGINATION, ERROR_PAGE, LIST_ROW_COUNT &#xa;- Found in webclient/components/&lt;component&gt; folders. &#xa;- All files ending in `-config.xml` are merged. The Xyz-curam.xml file format overwrites values in `curam-config.xml`. &#xa;- The standalone config files are in XyzConfig.xml format. They are used in Widget development." ID="ID_448323113" CREATED="1736104822211" MODIFIED="1741051224459" HGAP_QUANTITY="15 px" VSHIFT_QUANTITY="11 px" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node ID="ID_1586042239" CREATED="1736063276363" MODIFIED="1741051224460" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -140,7 +140,7 @@
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_1344191898" CREATED="1736063331923" MODIFIED="1740985616835" STYLE="bubble"><richcontent TYPE="NODE">
+<node ID="ID_1344191898" CREATED="1736063331923" MODIFIED="1741051224461" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -159,9 +159,9 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="images" ID="ID_529967566" CREATED="1735953775994" MODIFIED="1740985616836" STYLE="bubble">
+<node TEXT="images" ID="ID_529967566" CREATED="1735953775994" MODIFIED="1741051224461" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_1830823788" CREATED="1735953779492" MODIFIED="1740985616836" STYLE="bubble"><richcontent TYPE="NODE">
+<node ID="ID_1830823788" CREATED="1735953779492" MODIFIED="1741051224461" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -191,15 +191,15 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="javascript" ID="ID_331633103" CREATED="1736520285511" MODIFIED="1740985616836" STYLE="bubble">
+<node TEXT="javascript" ID="ID_331633103" CREATED="1736520285511" MODIFIED="1741051224462" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="place javascripts in components/&lt;mycomponent&gt;/WebContent folder. Curam provides some javascript apis. Use of other API and 3rd party frameworks are not supported. Nothing prevents a developer from using these though." ID="ID_248298205" CREATED="1736520296491" MODIFIED="1740985616836" STYLE="bubble">
+<node TEXT="place javascripts in components/&lt;mycomponent&gt;/WebContent folder. Curam provides some javascript apis. Use of other API and 3rd party frameworks are not supported. Nothing prevents a developer from using these though." ID="ID_248298205" CREATED="1736520296491" MODIFIED="1741051224462" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="css" ID="ID_830475722" CREATED="1736037250165" MODIFIED="1740985616837" STYLE="bubble">
+<node TEXT="css" ID="ID_830475722" CREATED="1736037250165" MODIFIED="1741051224463" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_67805654" CREATED="1736037252757" MODIFIED="1740985616838" STYLE="bubble"><richcontent TYPE="NODE">
+<node ID="ID_67805654" CREATED="1736037252757" MODIFIED="1741051224463" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -218,51 +218,51 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="navigation" ID="ID_1370750018" CREATED="1730949321219" MODIFIED="1740985616838" STYLE="bubble">
+<node TEXT="navigation" ID="ID_1370750018" CREATED="1730949321219" MODIFIED="1741051224463" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="navigation files are set in server side. See server-side customization" ID="ID_931138268" CREATED="1736037434718" MODIFIED="1740985616838" STYLE="bubble">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="smart-navigator  (see server side)" ID="ID_1024491047" CREATED="1736784487595" MODIFIED="1740985616839" STYLE="bubble">
+<node TEXT="navigation files are set in server side. See server-side customization" ID="ID_931138268" CREATED="1736037434718" MODIFIED="1741051224464" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-</node>
-<node TEXT="Session management" ID="ID_418578705" CREATED="1736785788511" MODIFIED="1740985616839" STYLE="bubble">
-<edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Session starts when user logs in and session ends when user logs out." ID="ID_978885851" CREATED="1736786127053" MODIFIED="1740985616839" STYLE="bubble">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="Tab that werre open are saved in TABSESSION table. When user logs back in, tabs are restored." ID="ID_653590238" CREATED="1736786151268" MODIFIED="1740985616840" STYLE="bubble">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="customize the default values in Application.prx, ApplicationConfiguration.properties, CDEJResources.properties" ID="ID_1060982982" CREATED="1736786192748" MODIFIED="1740985616841" STYLE="bubble">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="following can be configured: Maximum number of tabs, how often tabss are saved, error mesg when max tabs reached, timeout period and warning msg" ID="ID_1984040615" CREATED="1736786216950" MODIFIED="1740985616842" STYLE="bubble">
+<node TEXT="smart-navigator  (see server side)" ID="ID_1024491047" CREATED="1736784487595" MODIFIED="1741051224464" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="Browser Management" ID="ID_1746886013" CREATED="1736786892329" MODIFIED="1740985616843" STYLE="bubble">
+<node TEXT="Session management" ID="ID_418578705" CREATED="1736785788511" MODIFIED="1741051224465" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Configure min browser version (ApplicationConfiguration.properties). Define optimal browser msg in CDEJResources.properties" ID="ID_1596459364" CREATED="1736786899314" MODIFIED="1740985616843" STYLE="bubble">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="Browser button behavior: when user press back, refresh, close button, enable/disable warning msg (Application.prx)" ID="ID_900672963" CREATED="1736786969015" MODIFIED="1740985616844" STYLE="bubble">
+<node TEXT="Session starts when user logs in and session ends when user logs out." ID="ID_978885851" CREATED="1736786127053" MODIFIED="1741051224465" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-</node>
-<node TEXT="Autorecovery" ID="ID_1910944131" CREATED="1736787663340" MODIFIED="1740985616845" STYLE="bubble">
-<edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Recovers data in the event of a system interruption." ID="ID_1102776284" CREATED="1736787670579" MODIFIED="1740985616845" STYLE="bubble">
+<node TEXT="Tab that werre open are saved in TABSESSION table. When user logs back in, tabs are restored." ID="ID_653590238" CREATED="1736786151268" MODIFIED="1741051224466" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="Supported for UIM pages where data is entered." ID="ID_1591595497" CREATED="1736787717472" MODIFIED="1740985616846" STYLE="bubble">
+<node TEXT="customize the default values in Application.prx, ApplicationConfiguration.properties, CDEJResources.properties" ID="ID_1060982982" CREATED="1736786192748" MODIFIED="1741051224466" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="Supports only 1 record per user, which represent the last model the user interacted with." ID="ID_594959410" CREATED="1736787782795" MODIFIED="1740985616846" STYLE="bubble">
+<node TEXT="following can be configured: Maximum number of tabs, how often tabss are saved, error mesg when max tabs reached, timeout period and warning msg" ID="ID_1984040615" CREATED="1736786216950" MODIFIED="1741051224467" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_1629855763" CREATED="1736787833120" MODIFIED="1740985616847" STYLE="bubble"><richcontent TYPE="NODE">
+</node>
+<node TEXT="Browser Management" ID="ID_1746886013" CREATED="1736786892329" MODIFIED="1741051224468" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Configure min browser version (ApplicationConfiguration.properties). Define optimal browser msg in CDEJResources.properties" ID="ID_1596459364" CREATED="1736786899314" MODIFIED="1741051224468" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="Browser button behavior: when user press back, refresh, close button, enable/disable warning msg (Application.prx)" ID="ID_900672963" CREATED="1736786969015" MODIFIED="1741051224469" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+</node>
+<node TEXT="Autorecovery" ID="ID_1910944131" CREATED="1736787663340" MODIFIED="1741051224470" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Recovers data in the event of a system interruption." ID="ID_1102776284" CREATED="1736787670579" MODIFIED="1741051224470" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="Supported for UIM pages where data is entered." ID="ID_1591595497" CREATED="1736787717472" MODIFIED="1741051224470" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="Supports only 1 record per user, which represent the last model the user interacted with." ID="ID_594959410" CREATED="1736787782795" MODIFIED="1741051224471" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node ID="ID_1629855763" CREATED="1736787833120" MODIFIED="1741051224471" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -299,11 +299,11 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="Options for customizing widgets" ID="ID_633071442" CREATED="1730949330896" MODIFIED="1740985616847" STYLE="bubble">
+<node TEXT="Options for customizing widgets" ID="ID_633071442" CREATED="1730949330896" MODIFIED="1741051224472" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Domain plugin classes determine how an attribute is handled and looks" ID="ID_1936577311" CREATED="1736789424447" MODIFIED="1740985616848" STYLE="bubble">
+<node TEXT="Domain plugin classes determine how an attribute is handled and looks" ID="ID_1936577311" CREATED="1736789424447" MODIFIED="1741051224472" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_618330234" CREATED="1736789496891" MODIFIED="1740985616849" STYLE="bubble"><richcontent TYPE="NODE">
+<node ID="ID_618330234" CREATED="1736789496891" MODIFIED="1741051224473" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -321,7 +321,7 @@
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_486401408" CREATED="1736789506722" MODIFIED="1740985616849" STYLE="bubble"><richcontent TYPE="NODE">
+<node ID="ID_486401408" CREATED="1736789506722" MODIFIED="1741051224473" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -348,68 +348,68 @@
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="Custom Widget Development Framework (CWDF)" ID="ID_1075370409" CREATED="1736789346909" MODIFIED="1740985616849" STYLE="bubble">
+<node TEXT="Custom Widget Development Framework (CWDF)" ID="ID_1075370409" CREATED="1736789346909" MODIFIED="1741051224473" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Combines html created from java, css, javascripts, images." ID="ID_547048213" CREATED="1736800901918" MODIFIED="1740985616850" STYLE="bubble">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="Developer CANNOT extend out of the box renderers" ID="ID_533833619" CREATED="1736800930159" MODIFIED="1740985616850" STYLE="bubble">
+<node TEXT="Combines html created from java, css, javascripts, images." ID="ID_547048213" CREATED="1736800901918" MODIFIED="1741051224474" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="Steps" ID="ID_861479481" CREATED="1736800949011" MODIFIED="1740985616850" STYLE="bubble">
-<edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="1. define a domain definition in RSAD" ID="ID_1409528305" CREATED="1736800952691" MODIFIED="1740985616850" STYLE="bubble">
+<node TEXT="Developer CANNOT extend out of the box renderers" ID="ID_533833619" CREATED="1736800930159" MODIFIED="1741051224474" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="2. define the facade method and return struct." ID="ID_732725979" CREATED="1736800973343" MODIFIED="1740985616851" STYLE="bubble">
+<node TEXT="Steps" ID="ID_861479481" CREATED="1736800949011" MODIFIED="1741051224474" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="1. define a domain definition in RSAD" ID="ID_1409528305" CREATED="1736800952691" MODIFIED="1741051224474" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="3. implement java renderer class in client project" ID="ID_218300650" CREATED="1736800993311" MODIFIED="1740985616851" STYLE="bubble">
+<node TEXT="2. define the facade method and return struct." ID="ID_732725979" CREATED="1736800973343" MODIFIED="1741051224475" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="4. associate the domain definition with the renderer in DomainsConfig.xml" ID="ID_1127963042" CREATED="1736801008236" MODIFIED="1740985616851" STYLE="bubble">
+<node TEXT="3. implement java renderer class in client project" ID="ID_218300650" CREATED="1736800993311" MODIFIED="1741051224475" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-</node>
-</node>
-<node TEXT="UI Addons Development Environment is collection of open source tools and libraries that can be used to extend UIM with javascript component " ID="ID_4400050" CREATED="1736801891569" MODIFIED="1740985616852" STYLE="bubble">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="It enables rapid development, based on Carbon Design system." ID="ID_937235274" CREATED="1736801930582" MODIFIED="1740985616853" STYLE="bubble">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="When you install UI Addon dev environment; carbon, react, graphQL and apollo are downloaded by npm." ID="ID_308631975" CREATED="1736802007114" MODIFIED="1740985616854" STYLE="bubble">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="Card component &gt; Apollo GraphQL client &gt; GraphQL backend server &gt; Facade &gt; data" ID="ID_580588080" CREATED="1736803799269" MODIFIED="1740985616855" STYLE="bubble">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-</node>
-<node TEXT="Configuring OOTB Widgets" ID="ID_1260032206" CREATED="1736874186098" MODIFIED="1740985616856" STYLE="bubble">
-<edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="update configuration xml files or property files. perform `build client`" ID="ID_1610527640" CREATED="1736874194110" MODIFIED="1740985616856" STYLE="bubble">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="xml files are in &lt;component&gt; folders. Create a version of the file with same name. Files are merged based on component order." ID="ID_283154822" CREATED="1736874221820" MODIFIED="1740985616857" STYLE="bubble">
-<edge STYLE="bezier" WIDTH="2"/>
-</node>
-<node TEXT="property files: create property file with same name, create property with same name and update the value/text. perform `build client`" ID="ID_1386798877" CREATED="1736874252459" MODIFIED="1740985616858" STYLE="bubble">
+<node TEXT="4. associate the domain definition with the renderer in DomainsConfig.xml" ID="ID_1127963042" CREATED="1736801008236" MODIFIED="1741051224475" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
 </node>
-<node TEXT="Pod" ID="ID_1858499394" CREATED="1736875236648" MODIFIED="1740985616858" STYLE="bubble">
-<edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Pod is user interface widget that can be placed on a client page inside a pod container." ID="ID_1200193720" CREATED="1736875279968" MODIFIED="1740985616859" STYLE="bubble">
+<node TEXT="UI Addons Development Environment is collection of open source tools and libraries that can be used to extend UIM with javascript component " ID="ID_4400050" CREATED="1736801891569" MODIFIED="1741051224476" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="Pod can contain variety of contents including chart, links, calendars etc. User homepages contain pods that proper important and relevant activities." ID="ID_1364117727" CREATED="1736875300836" MODIFIED="1740985616860" STYLE="bubble">
+<node TEXT="It enables rapid development, based on Carbon Design system." ID="ID_937235274" CREATED="1736801930582" MODIFIED="1741051224477" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="Users can Reposition pod, show/hide pod." ID="ID_950258195" CREATED="1736875315827" MODIFIED="1740985616861" STYLE="bubble">
+<node TEXT="When you install UI Addon dev environment; carbon, react, graphQL and apollo are downloaded by npm." ID="ID_308631975" CREATED="1736802007114" MODIFIED="1741051224478" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_1020697603" CREATED="1736875332871" MODIFIED="1740985616861" STYLE="bubble"><richcontent TYPE="NODE">
+<node TEXT="Card component &gt; Apollo GraphQL client &gt; GraphQL backend server &gt; Facade &gt; data" ID="ID_580588080" CREATED="1736803799269" MODIFIED="1741051224478" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+</node>
+<node TEXT="Configuring OOTB Widgets" ID="ID_1260032206" CREATED="1736874186098" MODIFIED="1741051224479" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="update configuration xml files or property files. perform `build client`" ID="ID_1610527640" CREATED="1736874194110" MODIFIED="1741051224480" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="xml files are in &lt;component&gt; folders. Create a version of the file with same name. Files are merged based on component order." ID="ID_283154822" CREATED="1736874221820" MODIFIED="1741051224481" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="property files: create property file with same name, create property with same name and update the value/text. perform `build client`" ID="ID_1386798877" CREATED="1736874252459" MODIFIED="1741051224481" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+</node>
+</node>
+<node TEXT="Pod" ID="ID_1858499394" CREATED="1736875236648" MODIFIED="1741051224482" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="Pod is user interface widget that can be placed on a client page inside a pod container." ID="ID_1200193720" CREATED="1736875279968" MODIFIED="1741051224483" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="Pod can contain variety of contents including chart, links, calendars etc. User homepages contain pods that proper important and relevant activities." ID="ID_1364117727" CREATED="1736875300836" MODIFIED="1741051224483" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node TEXT="Users can Reposition pod, show/hide pod." ID="ID_950258195" CREATED="1736875315827" MODIFIED="1741051224484" STYLE="bubble">
+<edge STYLE="bezier" WIDTH="2"/>
+</node>
+<node ID="ID_1020697603" CREATED="1736875332871" MODIFIED="1741051224484" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -433,7 +433,7 @@
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_1102251230" CREATED="1736876838511" MODIFIED="1740985616862" STYLE="bubble"><richcontent TYPE="NODE">
+<node ID="ID_1102251230" CREATED="1736876838511" MODIFIED="1741051224485" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -459,9 +459,9 @@
 </node>
 </node>
 </node>
-<node TEXT="Curam Infrastructure" FOLDED="true" POSITION="bottom_or_right" ID="ID_742253712" CREATED="1730949181248" MODIFIED="1740985616862" STYLE="bubble">
+<node TEXT="Curam Infrastructure" POSITION="bottom_or_right" ID="ID_742253712" CREATED="1730949181248" MODIFIED="1741051224485" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Product documentation and information sources" ID="ID_1176609013" CREATED="1730949211243" MODIFIED="1740638364256" STYLE="bubble">
+<node TEXT="Product documentation and information sources" FOLDED="true" ID="ID_1176609013" CREATED="1730949211243" MODIFIED="1740638364256" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 <node TEXT="Entity relationship diagrams. Bunch of pdfs with ERD-somename.pdf contain ERD reference models. Models are produced for the following areas: Core, Infrastructure, Application modules." ID="ID_1194710158" CREATED="1735919625857" MODIFIED="1740638364256" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
@@ -482,9 +482,9 @@
 <node TEXT="customization approach" ID="ID_249703667" CREATED="1730949223996" MODIFIED="1740638364259" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="impact analysis" ID="ID_615944966" CREATED="1730949232146" MODIFIED="1740638364259" STYLE="bubble">
+<node TEXT="impact analysis" FOLDED="true" ID="ID_615944966" CREATED="1730949232146" MODIFIED="1741147095889" STYLE="bubble" VGAP_QUANTITY="2 pt" COMMON_HGAP_QUANTITY="14 pt">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="FitGap analysis" ID="ID_164302265" CREATED="1735919493108" MODIFIED="1740638364259" STYLE="bubble">
+<node TEXT="FitGap analysis" ID="ID_164302265" CREATED="1735919493108" MODIFIED="1741147097009" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 <node TEXT="determine gaps between customer requirements and the current system. Done by business analyst, but can also be performed by technical role." ID="ID_1944751891" CREATED="1735919756102" MODIFIED="1740638364259" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
@@ -507,7 +507,7 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="Server-side customization" POSITION="bottom_or_right" ID="ID_98750021" CREATED="1730949190680" MODIFIED="1740985616863" STYLE="bubble"><richcontent TYPE="NOTE">
+<node TEXT="Server-side customization" FOLDED="true" POSITION="bottom_or_right" ID="ID_98750021" CREATED="1730949190680" MODIFIED="1741051224486" STYLE="bubble"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -540,7 +540,7 @@
   </body>
 </html></richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="customizing server artifacts" FOLDED="true" ID="ID_354246700" CREATED="1737041380663" MODIFIED="1740985616866" STYLE="bubble">
+<node TEXT="customizing server artifacts" FOLDED="true" ID="ID_354246700" CREATED="1737041380663" MODIFIED="1741051224489" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 <node TEXT="customizing non-source artifacts (messages and codetables)" ID="ID_783667650" CREATED="1730949251736" MODIFIED="1740638364260" HGAP_QUANTITY="58 px" VSHIFT_QUANTITY="1066 px" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
@@ -966,7 +966,7 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="Processing class architecture" FOLDED="true" ID="ID_721742146" CREATED="1737122893654" MODIFIED="1740985616866" STYLE="bubble">
+<node TEXT="Processing class architecture" FOLDED="true" ID="ID_721742146" CREATED="1737122893654" MODIFIED="1741051224490" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 <node ID="ID_1662903697" CREATED="1737123375978" MODIFIED="1740638364263" HGAP_QUANTITY="31.25 pt" VSHIFT_QUANTITY="-30 pt" STYLE="bubble"><richcontent TYPE="NODE">
 
@@ -1170,7 +1170,7 @@
 </node>
 </node>
 </node>
-<node FOLDED="true" ID="ID_1366320371" CREATED="1730949268587" MODIFIED="1740985616867" STYLE="bubble"><richcontent TYPE="NODE">
+<node FOLDED="true" ID="ID_1366320371" CREATED="1730949268587" MODIFIED="1741051224490" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1347,7 +1347,7 @@
 </node>
 </node>
 </node>
-<node FOLDED="true" ID="ID_329532217" CREATED="1730949275356" MODIFIED="1740985616867" STYLE="bubble" VGAP_QUANTITY="2 pt" COMMON_HGAP_QUANTITY="14 pt"><richcontent TYPE="NODE">
+<node FOLDED="true" ID="ID_329532217" CREATED="1730949275356" MODIFIED="1741051224490" STYLE="bubble" VGAP_QUANTITY="2 pt" COMMON_HGAP_QUANTITY="14 pt"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -2039,7 +2039,7 @@
 </node>
 </node>
 </node>
-<node TEXT="restful and SOAP web services" FOLDED="true" ID="ID_1276395721" CREATED="1730949290808" MODIFIED="1740985616868" STYLE="bubble">
+<node TEXT="restful and SOAP web services" FOLDED="true" ID="ID_1276395721" CREATED="1730949290808" MODIFIED="1741051224490" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 <node TEXT="SOAP" ID="ID_362006984" CREATED="1740256264860" MODIFIED="1740638364274" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
@@ -2222,7 +2222,7 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="Processing types in Curam" FOLDED="true" ID="ID_1659286901" CREATED="1740290062566" MODIFIED="1740985616868" STYLE="bubble">
+<node TEXT="Processing types in Curam" FOLDED="true" ID="ID_1659286901" CREATED="1740290062566" MODIFIED="1741051224491" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 <node TEXT="Online" ID="ID_1056497777" CREATED="1740290124593" MODIFIED="1740638364275" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
@@ -2454,8 +2454,8 @@
 </node>
 </node>
 </node>
-<node TEXT="Localization" LOCALIZED_STYLE_REF="AutomaticLayout.level,5" ID="ID_717209724" CREATED="1740711555312" MODIFIED="1740985616868" STYLE="bubble">
-<node LOCALIZED_STYLE_REF="default" ID="ID_95414306" CREATED="1740723890051" MODIFIED="1740985616871" STYLE="bubble"><richcontent TYPE="NODE">
+<node TEXT="Localization" LOCALIZED_STYLE_REF="AutomaticLayout.level,5" ID="ID_717209724" CREATED="1740711555312" MODIFIED="1741051224491" STYLE="bubble">
+<node LOCALIZED_STYLE_REF="default" ID="ID_95414306" CREATED="1740723890051" MODIFIED="1741051224495" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -2486,15 +2486,15 @@
 </html>
 </richcontent>
 </node>
-<node TEXT="Areas of Curam impacted by Localization&#xa;Field labels, Address layout, Number format, Currencies, Date time layout, Dropdown codetables and error/info messages, navigation files (tab text, navigation labels etc), widget" LOCALIZED_STYLE_REF="default" ID="ID_1354746339" CREATED="1740984727154" MODIFIED="1740985616872" STYLE="bubble"/>
-<node TEXT="English + 13 languages support&#xa;Regionalization guide provides details for setting Locales. Settings in Application.prx, ApplicationConfiguration.properties, and bootstrap.properties&#xa;CDEJResource.properties, Image.properties, i18n.properties, Calendar.properties, FrequencyPatternSelector.properties, GanttChart.properties" LOCALIZED_STYLE_REF="default" ID="ID_540182056" CREATED="1740985084240" MODIFIED="1740986311202" STYLE="bubble"/>
-<node TEXT="`set LOCALE_LIST=en_CA,fr_CA`&#xa;add translated text to the property file. MyPage.properties, MyPage_fr_CA.properties. Make sure the language is set in LOCALE_LIST.&#xa;&#xa;COMPONENT_ORDER does not need to be manually added with `custom_fr`. They are sought and prepended during build (ie custom_fr, custom,..)" LOCALIZED_STYLE_REF="default" ID="ID_437645086" CREATED="1740985331178" MODIFIED="1740985616823" STYLE="bubble"/>
-<node TEXT="Fallback mechanism&#xa;If exact Language_Region is found, it is used. ie fr_CA&#xa;If exact not found, discard the region and only check for language ie fr&#xa;If still not found, fallback to default language ie en.&#xa;region by itself is never checked. ie CA is never used by itself.&#xa;&#xa;properties file format&#xa;Filename_languagecode_REGIONCODE&#xa;eg. Filename_fr_CA.properties" LOCALIZED_STYLE_REF="default" ID="ID_226450893" CREATED="1740985844840" MODIFIED="1740986199981"/>
-<node TEXT="The ootb messge xml and custom component message xml files are merged. ie the final xml contain messages from both files." LOCALIZED_STYLE_REF="default" ID="ID_1044647024" CREATED="1740986023880" MODIFIED="1740986101981"/>
-<node TEXT="Text elements are stored as LocalizableText records rather than plain strings.&#xa;For eg, for To support Add translation to Organisation Name.&#xa;Organisation table &lt;-&gt;LocalizableText table &lt;-&gt; TextTranslation table" LOCALIZED_STYLE_REF="default" ID="ID_1070071081" CREATED="1741039212471" MODIFIED="1741039378029"/>
+<node TEXT="Areas of Curam impacted by Localization&#xa;Field labels, Address layout, Number format, Currencies, Date time layout, Dropdown codetables and error/info messages, navigation files (tab text, navigation labels etc), widget" LOCALIZED_STYLE_REF="default" ID="ID_1354746339" CREATED="1740984727154" MODIFIED="1741051224496" STYLE="bubble"/>
+<node TEXT="English + 13 languages support&#xa;Regionalization guide provides details for setting Locales. Settings in Application.prx, ApplicationConfiguration.properties, and bootstrap.properties&#xa;CDEJResource.properties, Image.properties, i18n.properties, Calendar.properties, FrequencyPatternSelector.properties, GanttChart.properties" LOCALIZED_STYLE_REF="default" ID="ID_540182056" CREATED="1740985084240" MODIFIED="1741051224497" STYLE="bubble"/>
+<node TEXT="`set LOCALE_LIST=en_CA,fr_CA`&#xa;add translated text to the property file. MyPage.properties, MyPage_fr_CA.properties. Make sure the language is set in LOCALE_LIST.&#xa;&#xa;COMPONENT_ORDER does not need to be manually added with `custom_fr`. They are sought and prepended during build (ie custom_fr, custom,..)" LOCALIZED_STYLE_REF="default" ID="ID_437645086" CREATED="1740985331178" MODIFIED="1741051224498" STYLE="bubble"/>
+<node TEXT="Fallback mechanism&#xa;If exact Language_Region is found, it is used. ie fr_CA&#xa;If exact not found, discard the region and only check for language ie fr&#xa;If still not found, fallback to default language ie en.&#xa;region by itself is never checked. ie CA is never used by itself.&#xa;&#xa;properties file format&#xa;Filename_languagecode_REGIONCODE&#xa;eg. Filename_fr_CA.properties" LOCALIZED_STYLE_REF="default" ID="ID_226450893" CREATED="1740985844840" MODIFIED="1741051224499" STYLE="bubble"/>
+<node TEXT="The ootb messge xml and custom component message xml files are merged. ie the final xml contain messages from both files." LOCALIZED_STYLE_REF="default" ID="ID_1044647024" CREATED="1740986023880" MODIFIED="1741051224501" STYLE="bubble"/>
+<node TEXT="Text elements are stored as LocalizableText records rather than plain strings.&#xa;For eg, for To support Add translation to Organisation Name.&#xa;Organisation table &lt;-&gt;LocalizableText table &lt;-&gt; TextTranslation table" LOCALIZED_STYLE_REF="default" ID="ID_1070071081" CREATED="1741039212471" MODIFIED="1741051224502" STYLE="bubble"/>
 </node>
-<node TEXT="Support tools and Resources" LOCALIZED_STYLE_REF="default" ID="ID_1099373644" CREATED="1741039444060" MODIFIED="1741039450975">
-<node LOCALIZED_STYLE_REF="default" ID="ID_1852793889" CREATED="1741039599362" MODIFIED="1741041377020"><richcontent TYPE="NODE">
+<node TEXT="Support tools and Resources" LOCALIZED_STYLE_REF="default" ID="ID_1099373644" CREATED="1741039444060" MODIFIED="1741051224503" STYLE="bubble">
+<node LOCALIZED_STYLE_REF="default" ID="ID_1852793889" CREATED="1741039599362" MODIFIED="1741051224505" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -2523,10 +2523,12 @@
 </html>
 </richcontent>
 </node>
-<node TEXT="Support paths&#xa;Long term support (LTS) - You only get critical fix and security patches for the version you bought/install.&#xa;Continous Delivery (CD) - You get LTS +  new feature and enhancements." LOCALIZED_STYLE_REF="default" ID="ID_815606012" CREATED="1741041378384" MODIFIED="1741041449568"/>
-<node TEXT="Installing curam development environment&#xa;- Determine pre-requisite&#xa;- Install initial 3rd party products&#xa;- install curam platform, install fixes&#xa;- install and configure remaining 3rd party products&#xa;- Perform builds, run application&#xa;Can be installed on bare metal, virtual machines or Docker containers." LOCALIZED_STYLE_REF="default" ID="ID_1282081153" CREATED="1741042227493" MODIFIED="1741042344286"/>
+<node TEXT="Support paths&#xa;Long term support (LTS) - You only get critical fix and security patches for the version you bought/install.&#xa;Continous Delivery (CD) - You get LTS +  new feature and enhancements." LOCALIZED_STYLE_REF="default" ID="ID_815606012" CREATED="1741041378384" MODIFIED="1741051224506" STYLE="bubble"/>
+<node TEXT="Installing curam development environment&#xa;- Determine pre-requisite&#xa;- Install initial 3rd party products&#xa;- install curam platform, install fixes&#xa;- install and configure remaining 3rd party products&#xa;- Perform builds, run application&#xa;Can be installed on bare metal, virtual machines or Docker containers." LOCALIZED_STYLE_REF="default" ID="ID_1282081153" CREATED="1741042227493" MODIFIED="1741051224507" STYLE="bubble"/>
+<node TEXT="- Customer can raise following requests via portal: Defects, Request for new features, Other product queries.&#xa;- Curam support defines 4 levels of severity for issues: Critical, Significant business impact, minor business impact, minimal impact.&#xa;- Support does not provide help for custom code, data recovery, consulting, 3rd party products, and open-source products.&#xa;-Curam support policy provides details about support subscriptions and engaging with support." LOCALIZED_STYLE_REF="default" ID="ID_539900493" CREATED="1741051005987" MODIFIED="1741051299196" STYLE="bubble"/>
+<node TEXT="Deprecation&#xa;Code - @deprecated&#xa;XML - &lt;!curam-deprecated ..?&gt;&#xa;property files - .deprecated appended to the property&#xa;&#xa;EJBServer: `build deprecationreport`&#xa;above cmd deprecation report takes time becaue it performs build clean server, database, clean client, and check dependencies.&#xa;output in buildlogs\" LOCALIZED_STYLE_REF="default" ID="ID_1098939354" CREATED="1741052463316" MODIFIED="1741052592112"/>
 </node>
-<node TEXT="navigation" FOLDED="true" ID="ID_336547130" CREATED="1736037491018" MODIFIED="1740985616874" STYLE="bubble">
+<node TEXT="navigation" FOLDED="true" ID="ID_336547130" CREATED="1736037491018" MODIFIED="1741051224508" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 <node TEXT="" LOCALIZED_STYLE_REF="default" ID="ID_1414139627" CREATED="1740711318174" MODIFIED="1740711318174"/>
 <node TEXT="general" ID="ID_1048562780" CREATED="1736784921510" MODIFIED="1740638364281" STYLE="bubble">
