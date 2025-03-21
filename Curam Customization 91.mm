@@ -507,7 +507,7 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="Server-side customization" FOLDED="true" POSITION="bottom_or_right" ID="ID_98750021" CREATED="1730949190680" MODIFIED="1741051224486" STYLE="bubble"><richcontent TYPE="NOTE">
+<node TEXT="Server-side customization" POSITION="bottom_or_right" ID="ID_98750021" CREATED="1730949190680" MODIFIED="1741051224486" STYLE="bubble"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -1302,7 +1302,7 @@
 </html>
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_1259904712" CREATED="1737483319039" MODIFIED="1740638364267" STYLE="bubble"><richcontent TYPE="NODE">
+<node ID="ID_1259904712" CREATED="1737483319039" MODIFIED="1742531501420" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1310,34 +1310,34 @@
   </head>
   <body>
     <p>
-      <font size="3">Eg. Model CustomMaintainBankAccount facade with same operation name but return your custom struct which aggregates ootb struct. </font>
+      <span style="font-size: small;">Eg. Model CustomMaintainBankAccount facade with same operation name but return your custom struct which aggregates ootb struct. </span>
     </p>
     <p>
       
     </p>
     <p>
-      <font color="#0033ff" face="Calibri" size="3">public CustomAccountDetails prepareAccountSummary(BankAccountKey arg1) throws...{ </font>
+      <span style="color: #0033ff; font-family: Courier New; font-size: 8pt;">public CustomAccountDetails prepareAccountSummary(BankAccountKey args) throws...{ </span>
     </p>
     <p>
-      <font color="#0033ff" face="Calibri" size="3">&#160;&#160;curam.intf.MaintainBankAccount maintainBankAccount = curam.fact.MaintainBankAccountFactory.newInstance(); </font>
+      <span style="color: #0033ff; font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;curam.intf.MaintainBankAccount maintainBankAccount = curam.fact.MaintainBankAccountFactory.newInstance(); </span>
     </p>
     <p>
-      <font color="#0033ff" face="Calibri" size="3">&#160;&#160;AccountDetails accountDetails = maintainBankAccount.prepareAccountSummary(args)&#160;&#160;//call ootb </font>
+      <span style="color: #0033ff; font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;AccountDetails accountDetails = maintainBankAccount.prepareAccountSummary(args)&#xa0;&#xa0;//call ootb </span>
     </p>
     <p>
-      <font color="#0033ff" face="Calibri" size="3">&#160;&#160;CustomAccountDetails customAccountDetails = new CustomAccountDetails(); </font>
+      <span style="color: #0033ff; font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;CustomAccountDetails customAccountDetails = new CustomAccountDetails(); </span>
     </p>
     <p>
-      <font color="#0033ff" face="Calibri" size="3">&#160;&#160;customAccountDetails.dtls = accountDetails; </font>
+      <span style="color: #0033ff; font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;customAccountDetails.dtls = accountDetails; </span>
     </p>
     <p>
-      <font color="#0033ff" face="Calibri" size="3">&#160;&#160;//other custom logic </font>
+      <span style="color: #0033ff; font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;//other custom logic </span>
     </p>
     <p>
-      <font color="#0033ff" face="Calibri" size="3">&#160;&#160;return customAccountDetails; </font>
+      <span style="color: #0033ff; font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;return customAccountDetails; </span>
     </p>
     <p>
-      <font color="#0033ff" face="Calibri" size="3">}</font>
+      <span style="color: #0033ff; font-family: Courier New; font-size: 8pt;">}</span>
     </p>
   </body>
 </html>
@@ -1347,7 +1347,7 @@
 </node>
 </node>
 </node>
-<node FOLDED="true" ID="ID_329532217" CREATED="1730949275356" MODIFIED="1741051224490" STYLE="bubble" VGAP_QUANTITY="2 pt" COMMON_HGAP_QUANTITY="14 pt"><richcontent TYPE="NODE">
+<node ID="ID_329532217" CREATED="1730949275356" MODIFIED="1741051224490" STYLE="bubble" VGAP_QUANTITY="2 pt" COMMON_HGAP_QUANTITY="14 pt"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1361,15 +1361,15 @@
 </html>
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Strategy Pattern" ID="ID_1707278425" CREATED="1739430947052" MODIFIED="1740638364268" STYLE="bubble" VGAP_QUANTITY="2 pt" COMMON_HGAP_QUANTITY="14 pt">
+<node TEXT="Strategy Pattern" FOLDED="true" ID="ID_1707278425" CREATED="1739430947052" MODIFIED="1740638364268" STYLE="bubble" VGAP_QUANTITY="2 pt" COMMON_HGAP_QUANTITY="14 pt">
 <edge STYLE="bezier" WIDTH="2"/>
 <node TEXT="Developer handcraft the DAO and Entity interfaces and implementations." ID="ID_1644067803" CREATED="1739431230010" MODIFIED="1740638364268" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="Strategy pattern used to replace default DAO and Entity implementation classes with custom implementations." ID="ID_95071337" CREATED="1739852411677" MODIFIED="1740638364268" STYLE="bubble" HGAP_QUANTITY="36.5 pt" VSHIFT_QUANTITY="110.25 pt">
+<node TEXT="Strategy pattern used to replace default DAO and Entity implementation classes with custom implementations." ID="ID_95071337" CREATED="1739852411677" MODIFIED="1742531570331" STYLE="bubble" HGAP_QUANTITY="98.75 pt" VSHIFT_QUANTITY="234.75 pt">
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node TEXT="Guice used to inject the default or custom implementation using&#xa;@ImplementedBy or binding method in Guice Module configure().&#xa;@inject used to get reference. &#xa;You must create an entry in the ModuleClassName table. &#xa;Add reference to your Guice module from ModuleClassName table (use dmx)" ID="ID_445528065" CREATED="1739431268305" MODIFIED="1740638364268" STYLE="bubble" VSHIFT_QUANTITY="28.5 pt" VGAP_QUANTITY="2 pt" COMMON_HGAP_QUANTITY="14 pt">
+<node TEXT="Guice used to inject the default or custom implementation using&#xa;@ImplementedBy or binding method in Guice Module configure().&#xa;@inject used to get reference. &#xa;You must create an entry in the ModuleClassName table. &#xa;Add reference to your Guice module from ModuleClassName table (use dmx)" FOLDED="true" ID="ID_445528065" CREATED="1739431268305" MODIFIED="1742531565231" STYLE="bubble" HGAP_QUANTITY="75.5 pt" VSHIFT_QUANTITY="-73.5 pt" VGAP_QUANTITY="2 pt" COMMON_HGAP_QUANTITY="14 pt">
 <edge STYLE="bezier" WIDTH="2"/>
 <node ID="ID_1354303990" CREATED="1739853079981" MODIFIED="1740711152091" STYLE="bubble" HGAP_QUANTITY="212.74999 pt" VSHIFT_QUANTITY="14.25 pt"><richcontent TYPE="NODE">
 
@@ -1544,9 +1544,9 @@
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
 </node>
-<node TEXT="Event/Listener Pattern" ID="ID_177152152" CREATED="1739430971353" MODIFIED="1740711245631" STYLE="bubble" HGAP_QUANTITY="84.5 pt" VSHIFT_QUANTITY="-110.25 pt">
+<node TEXT="Event/Listener Pattern" FOLDED="true" ID="ID_177152152" CREATED="1739430971353" MODIFIED="1742531658958" STYLE="bubble" HGAP_QUANTITY="15.5 pt" VSHIFT_QUANTITY="0.75 pt" VGAP_QUANTITY="2 pt" COMMON_HGAP_QUANTITY="14 pt">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="There are 2 types of Events" ID="ID_949824789" CREATED="1739942797663" MODIFIED="1740638364271" LINK="EventHandlingOverview.png" STYLE="bubble">
+<node TEXT="There are 2 types of Events" FOLDED="true" ID="ID_949824789" CREATED="1739942797663" MODIFIED="1742531611468" LINK="EventHandlingOverview.png" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 <node ID="ID_1797743786" CREATED="1739942806617" MODIFIED="1740638364271" STYLE="bubble"><richcontent TYPE="NODE">
 
@@ -1628,7 +1628,7 @@
 </html>
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_1514051037" CREATED="1739943844838" MODIFIED="1740638364272" STYLE="bubble"><richcontent TYPE="NODE">
+<node ID="ID_1514051037" CREATED="1739943844838" MODIFIED="1742532486345" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1636,97 +1636,97 @@
   </head>
   <body>
     <p>
-      eg
+      <span style="font-family: Courier New; font-size: 8pt;">eg </span>
     </p>
     <p>
-      package curam.custom.application.impl;
+      <span style="font-family: Courier New; font-size: 8pt;">package curam.custom.application.impl; </span>
     </p>
     <p>
-      import curam.application.impl.ProgramApplication;
+      <span style="font-family: Courier New; font-size: 8pt;">import curam.application.impl.ProgramApplication; </span>
     </p>
     <p>
-      import curam.application.impl.ProgramApplicationEvents;
+      <span style="font-family: Courier New; font-size: 8pt;">import curam.application.impl.ProgramApplicationEvents; </span>
     </p>
     <p>
-      public class IS_ProgramApplicationBIEventListener implements ProgramApplicationEvents {
+      <span style="font-family: Courier New; font-size: 8pt;">public class IS_ProgramApplicationBIEventListener implements ProgramApplicationEvents { </span>
     </p>
     <p>
-      &#160;&#160;&#160;: : &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;&#xa0;: :&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>
     </p>
     <p>
-      &#160;&#160;@Override
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;@Override </span>
     </p>
     <p>
-      &#160;&#160;public void postReopen(ProgramApplication programApplication) {
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;public void postReopen(ProgramApplication programApplication) { </span>
     </p>
     <p>
-      &#160;&#160;&#160;&#160;&#160;// Custom implementation &#160;&#160;&#160;&#160;&#160;
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;// Custom implementation&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>
     </p>
     <p>
-      &#160;&#160;&#160;&#160;&#160;// : : : &#160;&#160;
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;// : : :&#xa0;&#xa0;&#xa0; </span>
     </p>
     <p>
-      &#160;&#160;} &#160;&#160;&#160;&#160;&#160;
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;}&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>
     </p>
     <p>
-      &#160;&#160;@Override
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;@Override </span>
     </p>
     <p>
-      &#160;&#160;public void preReopen(ProgramApplication programApplication) {
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;public void preReopen(ProgramApplication programApplication) { </span>
     </p>
     <p>
-      &#160;&#160;&#160;&#160;// No implementation required
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;&#xa0;&#xa0;// No implementation required </span>
     </p>
     <p>
-      &#160;&#160;&#160;}
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;&#xa0;} </span>
     </p>
     <p>
-      }
-    </p>
-    <p>
-      
+      <span style="font-family: Courier New; font-size: 8pt;">} </span>
     </p>
     <p>
       
     </p>
     <p>
-      Module.java
+      
     </p>
     <p>
-      import curam.application.impl.ProgramApplicationEvents;
+      <span style="font-family: Courier New; font-size: 8pt;">Module.java </span>
     </p>
     <p>
-      : : : :
+      <span style="font-family: Courier New; font-size: 8pt;">import curam.application.impl.ProgramApplicationEvents; </span>
     </p>
     <p>
-      public class ModuleextendsAbstractModule {
+      <span style="font-family: Courier New; font-size: 8pt;">: : : : </span>
     </p>
     <p>
-      &#160;&#160;&#160;&#160;&#160;&#160;@Override
+      <span style="font-family: Courier New; font-size: 8pt;">public class Module extends AbstractModule { </span>
     </p>
     <p>
-      &#160;&#160;&#160;&#160;&#160;&#160;protected void configure() {
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;@Override </span>
     </p>
     <p>
-      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Multibinder
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;protected void configure() { </span>
     </p>
     <p>
-      programApplicationBIEventListener = Multibinder.newSetBinder(binder(), ProgramApplicationEvents.class);
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;Multibinder </span>
     </p>
     <p>
-      &#160;&#160;&#160;programApplicationBIEventListener.addBinding().to( IS_ProgramApplicationBIEventListener.class);
+      <span style="font-family: Courier New; font-size: 8pt;">multiBinder = Multibinder.newSetBinder(binder(), ProgramApplicationEvents.class); </span>
     </p>
     <p>
-      &#160;&#160;}
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;&#xa0;multiBinder.addBinding().to( IS_ProgramApplicationBIEventListener.class); </span>
     </p>
     <p>
-      }
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;} </span>
+    </p>
+    <p>
+      <span style="font-family: Courier New; font-size: 8pt;">} </span>
     </p>
     <p>
       
     </p>
     <p>
-      * Make sure to add your Module in to the ModuleClassName.dmx
+      <span style="font-family: Courier New; font-size: 8pt;">* Make sure to add your Module in to the ModuleClassName.dmx</span>
     </p>
   </body>
 </html>
@@ -1783,7 +1783,7 @@
 <arrowlink DESTINATION="ID_1944112578" STARTINCLINATION="0 pt;0 pt;" ENDINCLINATION="0 pt;0 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <edge STYLE="bezier" WIDTH="2"/>
 <linktarget COLOR="#6699ff" DESTINATION="ID_1944112578" ENDARROW="Default" ENDINCLINATION="0;0;" ID="Arrow_ID_1179882700" SOURCE="ID_1944112578" STARTARROW="None" STARTINCLINATION="0;0;"/>
-<node ID="ID_1999159323" CREATED="1739944918230" MODIFIED="1740638364272" STYLE="bubble"><richcontent TYPE="NODE">
+<node ID="ID_1999159323" CREATED="1739944918230" MODIFIED="1742532997841" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1791,67 +1791,67 @@
   </head>
   <body>
     <p>
-      eg.
+      <span style="font-family: Courier New; font-size: 8pt;">eg. </span>
     </p>
     <p>
-      package curam.custom.contracts.impl;
+      <span style="font-family: Courier New; font-size: 8pt;">package curam.custom.contracts.impl; </span>
     </p>
     <p>
-      public class IS_ContractVersionPIEventListener extends PersistenceEvent&lt;ContractVersion&gt;{
+      <span style="font-family: Courier New; font-size: 8pt;">public class IS_ContractVersionPIEventListener extends PersistenceEvent&lt;ContractVersion&gt;{ </span>
     </p>
     <p>
-      &#160;&#160;@Override
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;@Override </span>
     </p>
     <p>
-      &#160;&#160;publi void postInsert(ContractVersion contractVersion) throws AppException, InformationalException {
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;publi void postInsert(ContractVersion contractVersion) throws AppException, InformationalException { </span>
     </p>
     <p>
-      &#160;&#160;//custom implementation
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;//custom implementation </span>
     </p>
     <p>
-      &#160;&#160;}
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;} </span>
     </p>
     <p>
-      }
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      Module.java
-    </p>
-    <p>
-      public class Module extends AbstractModule {
-    </p>
-    <p>
-      &#160;&#160;@Override
-    </p>
-    <p>
-      &#160;&#160;protected void configure(){
-    </p>
-    <p>
-      &#160;&#160;&#160;&#160;//need to use TypeLiteral because of the generic type for the entity
-    </p>
-    <p>
-      &#160;&#160;&#160;&#160;//must be multibinder since multiple listeners are supported
-    </p>
-    <p>
-      &#160;&#160;&#160;&#160;Multibinder&lt;PersistnceEvent&lt;ContractVersion&gt;&gt; listener = Multibinder.newSetBinder(binder(), new TypeLiteral&lt;PersistenceEvent&lt;ContractVersion&gt;&gt;(){});
-    </p>
-    <p>
-      &#160;&#160;&#160;&#160;listener.addBinding().to(IS_ContractVersionPIEventListener.class);
-    </p>
-    <p>
-      &#160;&#160;}
-    </p>
-    <p>
-      }
+      <span style="font-family: Courier New; font-size: 8pt;">} </span>
     </p>
     <p>
       
     </p>
     <p>
-      * dont forget to load your Module.java into&#160;&#160;the ModuleClassName.dmx
+      <span style="font-family: Courier New; font-size: 8pt;">Module.java </span>
+    </p>
+    <p>
+      <span style="font-family: Courier New; font-size: 8pt;">public class Module extends AbstractModule { </span>
+    </p>
+    <p>
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;@Override </span>
+    </p>
+    <p>
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;protected void configure(){ </span>
+    </p>
+    <p>
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;&#xa0;&#xa0;//need to use TypeLiteral because of the generic type for the entity </span>
+    </p>
+    <p>
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;&#xa0;&#xa0;//must be multibinder since multiple listeners are supported </span>
+    </p>
+    <p>
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;&#xa0;&#xa0;Multibinder&lt;PersistnceEvent&lt;ContractVersion&gt;&gt; multibinder = Multibinder.newSetBinder(binder(), new TypeLiteral&lt;PersistenceEvent&lt;ContractVersion&gt;&gt;(){}); </span>
+    </p>
+    <p>
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;&#xa0;&#xa0;multibinder.addBinding().to(IS_ContractVersionPIEventListener.class); </span>
+    </p>
+    <p>
+      <span style="font-family: Courier New; font-size: 8pt;">&#xa0;&#xa0;} </span>
+    </p>
+    <p>
+      <span style="font-family: Courier New; font-size: 8pt;">} </span>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <span style="font-family: Courier New; font-size: 8pt;">* dont forget to load your Module.java into&#xa0;&#xa0;the ModuleClassName.dmx</span>
     </p>
   </body>
 </html>
@@ -1886,7 +1886,7 @@
 </html>
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
-<node ID="ID_1878242951" CREATED="1740032734720" MODIFIED="1740638364273" STYLE="bubble"><richcontent TYPE="NODE">
+<node ID="ID_1878242951" CREATED="1740032734720" MODIFIED="1742533399043" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1894,77 +1894,77 @@
   </head>
   <body>
     <p>
-      <font size="2">public class MyFacade extends curam.facade.base.MyFacade { </font>
+      <span style="font-size: 8pt; font-family: Courier New;">public class MyFacade extends curam.facade.base.MyFacade { </span>
     </p>
     <p>
-      <font size="2">&#160;&#160;@Inject&#160;&#160;&#160;&#160;&#160;//1 </font>
+      <span style="font-size: 8pt; font-family: Courier New;">&#xa0;&#xa0;@Inject&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;//1 </span>
     </p>
     <p>
-      <font size="2">&#160;&#160;protect MyEntityDAO myEntityDAO; </font>
+      <span style="font-size: 8pt; font-family: Courier New;">&#xa0;&#xa0;protect MyEntityDAO myEntityDAO; </span>
     </p>
     <p>
-      <font size="2">&#160;&#160;public MyFacade(){ </font>
+      <span style="font-size: 8pt; font-family: Courier New;">&#xa0;&#xa0;public MyFacade(){ </span>
     </p>
     <p>
-      <font size="2">&#160;&#160;&#160;&#160;GuiceWrapper.getInjector().injectMembers(this);&#160;&#160;&#160;//2 </font>
+      <span style="font-size: 8pt; font-family: Courier New;">&#xa0;&#xa0;&#xa0;&#xa0;GuiceWrapper.getInjector().injectMembers(this);&#xa0;&#xa0;&#xa0;//2 </span>
     </p>
     <p>
-      <font size="2">&#160;&#160;} </font>
+      <span style="font-size: 8pt; font-family: Courier New;">&#xa0;&#xa0;} </span>
     </p>
     <p>
-      <font size="2">&#160;&#160;public MyEntityDetail getBlahblah(MyEntityKey key){ </font>
+      <span style="font-size: 8pt; font-family: Courier New;">&#xa0;&#xa0;public MyEntityDetail getBlahblah(MyEntityKey key){ </span>
     </p>
     <p>
-      <font size="2">&#160;&#160;&#160;&#160;MyEntity myEntity = myEntityDAO.get(key.myID);&#160;&#160;//3 </font>
+      <span style="font-size: 8pt; font-family: Courier New;">&#xa0;&#xa0;&#xa0;&#xa0;MyEntity myEntity = myEntityDAO.get(key.myID);&#xa0;&#xa0;//3 </span>
     </p>
     <p>
-      <font size="2">&#160;&#160;&#160;&#160;result = new MyEntityDetail(); </font>
+      <span style="font-size: 8pt; font-family: Courier New;">&#xa0;&#xa0;&#xa0;&#xa0;result = new MyEntityDetail(); </span>
     </p>
     <p>
-      <font size="2">&#160;&#160;&#160;&#160;result.details.key = myEntity.getID();&#160;&#160;//4 map result to return struct. </font>
+      <span style="font-size: 8pt; font-family: Courier New;">&#xa0;&#xa0;&#xa0;&#xa0;result.details.key = myEntity.getID();&#xa0;&#xa0;//4 map result to return struct. </span>
     </p>
     <p>
-      <font size="2">&#160;&#160;&#160;&#160;result.details.name = myEntity.getName(); </font>
+      <span style="font-size: 8pt; font-family: Courier New;">&#xa0;&#xa0;&#xa0;&#xa0;result.details.name = myEntity.getName(); </span>
     </p>
     <p>
-      <font size="2">&#160;&#160;&#160;&#160;return result; </font>
+      <span style="font-size: 8pt; font-family: Courier New;">&#xa0;&#xa0;&#xa0;&#xa0;return result; </span>
     </p>
     <p>
-      <font size="2">&#160;&#160;} </font>
+      <span style="font-size: 8pt; font-family: Courier New;">&#xa0;&#xa0;} </span>
     </p>
     <p>
-      <font size="2">} </font>
-    </p>
-    <p>
-      
+      <span style="font-size: 8pt; font-family: Courier New;">} </span>
     </p>
     <p>
       
     </p>
     <p>
-      <font size="2">//one of the key difference between DAO and classic factory. </font>
+      
     </p>
     <p>
-      <font size="2">DAO has get(id) method to get the entity. This entity has its details or key already set. </font>
+      <span style="font-size: 10pt; font-family: Arial;">//one of the key difference between DAO and classic factory. </span>
+    </p>
+    <p>
+      <span style="font-size: 10pt; font-family: Arial;">DAO has get(id) method to get the entity. This entity has its details or key already set. </span>
     </p>
     <p>
       
     </p>
     <p>
-      <font size="2">But in classic factory, you use the factory to create an empty instance first (factory.newInstance()), </font>
+      <span style="font-size: 10pt; font-family: Arial;">But in classic factory, you use the factory to create an empty instance first (factory.newInstance()), </span>
     </p>
     <p>
-      <font size="2">then set the details or key on that empty instance, </font>
+      <span style="font-size: 10pt; font-family: Arial;">then set the details or key on that empty instance, </span>
     </p>
     <p>
-      <font size="2">then call the operation (read, modify, delete, insert etc).</font>
+      <span style="font-size: 10pt; font-family: Arial;">then call the operation (read, modify, delete, insert etc).</span>
     </p>
   </body>
 </html>
 </richcontent>
 <edge STYLE="bezier" WIDTH="2"/>
 </node>
-<node ID="ID_408071617" CREATED="1740114468745" MODIFIED="1740638364273" STYLE="bubble"><richcontent TYPE="NODE">
+<node ID="ID_408071617" CREATED="1740114468745" MODIFIED="1742533359850" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1972,64 +1972,64 @@
   </head>
   <body>
     <p>
-      <font size="2">Create Interfaces </font>
+      <span style="font-size: 8pt; font-family: Courier New; font-weight: bold;">Create Interfaces</span><span style="font-size: 8pt; font-family: Courier New;">&#xa0;</span>
     </p>
     <p>
-      <font size="2">Create entity interface that extends curam.util.peristence.StandardEntity; </font>
+      <span style="font-size: 8pt; font-family: Courier New;">Create entity interface that extends curam.util.peristence.StandardEntity; </span>
     </p>
     <p>
-      <font size="2">Create entity DAO interface that extends curam.util.persistence.StandardDAO&lt;Entity&gt;; </font>
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      <font size="2">Create implementation </font>
-    </p>
-    <p>
-      <font size="2">To implement the entity interface, first you must model the entity with stereotyped operations. </font>
-    </p>
-    <p>
-      <font size="2">PI can generate an adapter code from the model. </font>
-    </p>
-    <p>
-      <font size="2">To enable this generation of adapter code, add the name of the db table into&#160;&#160;EJBServer/components/custom/properties/adapters.properties file. </font>
+      <span style="font-size: 8pt; font-family: Courier New;">Create entity DAO interface that extends curam.util.persistence.StandardDAO&lt;Entity&gt;; </span>
     </p>
     <p>
       
     </p>
     <p>
-      <font size="2">To implement the DAO </font>
+      <span style="font-size: 8pt; font-family: Courier New; font-weight: bold;">Create implementation</span><span style="font-size: 8pt; font-family: Courier New;">&#xa0;</span>
     </p>
     <p>
-      <font size="2">You can do following but requires lot of work. </font>
+      <span style="font-size: 8pt; font-family: Courier New;">To implement the entity interface, first you must model the entity with stereotyped operations. </span>
     </p>
     <p>
-      <font size="2">public class MyEntityDAOImpl implements MyEntityDAO { </font>
+      <span style="font-size: 8pt; font-family: Courier New;">PI can generate an adapter code from the model. </span>
     </p>
     <p>
-      <font size="2">} </font>
+      <span style="font-size: 8pt; font-family: Courier New;">To enable this generation of adapter code, add the name of the db table into&#xa0;&#xa0;EJBServer/components/custom/properties/adapters.properties file. </span>
     </p>
     <p>
       
     </p>
     <p>
-      <font size="2">Instead do following so that many boilerplate functionalities can be derived from StandardDAOImpl </font>
+      <span style="font-size: 8pt; font-family: Courier New; font-weight: bold;">To implement the DAO</span><span style="font-size: 8pt; font-family: Courier New;">&#xa0;</span>
     </p>
     <p>
-      <font size="2">public class MyEntityDAOImpl extends StandardDAOImpl&lt;MyEntity, MyEntityDtls&gt; implements MyEntityDAO { </font>
+      <span style="font-size: 8pt; font-family: Courier New;">You can do following but requires lot of work. </span>
     </p>
     <p>
-      <font size="2">&#160;&#160;&#160;&#160;private static MyEntityAdapter adapter&#160;&#160;= new MyEntityAdapter();&#160; </font>
+      <span style="font-size: 8pt; font-family: Courier New;">public class MyEntityDAOImpl implements MyEntityDAO { </span>
     </p>
     <p>
-      <font size="2">&#160;&#160;&#160;&#160;//the generated adapter by PI. Make it static so that there is shared instance among all entities </font>
+      <span style="font-size: 8pt; font-family: Courier New;">} </span>
     </p>
     <p>
-      <font size="2">&#160;.. then use the adapter to interact with db table. </font>
+      
     </p>
     <p>
-      <font size="2">}</font>
+      <span style="font-size: 8pt; font-family: Courier New; font-weight: bold;">Instead do following so that many boilerplate functionalities can be derived from StandardDAOImpl</span><span style="font-size: 8pt; font-family: Courier New;">&#xa0;</span>
+    </p>
+    <p>
+      <span style="font-size: 8pt; font-family: Courier New;">public class MyEntityDAOImpl extends StandardDAOImpl&lt;MyEntity, MyEntityDtls&gt; implements MyEntityDAO { </span>
+    </p>
+    <p>
+      <span style="font-size: 8pt; font-family: Courier New;">&#xa0;&#xa0;&#xa0;&#xa0;private static MyEntityAdapter adapter&#xa0;&#xa0;= new MyEntityAdapter();&#xa0; </span>
+    </p>
+    <p>
+      <span style="font-size: 8pt; font-family: Courier New;">&#xa0;&#xa0;&#xa0;&#xa0;//the generated adapter by PI. Make it static so that there is shared instance among all entities </span>
+    </p>
+    <p>
+      <span style="font-size: 8pt; font-family: Courier New;">&#xa0;.. then use the adapter to interact with db table. </span>
+    </p>
+    <p>
+      <span style="font-size: 8pt; font-family: Courier New;">}</span>
     </p>
   </body>
 </html>
@@ -2454,7 +2454,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Localization" LOCALIZED_STYLE_REF="AutomaticLayout.level,5" ID="ID_717209724" CREATED="1740711555312" MODIFIED="1741051224491" STYLE="bubble">
+<node TEXT="Localization" LOCALIZED_STYLE_REF="AutomaticLayout.level,5" FOLDED="true" ID="ID_717209724" CREATED="1740711555312" MODIFIED="1741051224491" STYLE="bubble">
 <node LOCALIZED_STYLE_REF="default" ID="ID_95414306" CREATED="1740723890051" MODIFIED="1741051224495" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
@@ -2493,7 +2493,7 @@
 <node TEXT="The ootb messge xml and custom component message xml files are merged. ie the final xml contain messages from both files." LOCALIZED_STYLE_REF="default" ID="ID_1044647024" CREATED="1740986023880" MODIFIED="1741051224501" STYLE="bubble"/>
 <node TEXT="Text elements are stored as LocalizableText records rather than plain strings.&#xa;For eg, for To support Add translation to Organisation Name.&#xa;Organisation table &lt;-&gt;LocalizableText table &lt;-&gt; TextTranslation table" LOCALIZED_STYLE_REF="default" ID="ID_1070071081" CREATED="1741039212471" MODIFIED="1741051224502" STYLE="bubble"/>
 </node>
-<node TEXT="Support tools and Resources" LOCALIZED_STYLE_REF="default" ID="ID_1099373644" CREATED="1741039444060" MODIFIED="1741051224503" STYLE="bubble">
+<node TEXT="Support tools and Resources" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1099373644" CREATED="1741039444060" MODIFIED="1741051224503" STYLE="bubble">
 <node LOCALIZED_STYLE_REF="default" ID="ID_1852793889" CREATED="1741039599362" MODIFIED="1741051224505" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
