@@ -94,7 +94,7 @@
 </hook>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="Client-side customization" FOLDED="true" POSITION="top_or_left" ID="ID_801206656" CREATED="1730949196500" MODIFIED="1742539604963" STYLE="bubble">
+<node TEXT="Client-side customization" POSITION="top_or_left" ID="ID_801206656" CREATED="1730949196500" MODIFIED="1742539604963" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 <node TEXT="Customizing pages," ID="ID_1872145217" CREATED="1730949316726" MODIFIED="1741051224453" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
@@ -459,7 +459,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Curam Infrastructure" POSITION="bottom_or_right" ID="ID_742253712" CREATED="1730949181248" MODIFIED="1742539604963" STYLE="bubble">
+<node TEXT="Curam Infrastructure" POSITION="bottom_or_right" ID="ID_742253712" CREATED="1730949181248" MODIFIED="1747590013176" STYLE="bubble" VGAP_QUANTITY="2 pt" COMMON_HGAP_QUANTITY="14 pt">
 <edge STYLE="bezier" WIDTH="2"/>
 <node TEXT="Product documentation and information sources" FOLDED="true" ID="ID_1176609013" CREATED="1730949211243" MODIFIED="1742539604963" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
@@ -505,6 +505,19 @@
 </node>
 <node TEXT="support and upgrade" ID="ID_340941452" CREATED="1730949244335" MODIFIED="1742539604964" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
+<node TEXT="LTS: Long term support, focused on critical fixes and security patches" LOCALIZED_STYLE_REF="default" ID="ID_464323420" CREATED="1747589808360" MODIFIED="1747589837710"/>
+<node TEXT="CD: Continuous Delivery: new features, fixes and enhancements." LOCALIZED_STYLE_REF="default" ID="ID_1992119855" CREATED="1747589838452" MODIFIED="1747589859784"/>
+<node TEXT="Support Portal access: named contact who can log support cases." LOCALIZED_STYLE_REF="default" ID="ID_1913423217" CREATED="1747589868459" MODIFIED="1747589893173">
+<node TEXT="Support case based on business impact" LOCALIZED_STYLE_REF="default" ID="ID_1226957554" CREATED="1747589903771" MODIFIED="1747589917713">
+<node TEXT="Critical impact: service down or major business impact" LOCALIZED_STYLE_REF="default" ID="ID_1330977240" CREATED="1747589919796" MODIFIED="1747589929138"/>
+<node TEXT="significant impact: major functionality is severely restricted" LOCALIZED_STYLE_REF="default" ID="ID_1773898671" CREATED="1747589929416" MODIFIED="1747589944521"/>
+<node TEXT="minor impact: non critical issues moderate impact" LOCALIZED_STYLE_REF="default" ID="ID_481155409" CREATED="1747589944868" MODIFIED="1747589957916"/>
+<node TEXT="minimal impact: minor issue" LOCALIZED_STYLE_REF="default" ID="ID_877521558" CREATED="1747589958196" MODIFIED="1747589974789"/>
+</node>
+</node>
+<node TEXT="Upgrade process" LOCALIZED_STYLE_REF="default" ID="ID_1092262071" CREATED="1747590027186" MODIFIED="1747590030784">
+<node TEXT="Upgrade tools provided by merative: File changes report, artifact dependency search tool, CADG, Curam Upgrade helper pack, user ui upgrade helper." LOCALIZED_STYLE_REF="default" ID="ID_1781248616" CREATED="1747590033829" MODIFIED="1747590109498"/>
+</node>
 </node>
 </node>
 <node TEXT="Server-side customization" POSITION="bottom_or_right" ID="ID_98750021" CREATED="1730949190680" MODIFIED="1742539604964" STYLE="bubble"><richcontent TYPE="NOTE">
@@ -1170,7 +1183,7 @@
 </node>
 </node>
 </node>
-<node FOLDED="true" ID="ID_1366320371" CREATED="1730949268587" MODIFIED="1742539604964" STYLE="bubble"><richcontent TYPE="NODE">
+<node ID="ID_1366320371" CREATED="1730949268587" MODIFIED="1742539604964" STYLE="bubble"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -1546,7 +1559,7 @@
 </node>
 <node TEXT="Event/Listener Pattern" ID="ID_177152152" CREATED="1739430971353" MODIFIED="1742539604965" STYLE="bubble" HGAP_QUANTITY="15.5 pt" VSHIFT_QUANTITY="0.75 pt" VGAP_QUANTITY="2 pt" COMMON_HGAP_QUANTITY="14 pt">
 <edge STYLE="bezier" WIDTH="2"/>
-<node TEXT="There are 2 types of Events" FOLDED="true" ID="ID_949824789" CREATED="1739942797663" MODIFIED="1742531611468" LINK="EventHandlingOverview.png" STYLE="bubble">
+<node TEXT="There are 2 types of Events" ID="ID_949824789" CREATED="1739942797663" MODIFIED="1742531611468" LINK="EventHandlingOverview.png" STYLE="bubble">
 <edge STYLE="bezier" WIDTH="2"/>
 <node ID="ID_1797743786" CREATED="1739942806617" MODIFIED="1740638364271" STYLE="bubble"><richcontent TYPE="NODE">
 
