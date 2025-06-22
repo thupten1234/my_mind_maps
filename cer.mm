@@ -276,7 +276,14 @@
 <node TEXT="DefaultProductKeyDataRuleSet.DefaultKeyDataTimeline" ID="ID_1620993578" CREATED="1750542229211" MODIFIED="1750542230524"/>
 </node>
 <node TEXT="DeterminationResult" ID="ID_1292858034" CREATED="1750542248170" MODIFIED="1750542249787"/>
+<node TEXT="ProductKeyDataRuleSet.AbstractKeyEvent" ID="ID_1700398635" CREATED="1750542898647" MODIFIED="1750556550161">
+<node TEXT="Eg. EmploymentStartedEvent" ID="ID_588861823" CREATED="1750556581355" MODIFIED="1750556583961"/>
+</node>
 <node TEXT="MyCustomCalculator" ID="ID_327300518" CREATED="1750542736670" MODIFIED="1750542752465"/>
+<node TEXT="ProductDecisionDetailsRuleSet.AbstractCaseSubscreenDisplay" ID="ID_127515820" CREATED="1750556693666" MODIFIED="1750556701015"/>
+<node TEXT="Rule Object Converters and Propagators" ID="ID_999009835" CREATED="1750557757528" MODIFIED="1750557765224">
+<node TEXT="Converters&#xa;Responsible for converting business objects from db to rule objects." ID="ID_1890641319" CREATED="1750557769824" MODIFIED="1750557808193"/>
+</node>
 </node>
 </node>
 </map>
